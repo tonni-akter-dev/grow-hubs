@@ -1,26 +1,149 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* === Colors === */
+@theme {
+  --color-primary: #0396FF;
+  --color-secondary: #FF5635;
+  --color-tertiary: #C5A572;
+  --color-teal: #1ABC9C;
+  --color-neutral: #11ABC30;
+  --color-purple: #EDE6FB;
+  --color-warning: #FFC940;
+  --color-violet: #9C27B0;
+  --color-danger: #E53935;
+
+  --color-background: #0F172A;
+  --color-text: #FFFFFF;
+
+  /* primary 2  */
+  --color-primary-2-50: #e8f2ff;
+  --color-primary-2-100: #b7d8fe;
+  --color-primary-2-200: #94c5fd;
+  --color-primary-2-300: #63aafc;
+  --color-primary-2-400: #4599fc;
+  --color-primary-2-500: #1680fb;
+  --color-primary-2-600: #1474e4;
+  --color-primary-2-700: #105bb2;
+  --color-primary-2-800: #0c468a;
+  --color-primary-2-900: #093669;
+  /* secondary */
+  --color-secondary-50: #fefcf8;
+  --color-secondary-100: #fdf6e8;
+  --color-secondary-200: #fcf1dd;
+  --color-secondary-300: #fbebce;
+  --color-secondary-400: #fae7c5;
+  --color-secondary-500: #f9e1b6;
+  --color-secondary-600: #e3cda6;
+  --color-secondary-700: #b1a081;
+  --color-secondary-800: #897c64;
+  --color-secondary-900: #695f4c;
+  /* teal */
+  --color-teal-50: #e8f8f6;
+  --color-teal-100: #b9e9e2;
+  --color-teal-200: #97dfd5;
+  --color-teal-300: #68d0c1;
+  --color-teal-400: #4ac7b5;
+  --color-teal-500: #1db9a3;
+  --color-teal-600: #1aa894;
+  --color-teal-700: #158374;
+  --color-teal-800: #10665a;
+  --color-teal-900: #0c4e44;
+  /*  neutral */
+  --color-neutral-1: #ffffff;
+  --color-neutral-2: #fdfdfd;
+  --color-neutral-3: #f6f6f6;
+  --color-neutral-4: #f2f2f2;
+  --color-neutral-5: #dedede;
+  --color-neutral-6: #c8c8c8;
+  --color-neutral-7: #9b9b9b;
+  --color-neutral-8: #6f6f6f;
+  --color-neutral-9: #5d5d5d;
+  --color-neutral-10: #424242;
+  --color-neutral-11: #3c3c3c;
+  --color-neutral-12: #333333;
+  --color-neutral-13: #212121;
+
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* === Typography === */
+@theme {
+  --text-h1: 72px;
+  /* 72px */
+  --text-display: 3.25rem;
+  /* 52px */
+  --text-h2: 2.688rem;
+  /* 42px */
+  --text-h3: 2.188rem;
+  /* 32px */
+  --text-h4: 1.812rem;
+  /* 28px */
+  --text-h5: 1.5rem;
+  /* 24px */
+  --text-body-lg: 1.188rem;
+  /* 18px */
+  --text-body: 1rem;
+  /* 16px */
+  --text-body-sm: 0.875rem;
+  /* 14px */
+  --text-caption: 0.75rem;
+  /* 12px */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.mega-menu,
+.mega-menu-why,
+.mega-menu-addons {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -900;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  text-align: left;
+  width: max-content;
+  max-width: 95vw;
+  transform: translateX(-50%);
+  transition: opacity 0.20s linear, top 0.20s linear, visibility 0.20s linear;
+}
+
+.hoverable {
+  position: static;
+}
+
+.hoverable:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  z-index: 900;
+  top: 115px;
+}
+
+
+.hoverable:hover .mega-menu-addons {
+  opacity: 1;
+  visibility: visible;
+  z-index: 900;
+  top: 115px;
+}
+
+.hoverable:hover .mega-menu-why {
+  opacity: 1;
+  visibility: visible;
+  z-index: 900;
+  top: 115px;
+  /* End at top: 90px */
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
 }
