@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 const TrustedBy = () => {
   return (
-    <div className='relative mb-[92px] mx-[26px] h-[101px] ps-12 pe-[60px] py-8 bg-[#F6F5F5] rounded-[20px]'>
+    <div className='relative mx-[26px] h-[101px] ps-12 pe-[60px] py-8 bg-[#F6F5F5] rounded-[20px]'>
       <Marquee>
         <div className='flex gap-[51px]  items-center'>
           <Image className='h-10 ' src={t1} alt="" />
