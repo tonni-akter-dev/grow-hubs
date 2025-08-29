@@ -13,13 +13,13 @@ const ResourceMegaMenu = () => {
                 }}>
                 <div className="w-full  grid lg:grid-cols-3 grid-cols-1  gap-x-6">
                     <div className="text-neutral-10 text-body font-medium">
-                        CREATE & LAUNCH
+                       RESOURCES
                     </div>
                     <div className="text-neutral-10 text-body font-medium">
-                        SCALE
+                        FOR PARTNERS
                     </div>
                     <div className="text-neutral-10 text-body font-medium">
-                        MANAGE
+                        GET SUPPORT
                     </div>
                 </div>
                 <ul className="w-full  grid lg:grid-cols-3 grid-cols-1  gap-x-6">

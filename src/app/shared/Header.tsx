@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="relative z-50 ">
       <nav className="container relative pt-5  ">
-        <div className="flex items-center justify-between  lg:py-0 py-5 lg:px-0 px-6">
+        <div className="flex items-center justify-between  lg:py-0 py-5 lg:px-0 px-6 header">
           <div className="lg:hidden mt-2">
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">
               {menuOpen ? <HiX /> : <HiOutlineMenu />}
