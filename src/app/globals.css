@@ -62,19 +62,6 @@ p {
 
 /* === Colors === */
 @theme {
-  --color-primary: #0396FF;
-  --color-secondary: #FF5635;
-  --color-tertiary: #C5A572;
-  --color-teal: #1ABC9C;
-  --color-neutral: #11ABC30;
-  --color-purple: #EDE6FB;
-  --color-warning: #FFC940;
-  --color-violet: #9C27B0;
-  --color-danger: #E53935;
-
-  --color-background: #0F172A;
-  --color-text: #FFFFFF;
-
   /* primary 2  */
   --color-primary-2-50: #e8f2ff;
   --color-primary-2-100: #b7d8fe;
@@ -86,6 +73,17 @@ p {
   --color-primary-2-700: #105bb2;
   --color-primary-2-800: #0c468a;
   --color-primary-2-900: #093669;
+  /* violet */
+  --color-violet-50: #f7ebfd;
+  --color-violet-100: #b7d8fe;
+  --color-violet-200: #94c5fd;
+  --color-violet-300: #63aafc;
+  --color-violet-400: #4599fc;
+  --color-violet-500: #1680fb;
+  --color-violet-600: #1474e4;
+  --color-violet-700: #105bb2;
+  --color-violet-800: #0c468a;
+  --color-violet-900: #093669;
   /* secondary */
   --color-secondary-50: #fefcf8;
   --color-secondary-100: #fdf6e8;
@@ -213,6 +211,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.course_bg {
+  background-image: url('/home/service1.png');
+  background-repeat: no-repeat;
+
+}
+
 
 /* banner */
 .banner_heading {
@@ -223,3 +227,34 @@ body {
 }
 
 /* banner */
+
+
+/* services */
+.service_bg {
+  background: linear-gradient(180deg, rgba(196, 224, 254, 0.00) 0%, rgba(196, 224, 254, 0.50) 44.34%, rgba(196, 223, 254, 0.00) 100%);
+
+}
+
+@keyframes slideDiagonal {
+  0% {
+    transform: translate(0, 40px); /* bottom */
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(40px, 0); /* top-right */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 40px); /* back to bottom */
+    opacity: 1;
+  }
+}
+
+.slide-diagonal {
+  animation: slideDiagonal 3s ease-in-out infinite;
+}
+
+
+/* services */

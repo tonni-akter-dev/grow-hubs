@@ -21,7 +21,7 @@ const Banner = () => {
                             className="text-[#A6A6A6] w-full md:w-3/4 p-[25px] focus:outline-0 "
                         />
                         <button style={{ background: 'linear-gradient(214deg, #3F7DFF 20.22%, #2E9FE5 77.53%)' }}
-                            className=" cursor-pointer px-6 rounded-[100px] h-[66px]  w-[190px]  text-body  text-primary-2-50 font-semibold py-3 hover:from-cyan-600 hover:to-blue-600 transition duration-300 leading-6 ">
+                            className=" cursor-pointer px-6 me-1 rounded-[100px] h-[66px]  w-[190px]  text-body  text-primary-2-50 font-semibold py-3 hover:from-cyan-600 hover:to-blue-600 transition duration-300 leading-6 ">
                             <p>Start for Free </p>
                             <p className="text-caption font-normal leading-[18px] whitespace-nowrap">No credit card Required</p>
                         </button>

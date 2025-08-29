@@ -13,25 +13,25 @@ import Image from 'next/image';
 
 const TrustedBy = () => {
   return (
-      <div className='relative mb-[92px] mx-[26px] ps-12 pe-[60px] py-8 bg-[#F6F5F5] rounded-[20px]'>
-        <Marquee>
-          <div className='flex gap-[51px] items-center'>
-            <Image className='h-10 ' src={t1} alt="" />
-            <Image className='h-10 ' src={t2} alt="" />
-            <Image className='h-10 ' src={t3} alt="" />
-            <Image className='h-10 ' src={t4} alt="" />
-            <Image className='h-10 ' src={t5} alt="" />
-            <Image className='h-10 ' src={t6} alt="" />
-            <Image className='h-10 ' src={t7} alt="" />
-          </div>
-        </Marquee>
-        <div className='absolute right-0 top-0 h-[101px] z-50 w-[290px] '>
-          <Image className='' src={trustedrightshadow} alt="" />
+    <div className='relative mb-[92px] mx-[26px] h-[101px] ps-12 pe-[60px] py-8 bg-[#F6F5F5] rounded-[20px]'>
+      <Marquee>
+        <div className='flex gap-[51px]  items-center'>
+          <Image className='h-10 ' src={t1} alt="" />
+          <Image className='h-10 ' src={t2} alt="" />
+          <Image className='h-10 ' src={t3} alt="" />
+          <Image className='h-10 ' src={t4} alt="" />
+          <Image className='h-10 ' src={t5} alt="" />
+          <Image className='h-10 ' src={t6} alt="" />
+          <Image className='h-10 ' src={t7} alt="" />
         </div>
-            <div className='absolute left-0 top-0 h-[101px] z-50 w-[290px] '>
-          <Image className='' src={trustedrleftshadow} alt="" />
-        </div>
+      </Marquee>
+      <div className='absolute right-0 top-0 h-[101px] z-50 w-[290px] '>
+        <Image className='rounded-[20px]' src={trustedrightshadow} alt="" />
       </div>
+      <div className='absolute left-0 top-0 h-[101px] z-50  w-[290px] '>
+        <Image className='rounded-[20px]' src={trustedrleftshadow} alt="" />
+      </div>
+    </div>
   )
 }
 

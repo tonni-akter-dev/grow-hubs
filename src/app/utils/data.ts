@@ -22,6 +22,20 @@ import r6 from "/public/home/r6.svg";
 import r7 from "/public/home/r7.svg";
 import r8 from "/public/home/r8.svg";
 import r9 from "/public/home/r9.svg";
+import s1 from '/public/home/s1.png'
+import s11 from '/public/home/s11.png'
+import s3 from '/public/home/s.svg'
+import s33 from '/public/home/s33.svg'
+import s2 from '/public/home/s2.svg'
+import s22 from '/public/home/s22.svg'
+import s4 from '/public/home/s4.png'
+import s44 from '/public/home/s44.svg'
+import s5 from '/public/home/s5.svg'
+import s55 from '/public/home/s55.svg'
+import s6 from '/public/home/s6.svg'
+import s66 from '/public/home/s66.svg'
+import s7 from '/public/home/s7.svg'
+import s77 from '/public/home/s77.svg'
 
 export const products1 = [
     {
@@ -205,24 +219,76 @@ export const resource3 = [
 ];
 
 export const stats = [
-  {
-    title: "CO-SELLERS IN NETWORK",
-    value: "21,500+",
-    description: "People who can co-promote"
-  },
-  {
-    title: "EXPECTED BUYERS / MONTH",
-    value: "86",
-    description: "With zero personal audience"
-  },
-  {
-    title: "EST. MRR AT US$9/MO",
-    value: "US$774",
-    description: "From membership sales"
-  },
-  {
-    title: "EARN W/O A PRODUCT",
-    value: "US$300",
-    description: "Just by co-selling"
-  }
+    {
+        title: "CO-SELLERS IN NETWORK",
+        value: "21,500+",
+        description: "People who can co-promote"
+    },
+    {
+        title: "EXPECTED BUYERS / MONTH",
+        value: "86",
+        description: "With zero personal audience"
+    },
+    {
+        title: "EST. MRR AT US$9/MO",
+        value: "US$774",
+        description: "From membership sales"
+    },
+    {
+        title: "EARN W/O A PRODUCT",
+        value: "US$300",
+        description: "Just by co-selling"
+    }
 ]
+
+export const buttons = [
+    {
+        key: 'courses',
+        label: 'Courses',
+        activeGradient: 'bg-[linear-gradient(214deg,#3F7DFF_20.22%,#2E9FE5_77.53%)]',
+        imgActive: s11,
+        imgInactive: s1,
+    },
+    {
+        key: 'communities',
+        label: 'Communities',
+        activeGradient: 'bg-[linear-gradient(214deg,#9F3FFF_20.22%,#892EE5_77.53%)]',
+        imgActive: s22,
+        imgInactive: s2,
+    },
+    {
+        key: 'coaching',
+        label: 'Coaching & Consulting',
+        activeGradient: 'bg-[linear-gradient(214deg,#F75757_20.22%,#F70808_77.53%)]',
+        imgActive: s33,
+        imgInactive: s3,
+    },
+    {
+        key: 'merchandise',
+        label: 'Merchandise',
+        activeGradient: 'bg-[linear-gradient(214deg,#BC3FFF_20.22%,#9806D7_77.53%)]',
+        imgActive: s44,
+        imgInactive: s4,
+    },
+    {
+        key: 'podcasts',
+        label: 'Podcasts',
+        activeGradient: 'bg-[linear-gradient(214deg,#F8B421_20.22%,#D29000_77.53%)]',
+        imgActive: s55,
+        imgInactive: s5,
+    },
+    {
+        key: 'events',
+        label: 'Events',
+        activeGradient: 'bg-[linear-gradient(214deg,#FF723F_20.22%,#E55F2E_77.53%)]',
+        imgActive: s66,
+        imgInactive: s6,
+    },
+    {
+        key: 'brokerage',
+        label: 'Brokerage',
+        activeGradient: 'bg-[linear-gradient(214deg,#05CFB4_20.22%,#00A58F_77.53%)]',
+        imgActive: s77,
+        imgInactive: s7,
+    },
+];
