@@ -10,8 +10,7 @@ const ProductsMegamenu = () => {
         className="rounded-[30px] p-11 flex flex-col justify-center  mega-menu max-w-[1186px] mx-auto w-full bg-white "
         style={{
           boxShadow: "0 7062px 250px 0 rgba(0, 0, 0, 0.00), 0 4520px 250px 0 rgba(0, 0, 0, 0.01), 0 2542px 250px 0 rgba(0, 0, 0, 0.05), 0 1130px 250px 0 rgba(0, 0, 0, 0.09), 0 282px 250px 0 rgba(0, 0, 0, 0.10)",
-        }}
-      >
+        }}>
         <div className="w-full  grid lg:grid-cols-3 grid-cols-1  gap-x-6">
           <div className="text-neutral-10 text-body font-medium">
             CREATE & LAUNCH

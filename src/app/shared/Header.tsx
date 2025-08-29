@@ -8,6 +8,7 @@ import ProductsMegamenu from "./ProductsMegamenu";
 import logo from '../../../public/logo.png';
 import LoginButtons from "../components/LoginButtons";
 import NavLink from "../home/components/NavLink";
+import ResourceMegaMenu from "./ResourceMegaMenu";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -61,7 +62,7 @@ const Header = () => {
                   <path d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729" stroke="#FDFDFD" strokeWidth="1.74695" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
-              <ProductsMegamenu />
+              <ResourceMegaMenu />
             </li>
           </ul>
 

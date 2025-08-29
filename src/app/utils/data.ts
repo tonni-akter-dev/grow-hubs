@@ -13,6 +13,15 @@ import m21 from "/public/home/m21.svg";
 import m22 from "/public/home/m22.svg";
 import m23 from "/public/home/m23.svg";
 import m24 from "/public/home/m24.svg";
+import r1 from "/public/home/r1.svg";
+import r2 from "/public/home/r2.svg";
+import r3 from "/public/home/r3.svg";
+import r4 from "/public/home/r4.svg";
+import r5 from "/public/home/r5.svg";
+import r6 from "/public/home/r6.svg";
+import r7 from "/public/home/r7.svg";
+import r8 from "/public/home/r8.svg";
+import r9 from "/public/home/r9.svg";
 
 export const products1 = [
     {
@@ -124,4 +133,74 @@ export const products3 = [
         bgEffect: "hover:bg-[#e8f8f6]",
         textEffect: "group-hover:text-[#e8f8f6]"
     }
+];
+
+export const resource1 = [
+    {
+        title: "Blog",
+        description: "Create and publish your own blog posts, and start earning from your insights.",
+        icon: r1,
+        bgEffect: "hover:bg-[#e8f2ff]",
+        textEffect: "group-hover:text-[#e8f2ff]"
+    },
+    {
+        title: "Creator Stories",
+        description: "Shares valuable insights, transforming members into dedicated customers.",
+        icon: r2,
+        bgEffect: "hover:bg-[#f2e6fe]",
+        textEffect: "group-hover:text-[#f2e6fe]"
+    },
+    {
+        title: "Training Webinars",
+        description: "Setting up a consultancy profile page to promote your training webinars online.",
+        icon: r3,
+        bgEffect: "hover:bg-[#e8f8f6]",
+        textEffect: "group-hover:text-[#e8f8f6]"
+    },
+];
+export const resource2 = [
+    {
+        title: "Become a Partner",
+        description: "Leverage your knowledge and earn by developing and offering courses.",
+        icon: r4,
+        bgEffect: "hover:bg-[#e8f2ff]",
+        textEffect: "group-hover:text-[#e8f2ff]"
+    },
+    {
+        title: "Product Updates",
+        description: "Easily create, send, and oversee your marketing emails with our latest updates.",
+        icon: r5,
+        bgEffect: "hover:bg-[#f2e6fe]",
+        textEffect: "group-hover:text-[#f2e6fe]"
+    },
+    {
+        title: "FAQs",
+        description: "Quickly create, send, and organize your frequently asked questions.",
+        icon: r6,
+        bgEffect: "hover:bg-[#e8f2ff]",
+        textEffect: "group-hover:text-[#e8f2ff]"
+    },
+];
+export const resource3 = [
+    {
+        title: "Contact Support",
+        description: "Add Growhubs content to your website with one embed code",
+        icon: r7,
+        bgEffect: "hover:bg-[#e8f2ff]",
+        textEffect: "group-hover:text-[#e8f2ff]"
+    },
+    {
+        title: "Help Center",
+        description: "Leverage the right metrics with reports designed for practical insights.",
+        icon: r8,
+        bgEffect: "hover:bg-[#e8f8f6]",
+        textEffect: "group-hover:text-[#e8f8f6]"
+    },
+    {
+        title: "Hire an Expert",
+        description: "Bring your contacts and audience to turn them in one of your biggest assets ",
+        icon: r9,
+        bgEffect: "hover:bg-[#f2e6fe]",
+        textEffect: "group-hover:text-[#f2e6fe]"
+    },
 ];
