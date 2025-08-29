@@ -58,7 +58,7 @@ const Header = () => {
                 className=" flex items-center text-neutral-2 hover:border-b border-neutral-2 transition-all duration-75 ease-in-out relative text-sm lg:text-base font-medium"
               >
                 Resources <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729" stroke="#FDFDFD" stroke-width="1.74695" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729" stroke="#FDFDFD" strokeWidth="1.74695" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
               <ProductsMegamenu />

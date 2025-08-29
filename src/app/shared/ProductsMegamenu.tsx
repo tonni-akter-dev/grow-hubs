@@ -1,119 +1,221 @@
 import React from "react";
-// import next1 from "/public/home/next.png";
-// import m1 from "/public/home/m1.png";
-// import m2 from "/public/home/m2.png";
-// import m3 from "/public/home/m3.png";
-// import m4 from "/public/home/m4.png";
-// import m5 from "/public/home/m5.png";
-// import m6 from "/public/home/m6.png";
-// import m7 from "/public/home/m7.png";
-// import m8 from "/public/home/m8.png";
-// import m9 from "/public/home/m9.png";
-// import m10 from "/public/home/m10.png";
-// import m11 from "/public/home/m11.png";
-// import m12 from "/public/home/m12.png";
+import m1 from "/public/home/m1.png";
+import m2 from "/public/home/m2.png";
+import m3 from "/public/home/m3.svg";
+import m4 from "/public/home/m4.svg";
+import m5 from "/public/home/m5.svg";
+import m6 from "/public/home/m6.svg";
+import m7 from "/public/home/m7.svg";
+import m11 from "/public/home/m11.png";
+import m12 from "/public/home/m12.png";
+import m13 from "/public/home/m13.svg";
+import m14 from "/public/home/m14.svg";
+import m21 from "/public/home/m21.svg";
+import m22 from "/public/home/m22.svg";
+import m23 from "/public/home/m23.svg";
+import m24 from "/public/home/m24.svg";
 import Image from "next/image";
 
-const products = [
+const products1 = [
   {
-    title: "POS Pro - Advanced POS",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m1,
-    category: "Powerful and Simple Analytics",
+    title: "Courses",
+    description: "Share and profit from your expertise by creating and publishing courses.",
+    icon: m1,
+    bgEffect: "hover:bg-[#E8F2FF]",
+    textEffect: "group-hover:text-[#E8F2FF]"
   },
   {
-    title: "Garments ERP",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m2,
-    category: "Powerful and Simple Analytics",
+    title: "Community",
+    description: "Create a community to share value, and turn members into loyal customers.",
+    icon: m2,
+    bgEffect: "hover:bg-[#F7EBFD]",
+    textEffect: "group-hover:text-[#F7EBFD]"
   },
   {
-    title: "SMSPro - Bulk SMS Gateway",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m3,
-    category: "Powerful and Simple Analytics",
+    title: "Coaching & Consulting",
+    description: "Monetise Your Expertise by Creating a consultancy profile page to share it online.",
+    icon: m3,
+    bgEffect: "hover:bg-[#FBE6E6]",
+    textEffect: "group-hover:text-[#FBE6E6]"
   },
   {
-    title: "SaaS Pharmacy App",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m4,
-    category: "Powerful and Simple Analytics",
+    title: "Merchandise",
+    description: "Expand Your Revenue Streams. Sell retail products to complement your services.",
+    icon: m4,
+    bgEffect: "hover:bg-[#F7EBFD]",
+    textEffect: "group-hover:text-[#F7EBFD]"
   },
   {
-    title: "Grocery Selling App",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m5,
-    category: "Powerful and Simple Analytics",
+    title: "Podcasts",
+    description: "Create, publish, and monetize podcasts effortlessly from your dashboard on all",
+    icon: m5,
+    bgEffect: "hover:bg-[#fff8eb]",
+    textEffect: "group-hover:text-[#fff8eb]"
   },
   {
-    title: "Acnoo Flutter Dashboard",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m6,
-    category: "Powerful and Simple Analytics",
+    title: "Events",
+    description: "Gather your audience in one place for more growth and success.",
+    icon: m6,
+    bgEffect: "hover:bg-[#fff0ea]",
+    textEffect: "group-hover:text-[#fff0ea]"
   },
   {
-    title: "HRM Application..",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m7,
-    category: "Powerful and Simple Analytics",
-  },
-  {
-    title: "Rentpro SaaS",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m8,
-    category: "Powerful and Simple Analytics",
-  },
-  {
-    title: "Blog & news PHP Scripts",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m9,
-    category: "Powerful and Simple Analytics",
-  },
-  {
-    title: "Influencer Hiring Marke",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m10,
-    category: "Powerful and Simple Analytics",
-  },
-  {
-    title: "My Bazar Laravel Multivendor Script",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m11,
-    category: "Powerful and Simple Analytics",
-  },
-  {
-    title: "POS SAAS - Flutter POS",
-    description: "Build your dream multi vendor marketplace",
-    // icon: m12,
-    category: "Powerful and Simple Analytics",
-  },
+    title: "Brokerage",
+    description: "Connect creators, clients, and products in the platform, and earn a commission",
+    icon: m7,
+    bgEffect: "hover:bg-[#e8f8f6]",
+    textEffect: "group-hover:text-[#e8f8f6]"
+  }
 ];
-
+const products2 = [
+  {
+    title: "Co-sales",
+    description: "Share and profit from your expertise by creating and publishing courses.",
+    icon: m11,
+    bgEffect: "hover:bg-[#f2e6fe]",
+    textEffect: "group-hover:text-[#f2e6fe]"
+  },
+  {
+    title: "Email Marketing",
+    description: "Draft, send and manage marketing emails with ease.",
+    icon: m12,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover:text-[#e8f2ff]"
+  },
+  {
+    title: "Funnels & Automations",
+    description: "Create sales funnels and automate processes to boost your income easy.",
+    icon: m13,
+    bgEffect: "hover:bg-[#f2e6fe]",
+    textEffect: "group-hover:text-[#f2e6fe]"
+  },
+  {
+    title: "Third party integrations",
+    description: "Integrate to many available tools to solidify your online business.",
+    icon: m14,
+    bgEffect: "hover:bg-[#fff8eb]",
+    textEffect: "group-hover:text-[#fff8eb]"
+  }
+];
+const products3 = [
+  {
+    title: "Embed anywhere",
+    description: "Add Growhubs content to your website with one embed code",
+    icon: m21,
+    bgEffect: "hover:bg-[#fbe6e6]",
+    textEffect: "group-hover:text-[#fbe6e6]"
+  },
+  {
+    title: "Analytics & Performance",
+    description: "Leverage the right metrics with reports designed for practical insights.",
+    icon: m22,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover:text-[#e8f2ff]"
+  },
+  {
+    title: "Contacts CRM",
+    description: "Bring your contacts and audience to turn them in one of your biggest assets ",
+    icon: m23,
+    bgEffect: "hover:bg-[#fff8eb]",
+    textEffect: "group-hover:text-[#fff8eb]"
+  },
+  {
+    title: "Time management",
+    description: "Leverage our unique calendar features for bringing time efficiency in your business.",
+    icon: m24,
+    bgEffect: "hover:bg-[#e8f8f6]",
+    textEffect: "group-hover:text-[#e8f8f6]"
+  }
+];
 const ProductsMegamenu = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div
-        className="mb-12 rounded-2xl pt-5 lg:pt-[61px] pb-10 px-5 lg:px-10 flex justify-center  mega-menu max-w-[1030px] mx-auto w-full bg-white  "
+        className="rounded-[30px] p-11 flex flex-col justify-center  mega-menu max-w-[1186px] mx-auto w-full bg-white "
         style={{
-          boxShadow: "0px 24px 56px 0px rgba(167, 174, 186, 0.16)",
+          boxShadow: "0 7062px 250px 0 rgba(0, 0, 0, 0.00), 0 4520px 250px 0 rgba(0, 0, 0, 0.01), 0 2542px 250px 0 rgba(0, 0, 0, 0.05), 0 1130px 250px 0 rgba(0, 0, 0, 0.09), 0 282px 250px 0 rgba(0, 0, 0, 0.10)",
         }}
       >
-        <div className="container mx-auto ">
-          <ul className="w-full  grid lg:grid-cols-3 grid-cols-1  gap-x-5">
-            {products.map((product, i) => (
-              <div key={i} className="cursor-pointer flex items-start pt-6 lg:pt-3 gap-3 pb-6 hover:bg-[#E4C2FF66] px-5 rounded-lg transition-all ease-in-out duration-100">
-                <div>
-                  <h3 className="font-bold text-[#282F39] text-base mb-2">
-                    {product.title}
-                  </h3>
-                  <p className="text-sm text-[#6B7280] font-medium">
-                    {product.description}
-                  </p>
+        <div className="w-full  grid lg:grid-cols-3 grid-cols-1  gap-x-6">
+          <div className="text-neutral-10 text-base font-medium">
+            CREATE & LAUNCH
+          </div>
+          <div className="text-neutral-10 text-base font-medium">
+            SCALE
+          </div>
+          <div className="text-neutral-10 text-base font-medium">
+            MANAGE
+          </div>
+        </div>
+        <div className="">
+          <ul className="w-full  grid lg:grid-cols-3 grid-cols-1  gap-x-6">
+            <div>
+              {products1.map((product, i) => (
+                <div
+                  key={i}
+                  className={`cursor-pointer group flex items-start gap-[18px] p-4 rounded-lg transition-all ease-in-out duration-100 ${product.bgEffect}`}
+                >
+                  <Image className="size-[45px]" src={product.icon} alt="" />
+                  <div className="group-hover-transition">
+                    <h3
+                      className={`font-bold text-neutral-10 text-base mb-1.5 transition-colors duration-200 ${product.textEffect}`}
+                    >
+                      {product.title}
+                    </h3>
+                    <p
+                      className={`text-sm text-neutral-8 font-medium transition-colors duration-200 ${product.textEffect}`}
+                    >
+                      {product.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div>
+              {products2.map((product, i) => (
+                <div 
+                  key={i} 
+                  className={`cursor-pointer group flex items-start gap-[18px] p-4 rounded-lg transition-all ease-in-out duration-100 ${product.bgEffect}`}
+                >
+                  <Image className="size-[45px]" src={product.icon} alt="" />
+                  <div className="group-hover-transition">
+                    <h3
+                      className={`font-bold text-neutral-10 text-base mb-1.5 transition-colors duration-200 ${product.textEffect}`}
+                    >
+                      {product.title}
+                    </h3>
+                    <p
+                      className={`text-sm text-neutral-8 font-medium transition-colors duration-200 ${product.textEffect}`}
+                    >
+                      {product.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div>
+              {products3.map((product, i) => (
+                <div 
+                  key={i} 
+                  className={`cursor-pointer group flex items-start gap-[18px] p-4 rounded-lg transition-all ease-in-out duration-100 ${product.bgEffect}`}
+                >
+                  <Image className="size-[45px]" src={product.icon} alt="" />
+                  <div className="group-hover-transition">
+                    <h3
+                      className={`font-bold text-neutral-10 text-base mb-1.5 transition-colors duration-200 ${product.textEffect}`}
+                    >
+                      {product.title}
+                    </h3>
+                    <p
+                      className={`text-sm text-neutral-8 font-medium transition-colors duration-200 ${product.textEffect}`}
+                    >
+                      {product.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </ul>
-        
         </div>
       </div>
     </div>

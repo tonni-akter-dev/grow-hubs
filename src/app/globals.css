@@ -111,7 +111,7 @@ body {
   position: absolute;
   text-align: left;
   width: max-content;
-  max-width: 95vw;
+  max-width: 1186px;
   transform: translateX(-50%);
   transition: opacity 0.20s linear, top 0.20s linear, visibility 0.20s linear;
 }
