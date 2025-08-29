@@ -134,7 +134,6 @@ export const products3 = [
         textEffect: "group-hover:text-[#e8f8f6]"
     }
 ];
-
 export const resource1 = [
     {
         title: "Blog",
@@ -204,3 +203,26 @@ export const resource3 = [
         textEffect: "group-hover:text-[#f2e6fe]"
     },
 ];
+
+export const stats = [
+  {
+    title: "CO-SELLERS IN NETWORK",
+    value: "21,500+",
+    description: "People who can co-promote"
+  },
+  {
+    title: "EXPECTED BUYERS / MONTH",
+    value: "86",
+    description: "With zero personal audience"
+  },
+  {
+    title: "EST. MRR AT US$9/MO",
+    value: "US$774",
+    description: "From membership sales"
+  },
+  {
+    title: "EARN W/O A PRODUCT",
+    value: "US$300",
+    description: "Just by co-selling"
+  }
+]

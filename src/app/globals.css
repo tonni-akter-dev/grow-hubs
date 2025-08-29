@@ -99,27 +99,16 @@ p {
 /* === Typography === */
 @theme {
   --text-h1: 72px;
-  /* 72px */
-  --text-display: 3.25rem;
-  /* 52px */
-  --text-h2: 2.688rem;
-  /* 42px */
-  --text-h3: 2.188rem;
-  /* 32px */
-  --text-h4: 1.812rem;
-  /* 28px */
-  --text-h5: 1.5rem;
-  /* 24px */
+  --text-display: 52px;
+  --text-h2: 42px;
+  --text-h3: 32px;
+  --text-h4: 28px;
+  --text-h5: 24px;
   --text-h6: 20px;
-  /* 20px */
-  --text-body-lg: 1.188rem;
-  /* 18px */
-  --text-body: 1rem;
-  /* 16px */
-  --text-body-sm: 0.875rem;
-  /* 14px */
-  --text-caption: 0.75rem;
-  /* 12px */
+  --text-body-lg: 118px;
+  --text-body: 16px;
+  --text-body-sm: 14px;
+  --text-caption: 12px;
 
 }
 
