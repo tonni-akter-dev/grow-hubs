@@ -14,15 +14,13 @@ const Courses = () => {
                 </div>
                 <button className='px-6 py-3 text-secondary-50 font-bold text-body leading-6 bg-[#1882FB] hover:bg-transparent hover:text-[#1882FB] rounded-[100px] mt-4 border border-[#1882FB] cursor-pointer transition-all ease-in-out duration-300'>Learn More</button>
             </div>
-            <div className='relative rounded-tr-[32px] rounded-br-[32px] course_bg m-4 max-w-[634px] w-full'>
+            <div className='relative rounded-tr-[32px] rounded-tl-[250px] rounded-bl-[250px] rounded-br-[32px] course_bg m-4 max-w-[634px] w-full'>
                 <Image
                     className='absolute bottom-[90px] right-9 slide-diagonal'
                     src={service1}
                     alt=""
                 />
             </div>
-
-
         </div>
     )
 }

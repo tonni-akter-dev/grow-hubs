@@ -79,7 +79,7 @@ p {
   --color-violet-200: #94c5fd;
   --color-violet-300: #63aafc;
   --color-violet-400: #4599fc;
-  --color-violet-500: #1680fb;
+  --color-violet-500: #7800F0;
   --color-violet-600: #1474e4;
   --color-violet-700: #105bb2;
   --color-violet-800: #0c468a;
@@ -214,7 +214,37 @@ body {
 .course_bg {
   background-image: url('/home/service1.png');
   background-repeat: no-repeat;
-
+  background-size:cover;
+}
+.communities_bg {
+  background-image: url('/home/service2.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.merchandise_bg {
+  background-image: url('/home/merchandise.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.coaching_bg {
+  background-image: url('/home/coatching.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.podcast_bg {
+  background-image: url('/home/podcast.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.events_bg {
+  background-image: url('/home/events.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.brokerage_bg {
+  background-image: url('/home/brokerage.png');
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 
@@ -232,7 +262,6 @@ body {
 /* services */
 .service_bg {
   background: linear-gradient(180deg, rgba(196, 224, 254, 0.00) 0%, rgba(196, 224, 254, 0.50) 44.34%, rgba(196, 223, 254, 0.00) 100%);
-
 }
 
 @keyframes slideDiagonal {

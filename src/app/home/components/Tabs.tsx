@@ -3,6 +3,12 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { buttons } from '@/app/utils/data'
 import Courses from './Courses'
+import Communities from './Communities'
+import Coaching from './Coaching'
+import Merchandise from './Merchandise'
+import PodCasts from './PodCasts'
+import Events from './Events'
+import Brokerage from './Brokerage'
 
 export default function Tabs() {
     const [active, setActive] = useState('courses')
@@ -10,7 +16,7 @@ export default function Tabs() {
     return (
         <div>
             <div className="flex flex-col items-center justify-center gap-6 w-full">
-                <div className='mx-12 w-[1145px]'>
+                <div className='mx-12 w-[1080px]'>
                     <div className="flex items-center justify-start bg-white p-2 rounded-[100px] w-full gap-2">
                         {buttons.map((btn) => (
                             <button
@@ -37,16 +43,15 @@ export default function Tabs() {
                         ))}
                     </div>
                 </div>
-                {/* Tab Content */}
             </div>
             <div className="w-full mt-6">
                 {active === 'courses' && <Courses />}
-                {active === 'communities' && <p>👥 Communities content goes here...</p>}
-                {active === 'coaching' && <p>👥 coaching content goes here...</p>}
-                {active === 'merchandise' && <p>🛍️ Merchandise content goes here...</p>}
-                {active === 'podcasts' && <p>🎙️ Podcasts content goes here...</p>}
-                {active === 'events' && <p>📅 Events content goes here...</p>}
-                {active === 'brokerage' && <p>🏦 Brokerage content goes here...</p>}
+                {active === 'communities' && <Communities />}
+                {active === 'coaching' && <Coaching />}
+                {active === 'merchandise' && <Merchandise />}
+                {active === 'podcasts' && <PodCasts />}
+                {active === 'events' && <Events />}
+                {active === 'brokerage' && <Brokerage />}
             </div>
         </div>
     )
