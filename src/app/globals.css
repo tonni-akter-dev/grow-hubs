@@ -29,6 +29,36 @@ p {
 }
 
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s infinite;
+}
+
+.bg_rightShadow {
+  background-image: url('/home/banner-right-shadow.png');
+  background-repeat: no-repeat;
+}
+
+.bg_leftShadow {
+  background-image: url('/home/banner-left-shadow.png');
+  background-repeat: no-repeat;
+}
 
 /* === Colors === */
 @theme {
