@@ -37,6 +37,27 @@ import s66 from '/public/home/s66.svg'
 import s7 from '/public/home/s7.svg'
 import s77 from '/public/home/s77.svg'
 
+import pay from "/public/home/pay.png"
+import commision from "/public/home/commission.png"
+import network from "/public/home/network.png"
+
+export const features = [
+    {
+        title: "Pay Only When You Earn",
+        description: "No monthly fees or ad costs. We grow with your success.",
+        icon: pay,
+    },
+    {
+        title: "You Set the Commission",
+        description: "Decide how much to share with members who help you sell.",
+        icon: commision,
+    },
+    {
+        title: "Earn From the Network",
+        description: "Sell your content or earn by helping others grow.",
+        icon: network,
+    },
+];
 export const products1 = [
     {
         title: "Courses",
