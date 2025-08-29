@@ -1,6 +1,35 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* font family */
+:root {
+  --font-clash-display: 'ClashDisplay', sans-serif;
+  --font-silka: 'Silka', sans-serif;
+}
+
+/* Usage examples */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-clash-display);
+}
+
+p {
+  font-family: var(--font-clash-display);
+
+}
+
+
+.text-body-lg,
+.text-body,
+.text-body-sm,
+.text-caption {
+  font-family: var(--font-silka);
+}
+
 /* === Colors === */
 @theme {
   --color-primary: #0396FF;
@@ -146,4 +175,15 @@ body {
 .container {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.product2_bg {
+  background-image: url('/home/product2image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product3_bg {
+  background-image: url('/home/product3image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
