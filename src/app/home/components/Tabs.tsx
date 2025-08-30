@@ -16,13 +16,13 @@ export default function Tabs() {
     return (
         <div>
             <div className="flex flex-col items-center justify-center gap-6 w-full">
-                <div className='mx-12 w-[1080px]'>
-                    <div className="flex items-center justify-start bg-white p-2 rounded-[100px] w-full gap-2">
+                <div className='mx-12 w-full lg:w-[1080px]'>
+                    <div className="flex items-center justify-start bg-white p-2 rounded-[100px] w-full gap-2 lg:overflow-auto overflow-x-scroll">
                         {buttons.map((btn) => (
                             <button
                                 key={btn.key}
                                 onClick={() => setActive(btn.key)}
-                                className={`flex items-center gap-2 text-body text-neutral-8 font-bold ps-2 pe-4 py-2 rounded-[100px] transition-all ${active === btn.key
+                                className={`flex items-center gap-2 text-body text-neutral-8 font-bold ps-2 pe-2  lg:pe-4 py-2 rounded-[100px] transition-all ${active === btn.key
                                     ? `${btn.activeGradient} text-violet-50 font-bold`
                                     : 'text-neutral-8 hover:bg-gray-100'
                                     }`}
@@ -38,7 +38,7 @@ export default function Tabs() {
                                             : { mixBlendMode: 'luminosity', aspectRatio: 'revert-layer' }
                                     }
                                 />
-                                <span className="text-sm">{btn.label}</span>
+                                <span className="text-sm lg:block hidden">{btn.label}</span>
                             </button>
                         ))}
                     </div>

@@ -276,19 +276,16 @@ body {
 @keyframes slideDiagonal {
   0% {
     transform: translate(0, 40px);
-    /* bottom */
     opacity: 1;
   }
 
   50% {
     transform: translate(40px, 0);
-    /* top-right */
     opacity: 1;
   }
 
   100% {
     transform: translate(0, 40px);
-    /* back to bottom */
     opacity: 1;
   }
 }
@@ -299,10 +296,44 @@ body {
 
 
 /* services */
+@media (max-width: 768px) {
+  .course_bg {
+    background-image: url('/home/service11.png');
+    height: 300px;
+    border-radius: 20px;
+    width: 351px;
+  }
+  .communities_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 351px;
+  }
+  .coaching_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 351px;
+  }
+  .merchandise_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 351px;
+  }
+  .podcast_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 351px;
+  }
+  .events_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 351px;
+  }
+  .brokerage_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 351px;
+  }
 
-
-
-@media (max-width: 1024px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
