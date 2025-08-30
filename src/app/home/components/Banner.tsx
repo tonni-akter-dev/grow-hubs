@@ -4,14 +4,16 @@ import BannerDots from './BannerDots';
 
 const Banner = () => {
     return (
-        <div className=' bg-[#020E1B] pt-[36px] h-full lg:h-[1034px] relative mb-[50px] lg:mb-[90px]'>
+        <div className=' bg-[#020E1B] pt-[36px] h-full relative mb-[50px] lg:mb-[90px] overflow-hidden'>
             <div className='flex justify-center'>
                 <button className='py-3 px-3.5 bg-[#1B162699] rounded-[100px] text-neutral-50  text-body'> Build for you</button>
             </div>
             <div className='lg:block hidden'>
+                <div className="absolute inset-0 bg_rightShadow bg-no-repeat bg-right-top z-0 top-[-45px]"></div>
+                <div className="absolute inset-0 bg_leftShadow bg-no-repeat bg-left-top z-0 top-[-65px]"></div>
                 <BannerDots />
             </div>
-            <div className='text-center z-50 lg:px-0 px-5 '>
+            <div className='text-center lg:px-0 px-5 relative z-40 '>
                 <h1 className='text-[36px] lg:text-h1 font-bold  leading-[40px] lg:leading-[80px] banner_heading my-4 '>Built for Creators.  <br /> Powered for Profit </h1>
                 <p className='text-body lg:text-h6 text-white leading-[30px] mb-8'>Create and sell courses, consulting services, and communities - with Zero <br className='lg:block hidden' /> marketing cost and a built-in sales network.</p>
 

@@ -53,11 +53,47 @@ p {
 .bg_rightShadow {
   background-image: url('/home/banner-right-shadow.png');
   background-repeat: no-repeat;
+  animation: moveRightToLeft 8s ease-in-out infinite;
+
 }
 
 .bg_leftShadow {
   background-image: url('/home/banner-left-shadow.png');
   background-repeat: no-repeat;
+  animation: moveLeftToRight 8s ease-in-out infinite;
+
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(-100px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
 }
 
 /* === Colors === */
@@ -195,6 +231,7 @@ body {
 .container {
   padding-left: 100px;
   padding-right: 100px;
+  margin: auto;
 }
 
 .product2_bg {
@@ -459,6 +496,7 @@ body {
 }
 
 @media (min-width:320px) and (max-width:699px) {
+
   .mega-menu,
   .mega-menu-addons,
   .mega-menu-why {

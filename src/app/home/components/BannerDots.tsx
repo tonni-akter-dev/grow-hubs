@@ -3,9 +3,7 @@ import React from 'react'
 const BannerDots = () => {
   return (
  <div className="">
-                <div className="absolute inset-0 bg_rightShadow bg-no-repeat bg-right-top z-0 top-[-45px]"></div>
-                <div className="absolute inset-0 bg_leftShadow bg-no-repeat bg-left-top z-0 top-[-65px]"></div>
-
+      
                 {/* LEFT DOTS */}
                 <div className="absolute left-[7%] top-[9%] z-10">
                     <span className="inline-block size-1.5 bg-white rounded-full animate-pulse"></span>
