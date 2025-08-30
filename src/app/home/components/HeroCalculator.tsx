@@ -262,7 +262,7 @@ export default function CosellHeroCalculator({ openCalculator }: CosellHeroCalcu
 
 function StatCard({ label, value, sub, highlight }: StatCardProps) {
   return (
-    <div className={`border border-neutral-11 rounded-xl px-4 py-8 text-neutral-50 flex flex-col gap-2 leading-normal ${highlight ? 'bg-blue-950' : ''}`}>
+    <div className={`border border-neutral-11 rounded-xl px-4 py-8 text-neutral-50 flex flex-col gap-2 leading-normal `}>
       <p className="text-body-sm lg:text-body">{label}</p>
       <h2 className="text-h5 lg:text-h2 font-semibold">{value}</h2>
       <p className="text-body-sm lg:text-body">{sub}</p>
