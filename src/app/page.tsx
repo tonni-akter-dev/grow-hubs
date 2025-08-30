@@ -11,9 +11,9 @@ export default function Home() {
       <Banner />
       {/* <CosellHeroCalculator/> */}
       <TrustedBy />
-      <Services />
-      <SellMore />
-      <EssentialTools />
+      {/* <Services /> */}
+      {/* <SellMore /> */}
+      {/* <EssentialTools /> */}
     </>
   );
 }

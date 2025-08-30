@@ -133,7 +133,7 @@ p {
   --text-h4: 28px;
   --text-h5: 24px;
   --text-h6: 20px;
-  --text-body-lg: 118px;
+  --text-body-lg: 18px;
   --text-body: 16px;
   --text-body-sm: 14px;
   --text-caption: 12px;
@@ -190,7 +190,6 @@ body {
   visibility: visible;
   z-index: 900;
   top: 115px;
-  /* End at top: 90px */
 }
 
 .container {
@@ -253,9 +252,9 @@ body {
 }
 
 .sell_bg {
-    background: linear-gradient(to top, rgba(202, 248, 241, 0.00) 0%, rgba(202, 240, 248, 0.50) 49.12%, rgba(196, 223, 254, 0.00) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  background: linear-gradient(to top, rgba(202, 248, 241, 0.00) 0%, rgba(202, 240, 248, 0.50) 49.12%, rgba(196, 223, 254, 0.00) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* banner */
@@ -300,3 +299,20 @@ body {
 
 
 /* services */
+
+
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header {
+    border-bottom: none;
+  }
+
+  nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+  }
+}
