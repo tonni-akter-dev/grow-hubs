@@ -12,8 +12,8 @@ export default function Home() {
       {/* <CosellHeroCalculator/> */}
       <TrustedBy />
       <Services />
-      {/* <SellMore /> */}
-      {/* <EssentialTools /> */}
+      <SellMore />
+      <EssentialTools />
     </>
   );
 }
