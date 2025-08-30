@@ -457,3 +457,21 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.50);
   }
 }
+
+@media (min-width:320px) and (max-width:699px) {
+  .mega-menu,
+  .mega-menu-addons,
+  .mega-menu-why {
+    left: 0 !important;
+  }
+
+  .hoverable:hover .mega-menu-addons {
+    top: 200px !important;
+  }
+
+  .hoverable:hover .mega-menu-why {
+    top: 358px !important;
+  }
+
+
+}

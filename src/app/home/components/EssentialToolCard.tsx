@@ -4,11 +4,12 @@ import React from 'react'
 
 const EssentialToolCard = () => {
     return (
-        <div className="w-full  py-10 lg:py-[100px]">
-            <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+        <div className="w-full  py-10">
+            <div className="container px-4 grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
                 {tools.map((item, index) => (
                     <div
                         key={index}
+                        style={{ boxShadow: '0 62px 136px 0 rgba(0, 0, 0, 0.10)' }}
                         className="bg-white rounded-xl p-4 lg:px-8 lg:pb-8 lg:pt-11 flex flex-col items-start text-left hover:shadow-lg transition-all duration-200">
                         <div className='flex justify-between w-full items-center mb-4 lg:mb-11'>
                             <h3 className="font-semibold leading-[35px] text-[#4E4E4E] text-h6 lg:text-h3 ">{item.title}</h3>
