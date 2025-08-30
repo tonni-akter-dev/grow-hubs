@@ -4,7 +4,7 @@ import BannerDots from './BannerDots';
 
 const Banner = () => {
     return (
-        <div className=' bg-[#020E1B] pt-[36px] h-full lg:h-[1034px] relative mb-[90px]'>
+        <div className=' bg-[#020E1B] pt-[36px] h-full lg:h-[1034px] relative mb-[50px] lg:mb-[90px]'>
             <div className='flex justify-center'>
                 <button className='py-3 px-3.5 bg-[#1B162699] rounded-[100px] text-neutral-50  text-body'> Build for you</button>
             </div>
