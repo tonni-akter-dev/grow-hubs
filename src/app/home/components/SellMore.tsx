@@ -32,7 +32,7 @@ const SellMore = () => {
                         <Image className='lg:hidden block' src={arrowRightSm} alt="" />
                     </div>
                     <div className='flex flex-col text-center justify-center '>
-                        <Image  className='lg:h-full h-[61px] ' src={publish} alt="" />
+                        <Image className='lg:h-full h-[61px] ' src={publish} alt="" />
                         <p className='text-neutral-13 text-[9px] lg:text-h5 font-semibold leading-[38px] '>Publish</p>
                     </div>
                     <div>
@@ -45,7 +45,7 @@ const SellMore = () => {
                     </div>
                 </div>
                 <div className='flex items-center justify-center gap-[74px] relative'>
-                    <div className='absolute left-[53px] lg:left-[103px] top-[-13px] lg:top-[10px]'>
+                    <div className='absolute left-[53px] md:left-[190px] lg:left-[103px] top-[-13px] md:top-[-9px] lg:top-[10px]'>
                         <Image className='lg:block hidden' src={arrowLeftBottom} alt="" />
                         <Image className='lg:hidden block' src={arrowLeftBottom_sm} alt="" />
                     </div>
@@ -53,14 +53,12 @@ const SellMore = () => {
                         <Image className="lg:h-full h-[61px]" src={earn} alt="" />
                         <p className='text-neutral-13 text-[9px] lg:text-h5 font-semibold leading-[38px] '>You Earn</p>
                     </div>
-                    <div className='absolute right-[53px] lg:right-[103px] top-[-13px] lg:top-[10px]'>
+                    <div className='absolute right-[53px] md:right-[192px] lg:right-[103px] top-[-13px] md:top-[-9px] lg:top-[10px]'>
                         <Image className='lg:block hidden' src={arrowRightBottom} alt="" />
                         <Image className='lg:hidden block' src={arrowRightBottomsm} alt="" />
                     </div>
-
                 </div>
             </div>
-
             <SellCard />
         </div>
     )

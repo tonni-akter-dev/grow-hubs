@@ -17,7 +17,7 @@ export default function Tabs() {
         <div>
             <div className="flex flex-col items-center justify-center gap-6 w-full">
                 <div className='mx-12 w-full lg:w-[1080px]'>
-                    <div className="flex items-center justify-start bg-white p-2 rounded-[100px] w-full gap-2 lg:overflow-auto overflow-x-scroll">
+                    <div className="flex items-center justify-between lg:justify-start bg-white p-2 rounded-[100px] w-full gap-2 ">
                         {buttons.map((btn) => (
                             <button
                                 key={btn.key}

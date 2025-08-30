@@ -14,7 +14,6 @@ const BannerSelling = () => {
                 <Stats />
                 <BannerMarquee />
             </div>
-
         </div>
     )
 }

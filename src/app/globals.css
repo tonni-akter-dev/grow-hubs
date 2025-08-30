@@ -296,42 +296,152 @@ body {
 
 
 /* services */
-@media (max-width: 768px) {
+@media (min-width:320px) and (max-width: 424px) {
+  .course_bg {
+    background-image: url('/home/service11.png');
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  .communities_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  .coaching_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  .merchandise_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  .podcast_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  .events_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  .brokerage_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 767px) {
   .course_bg {
     background-image: url('/home/service11.png');
     height: 300px;
     border-radius: 20px;
     width: 351px;
   }
+
   .communities_bg {
     height: 300px;
     border-radius: 20px;
     width: 351px;
   }
+
   .coaching_bg {
     height: 300px;
     border-radius: 20px;
     width: 351px;
   }
+
   .merchandise_bg {
     height: 300px;
     border-radius: 20px;
     width: 351px;
   }
+
   .podcast_bg {
     height: 300px;
     border-radius: 20px;
     width: 351px;
   }
+
   .events_bg {
     height: 300px;
     border-radius: 20px;
     width: 351px;
   }
+
   .brokerage_bg {
     height: 300px;
     border-radius: 20px;
     width: 351px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header {
+    border-bottom: none;
+  }
+
+  nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+  }
+}
+
+@media (max-width: 768px) {
+  .course_bg {
+    background-image: url('/home/service11.png');
+    height: 300px;
+    border-radius: 20px;
+    width: 93%;
+  }
+
+  .communities_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 93%;
+  }
+
+  .coaching_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 93%;
+  }
+
+  .merchandise_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 93%;
+  }
+
+  .podcast_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 93%;
+  }
+
+  .events_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 93%;
+  }
+
+  .brokerage_bg {
+    height: 300px;
+    border-radius: 20px;
+    width: 93%;
   }
 
   .container {
