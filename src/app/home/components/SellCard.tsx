@@ -4,7 +4,7 @@ import React from 'react'
 
 const SellCard = () => {
     return (
-       <div className="w-full bg-white mb-[105px]">
+       <div className="w-full bg-white pb-[105px]">
                 <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {features.map((item, index) => (
                         <div

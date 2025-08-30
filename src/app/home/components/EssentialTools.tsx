@@ -3,7 +3,7 @@ import EssentialToolCard from './EssentialToolCard'
 
 const EssentialTools = () => {
     return (
-        <div>
+        <div className='bg-[#FDF6E8] pt-[100px]'>
             <div className='text-center'>
                 <button className='bg-[linear-gradient(90deg,_#BCB3A0_0%,_#E0D8C9_100%)] text-black text-body uppercase  font-semibold text-center mb-6 px-3.5 py-3  rounded-[100px] '>CO-sell</button>
                 <h1 className='text-display text-neutral-13 font-bold leading-[57px]'>Essential Tools <br />

@@ -253,12 +253,9 @@ body {
 }
 
 .sell_bg {
-  background: linear-gradient(to top,
-      rgba(202, 248, 241, 0.00) 0%,
-      rgba(202, 240, 248, 0.50) 49.12%,
-      rgba(196, 223, 254, 0.00) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+    background: linear-gradient(to top, rgba(202, 248, 241, 0.00) 0%, rgba(202, 240, 248, 0.50) 49.12%, rgba(196, 223, 254, 0.00) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* banner */

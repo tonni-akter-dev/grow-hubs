@@ -41,6 +41,45 @@ import pay from "/public/home/pay.png"
 import commision from "/public/home/commission.png"
 import network from "/public/home/network.png"
 
+import t1 from '/public/home/t1.svg'
+import t2 from '/public/home/t2.svg'
+import t3 from '/public/home/t3.svg'
+import t4 from '/public/home/t4.svg'
+import t5 from '/public/home/t5.svg'
+import t6 from '/public/home/t6.svg'
+
+export const tools = [
+    {
+        title: "Payments",
+        description: "Responsibly sourced woods and eco-friendly fabrics for a better tomorrow.",
+        icon: t1,
+    },
+    {
+        title: "Analytics",
+        description: "Understand your growth with smart, built-in analytics.",
+        icon: t2,
+    },
+    {
+        title: "Newsletters",
+        description: "build your audience with engaging, branded newsletter.",
+        icon: t3,
+    },
+    {
+        title: "Pages",
+        description: "Showcase your expertise with a personal profile that sells for you.",
+        icon: t4,
+    },
+    {
+        title: "Contact",
+        description: "Organize your contacts and turn them into your most valuable asset., ",
+        icon: t5,
+    },
+    {
+        title: "Emails",
+        description: "Showcase your expertise with a personal profile that sells for you.",
+        icon: t6,
+    }
+];
 export const features = [
     {
         title: "Pay Only When You Earn",
