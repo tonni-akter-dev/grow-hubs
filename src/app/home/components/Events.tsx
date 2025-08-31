@@ -27,7 +27,7 @@ const Events = () => {
             {/* Right image */}
             <div className='relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] section_bg events_bg m-6 lg:m-4 lg:w-[634px]'>
                 <Image
-                    className='absolute bottom-6 lg:w-full w-[300px]  lg:bottom-[90px] right-9 slide-diagonal'
+                    className='absolute bottom-6 lg:w-full w-[200px] h-[300px]  lg:bottom-[90px] right-9 slide-diagonal'
                     src={service1}
                     alt=""
                 />
