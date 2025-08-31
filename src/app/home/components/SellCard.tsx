@@ -10,7 +10,7 @@ const SellCard = () => {
                     <div
                         key={index}
                         style={{ boxShadow: '0 8px 28px 0 rgba(20, 20, 43, 0.10)' }}
-                        className="bg-white rounded-xl p-6 flex flex-col items-start text-left transition-transform duration-200 hover:shadow-xl hover:-translate-y-1"
+                        className="bg-white cursor-pointer rounded-xl p-6 flex flex-col items-start text-left transition-transform duration-200 hover:shadow-xl hover:-translate-y-1"
                     >
                         <Image src={item.icon} alt={item.title} className=" size-[65px] mb-[30px]" />
                         <h3 className="font-bold text-h5 text-neutral-13  leading-[26px]">{item.title}</h3>

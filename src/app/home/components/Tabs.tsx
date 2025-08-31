@@ -24,7 +24,7 @@ export default function Tabs() {
                                 onClick={() => setActive(btn.key)}
                                 className={`flex items-center gap-2 text-body text-neutral-8 font-bold ps-2 pe-2  lg:pe-4 py-2 rounded-[100px] transition-all ${active === btn.key
                                     ? `${btn.activeGradient} text-violet-50 font-bold`
-                                    : 'text-neutral-8 hover:bg-gray-100'
+                                    : 'text-neutral-8 hover:bg-gray-100 cursor-pointer'
                                     }`}
                             >
                                 <Image

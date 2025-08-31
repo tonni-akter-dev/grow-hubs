@@ -13,7 +13,7 @@ export default function Home() {
       <Services />
       <SellMore />
       <EssentialTools />
-      {/* <GotoTorvert /> */}
+      <GotoTorvert />
     </>
   );
 }
