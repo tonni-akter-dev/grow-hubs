@@ -26,7 +26,7 @@ const TrustedBy = () => {
             <Image className=' h-[30px] lg:h-10 ' src={t4} alt="" />
             <Image className=' h-[30px] lg:h-10 ' src={t5} alt="" />
             <Image className=' h-[30px] lg:h-10 ' src={t6} alt="" />
-            <Image className=' h-[30px] lg:h-10 ' src={t7} alt="" />
+            <Image className=' h-[30px] lg:h-10 mr-[51px]' src={t7} alt="" />
           </div>
         </Marquee>
         <div className='absolute right-0 top-0 h-[101px] z-50 w-[91px] lg:w-[290px] '>

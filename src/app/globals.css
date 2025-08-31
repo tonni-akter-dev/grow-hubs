@@ -303,11 +303,20 @@ body {
 }
 
 /* banner */
-
-
-/* services */
 .service_bg {
   background: linear-gradient(180deg, rgba(196, 224, 254, 0.00) 0%, rgba(196, 224, 254, 0.50) 44.34%, rgba(196, 223, 254, 0.00) 100%);
+}
+
+@keyframes fadeDiagonal {
+  0% {
+    transform: translate(40px, 40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 40px);
+    opacity: 1;
+  }
 }
 
 @keyframes slideDiagonal {
@@ -328,9 +337,9 @@ body {
 }
 
 .slide-diagonal {
-  animation: slideDiagonal 3s ease-in-out infinite;
+  animation: fadeDiagonal 1s ease-out forwards, slideDiagonal 3s ease-in-out infinite;
+  animation-delay: 0s, 1s;
 }
-
 
 /* services */
 @media (min-width:320px) and (max-width: 424px) {
