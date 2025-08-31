@@ -14,9 +14,9 @@ const EssentialToolCard = () => {
                         className="bg-white cursor-pointer rounded-xl p-4 lg:p-8 flex flex-col justify-between gap-6 items-start text-left transition-transform duration-200 hover:shadow-xl hover:-translate-y-1"
                     >
                         {/* Top content */}
-                        <div className="flex flex-col gap-6 w-full">
+                        <div className="flex flex-col gap-4 lg:gap-6 w-full">
                             <div className="flex justify-between w-full items-center">
-                                <h3 className="font-semibold leading-[35px] text-[#4E4E4E] text-h3 lg:text-h3">
+                                <h3 className="font-semibold leading-[35px] text-[#4E4E4E] text-h6 lg:text-h3">
                                     {item.title}
                                 </h3>
                                 <Image
