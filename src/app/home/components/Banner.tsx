@@ -13,9 +13,8 @@ const Banner = () => {
         </button>
       </div>
       <div className="">
-        <div className="absolute inset-0 bg_rightShadow bg-no-repeat bg-right-top z-0 top-[150px] lg:top-[-45px]"></div>
+        <div className="absolute inset-0 bg_rightShadow bg-no-repeat bg-right-top z-0 top-[-45px]"></div>
         <div className="absolute inset-0 bg_leftShadow bg-no-repeat bg-left-top z-0 top-[-65px]"></div>
-
         <BannerDots />
       </div>
       <div className="text-center lg:px-0 px-5 relative z-40 ">
