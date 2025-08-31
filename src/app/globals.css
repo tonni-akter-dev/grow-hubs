@@ -533,9 +533,17 @@ body {
 
 /* Animation for the central circle */
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.02); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .icon-blend {
@@ -547,4 +555,30 @@ body {
   width: 25px;
   height: 25px;
   filter: brightness(1.2) contrast(1.1);
+}
+
+footer {
+  background-image: url('/home/footer-bg.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.footer_text {
+  background: linear-gradient(90deg, #33363D -6.37%, rgba(255, 255, 255, 0.90) 49.33%, #7B7D8D 85.21%, #33363D 102.75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 253px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  /* 278.3px */
+  letter-spacing: -12.65px;
+  text-transform: uppercase;
+  font-family: var(--font-blauer-nue), sans-serif;
+
 }

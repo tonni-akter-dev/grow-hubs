@@ -2,7 +2,7 @@
 <g filter="url(#filter0_i_2682_1799)">
 <circle cx="77.4729" cy="76.7366" r="76.637" fill="url(#paint0_linear_2682_1799)"/>
 </g>
-<circle cx="77.4729" cy="76.7366" r="74.5469" stroke="#F7F0E9" stroke-width="4.1802"/>
+<circle cx="77.4729" cy="76.7366" r="74.5469" stroke="#F7F0E9" strokeWidth="4.1802"/>
 <defs>
 <filter id="filter0_i_2682_1799" x="0.835938" y="-11.7443" width="153.274" height="165.118" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

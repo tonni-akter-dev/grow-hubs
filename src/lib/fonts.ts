@@ -55,3 +55,37 @@ export const silka = localFont({
   variable: "--font-silka",
   display: "swap",
 });
+
+
+export const blauerNue = localFont({
+  src: [
+    {
+      path: "../../public/fonts/blauer-nue/Blauer-Nue-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/blauer-nue/Blauer-Nue-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+
+    {
+      path: "../../public/fonts/blauer-nue/Blauer-Nue-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/blauer-nue/Blauer-Nue-Semibold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    // {
+    //   path: "../../public/fonts/blauer-nue/Blauer-Nue-Bold.otf",
+    //   weight: "700",
+    //   style: "normal",
+    // },
+  ],
+  variable: "--font-blauer-nue",
+  display: "swap",
+});

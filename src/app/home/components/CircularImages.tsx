@@ -139,28 +139,6 @@ const CircularImages = () => {
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             {/* Third bordered circle (largest) */}
             <div className="absolute z-10 rounded-full size-[460px] flex items-center justify-center">
 

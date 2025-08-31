@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./shared/Header";
-import { clashDisplay, silka } from '@/lib/fonts'
+import { clashDisplay, silka, blauerNue } from '@/lib/fonts'
+import Footer from "./shared/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,12 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${clashDisplay.variable} ${silka.variable}`}
+        className={`${clashDisplay.variable} ${silka.variable} ${blauerNue.variable}`} 
       >
         <div className="bg-[#020E1B]">
           <Header />
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );
