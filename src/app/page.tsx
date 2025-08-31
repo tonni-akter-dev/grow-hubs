@@ -4,6 +4,7 @@ import GotoTorvert from "./home/components/GotoTorvert";
 import SellMore from "./home/components/SellMore";
 import Services from "./home/components/Services";
 import TrustedBy from "./home/components/TrustedBy";
+import TrustedSlider from "./home/components/TrustedSlider";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SellMore />
       <EssentialTools />
       <GotoTorvert />
+      {/* <TrustedSlider /> */}
     </>
   );
 }
