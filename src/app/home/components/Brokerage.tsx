@@ -35,7 +35,7 @@ const Brokerage = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] podcast_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] brokerage_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
