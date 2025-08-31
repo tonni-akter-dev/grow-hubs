@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import logo from '/public/home/logo.png';
 
 const Footer = () => {
   return (
@@ -18,7 +17,6 @@ const Footer = () => {
             <span>GrowHubs</span>
           </Link>
         </div>
-        {/* links */}
         <div className="flex justify-between mb-[51px]">
           {/* Products Column */}
           <div className='flex gap-[100px]'>
@@ -57,7 +55,6 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
           {/* Social Media Column */}
           <div>
             <h3 className="text-h6 text-white font-medium leading-[30px] mb-6">Social media</h3>
@@ -154,15 +151,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* Address Column */}
-
         </div>
-
-
       </div>
-        <div className=" text-center">
-          <h1 className="footer_text">GROWHUBS</h1>
-        </div>
+      <div className=" text-center">
+        <h1 className="footer_text">GROWHUBS</h1>
+      </div>
     </footer>
   );
 };
