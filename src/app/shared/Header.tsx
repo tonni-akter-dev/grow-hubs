@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="relative w-full">
-      <div className="lg:block hidden absolute left-[14%] top-0 z-10">
+      <div className="absolute left-0 lg:left-[14%] top-0 z-10">
         <Image src={topShadow} alt="" />
       </div>
       <nav className="container relative lg:pt-5   z-50">

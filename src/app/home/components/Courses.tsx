@@ -1,5 +1,6 @@
 import React from 'react'
-import service1 from '../../../../public/home/servicehover1.png'
+import service1 from '../../../../public/home/courses-1.png'
+import service2 from '../../../../public/home/courses-2.png'
 import Image from 'next/image'
 
 const Courses = () => {
@@ -20,7 +21,7 @@ const Courses = () => {
 
             <div className='relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] course_bg m-6 lg:m-4 lg:w-[634px] '>
                 <Image
-                    className='absolute bottom-[90px] right-9 slide-diagonal'
+                    className='absolute bottom-[57px] right-[60px] slide-diagonal'
                     src={service1}
                     alt=""
                 />

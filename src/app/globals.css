@@ -506,7 +506,7 @@ footer {
     background-image: url('/home/service11.png');
     height: 300px;
     border-radius: 20px;
-    width: 351px;
+    width: 345px !important;
   }
 
   .communities_bg {
@@ -618,7 +618,21 @@ footer {
 }
 
 @media (min-width:320px) and (max-width:699px) {
+.bg_rightShadow {
+  background-image: url('/home/banner-right-shadow_sm.png');
+  background-repeat: no-repeat;
+  right: -132px;
+  top: 150px;
+}
 
+.bg_leftShadow {
+  /* background-image: none; */
+  background-image: url('/home/banner-left-shadow_sm.png ');
+  background-repeat: no-repeat;
+    left: -132px;
+  top: 150px;
+
+}
   .mega-menu,
   .mega-menu-addons,
   .mega-menu-why {
