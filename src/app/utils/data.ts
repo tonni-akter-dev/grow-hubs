@@ -326,7 +326,7 @@ export const buttons = [
     {
         key: 'merchandise',
         label: 'Merchandise',
-        activeGradient: 'bg-[linear-gradient(214deg,#BC3FFF_20.22%,#9806D7_77.53%)]',
+        activeGradient: 'bg-[linear-gradient(21deg,#76CA00_20.22%,#579600_77.53%)]',
         imgActive: s44,
         imgInactive: s4,
     },
@@ -351,4 +351,77 @@ export const buttons = [
         imgActive: s77,
         imgInactive: s7,
     },
+];
+
+export const testimonials = [
+    {
+        id: 1,
+        name: "Iva Ryan",
+        position: "Marketing manager at Adobe",
+        tags: ["Content Creator", "Youtuber", "Growth Expert"],
+        text: "I recently had the opportunity to use the platform, and I must say, the feature that allows you to set your own commission is a game changer!",
+        amount: "$2M",
+        earnings: "EARNED IN HELENUIL",
+        rating: 5
+    },
+    {
+        id: 2,
+        name: "John Smith",
+        position: "Content Creator at YouTube",
+        tags: ["Content Creator", "Youtuber", "Growth Expert"],
+        text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
+        amount: "$1.5M",
+        earnings: "EARNED IN 6 MONTHS",
+        rating: 3
+    },
+    {
+        id: 3,
+        name: "Sarah Johnson",
+        position: "Digital Marketer at TechCorp",
+        tags: ["Marketer", "Growth Expert"],
+        text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
+        amount: "$3.2M",
+        earnings: "EARNED IN 1 YEAR",
+        rating: 5
+    },
+    {
+        id: 2,
+        name: "John Smith",
+        position: "Content Creator at YouTube",
+        tags: ["Content Creator", "Influencer"],
+        text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
+        amount: "$1.5M",
+        earnings: "EARNED IN 6 MONTHS",
+        rating: 3
+    },
+    {
+        id: 3,
+        name: "Sarah Johnson",
+        position: "Digital Marketer at TechCorp",
+        tags: ["Marketer", "Growth Expert"],
+        text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
+        amount: "$3.2M",
+        earnings: "EARNED IN 1 YEAR",
+        rating: 4
+    },
+    {
+        id: 2,
+        name: "John Smith",
+        position: "Content Creator at YouTube",
+        tags: ["Content Creator", "Influencer"],
+        text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
+        amount: "$1.5M",
+        earnings: "EARNED IN 6 MONTHS",
+        rating: 2
+    },
+    {
+        id: 3,
+        name: "Sarah Johnson",
+        position: "Digital Marketer at TechCorp",
+        tags: ["Marketer", "Growth Expert"],
+        text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
+        amount: "$3.2M",
+        earnings: "EARNED IN 1 YEAR",
+        rating: 5
+    }
 ];

@@ -1,17 +1,38 @@
+
+'use client'
 import { tools } from '@/app/utils/data'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { motion, Variants } from 'framer-motion'
+
+const cardVariants: Variants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: i * 0.2,
+            duration: 0.6,
+            ease: "easeOut" as const,
+        },
+    }),
+}
 
 const EssentialToolCard = () => {
     return (
-        <div className="w-full  pt-10 pb-[60px]">
+        <div className="w-full pt-10 pb-[60px]">
             <div className="container px-4 grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
                 {tools.map((item, index) => (
-                    <div
+                    <motion.div
                         key={index}
+                        custom={index}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }}
+                        variants={cardVariants}
                         style={{ boxShadow: '0 62px 136px 0 rgba(0, 0, 0, 0.10)' }}
-                        className="bg-white cursor-pointer rounded-xl p-4 lg:p-8 flex flex-col justify-between gap-6 items-start text-left transition-transform duration-200 hover:shadow-xl hover:-translate-y-1"
+                        className="bg-white cursor-pointer rounded-xl p-4 lg:p-8 flex flex-col justify-between gap-6 items-start text-left transition-transform duration-200 hover:shadow-xl "
                     >
                         {/* Top content */}
                         <div className="flex flex-col gap-4 lg:gap-6 w-full">
@@ -29,7 +50,6 @@ const EssentialToolCard = () => {
                                 {item.description}
                             </p>
                         </div>
-
                         {/* Bottom button */}
                         <Link
                             href="#"
@@ -64,8 +84,7 @@ const EssentialToolCard = () => {
                                 </defs>
                             </svg>
                         </Link>
-                    </div>
-
+                    </motion.div>
                 ))}
             </div>
         </div>

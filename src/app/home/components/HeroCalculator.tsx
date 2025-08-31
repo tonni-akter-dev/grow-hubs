@@ -264,7 +264,7 @@ function StatCard({ label, value, sub }: StatCardProps) {
   return (
     <div className={`border border-neutral-11 rounded-xl px-4 py-8 text-neutral-50 flex flex-col gap-2 leading-normal `}>
       <p className="text-body-sm lg:text-body">{label}</p>
-      <h2 className="text-h5 lg:text-h2 font-semibold">{value}</h2>
+      <h2 className="text-h5 lg:text-h2 font-semibold stat_text">{value}</h2>
       <p className="text-body-sm lg:text-body">{sub}</p>
     </div>
   );

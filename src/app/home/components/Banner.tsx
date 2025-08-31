@@ -16,7 +16,6 @@ const Banner = () => {
             <div className='text-center lg:px-0 px-5 relative z-40 '>
                 <h1 className='text-[36px] lg:text-h1 font-bold  leading-[40px] lg:leading-[80px] banner_heading my-4 '>Built for Creators.  <br /> Powered for Profit </h1>
                 <p className='text-body lg:text-h6 text-white leading-[30px] mb-8'>Create and sell courses, consulting services, and communities - with Zero <br className='lg:block hidden' /> marketing cost and a built-in sales network.</p>
-
                 <div className="flex flex-col items-center ">
                     <div className="flex justify-between md:flex-row w-full lg:w-[516px] bg-[#3B3B4B] rounded-[100px] items-center h-[66px] lg:h-[74px]">
                         <input
