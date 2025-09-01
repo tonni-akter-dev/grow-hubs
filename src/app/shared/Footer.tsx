@@ -75,7 +75,7 @@ const Footer = () => {
                   { href: '#', text: 'Pricing' },
                 ].map((item, index) => (
                   <li key={index}>
-                    <Link 
+                    <Link
                       href={item.href}
                       className="group text-white opacity-70 hover:opacity-100 hover:border-b transition-opacity duration-300 font-medium leading-6 text-body"
                     >
@@ -170,12 +170,14 @@ const Footer = () => {
         <h1 className="footer_text">GROWHUBS</h1>
       </div>
 
-      <div className="absolute right-0 top-[7%] z-0 pointer-events-none">
+      {/* <div className="absolute right-0 top-[7%] z-0 pointer-events-none">
         <Image src={footerrightshadow} alt="Right footer shadow" />
       </div>
       <div className="absolute left-0 top-[17%] z-0 pointer-events-none">
         <Image src={footerleftShadow} alt="Left footer shadow" />
-      </div>
+      </div> */}
+      <div className="absolute inset-0 bg_rightShadow bg-no-repeat bg-right-top z-0 top-[-45px]"></div>
+      <div className="absolute inset-0 bg_leftShadow bg-no-repeat bg-left-top z-0 bottom-[-65px]"></div>
     </footer>
   );
 };

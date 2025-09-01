@@ -407,7 +407,7 @@ export const testimonials = [
         rating: 5
     },
     {
-        id: 2,
+        id: 4,
         name: "John Smith",
         position: "Content Creator at YouTube",
         tags: ["Content Creator", "Influencer"],
@@ -417,7 +417,7 @@ export const testimonials = [
         rating: 3
     },
     {
-        id: 3,
+        id: 5,
         name: "Sarah Johnson",
         position: "Digital Marketer at TechCorp",
         tags: ["Marketer", "Growth Expert"],
@@ -427,7 +427,7 @@ export const testimonials = [
         rating: 4
     },
     {
-        id: 2,
+        id: 6,
         name: "John Smith",
         position: "Content Creator at YouTube",
         tags: ["Content Creator", "Influencer"],
@@ -437,7 +437,7 @@ export const testimonials = [
         rating: 2
     },
     {
-        id: 3,
+        id: 7,
         name: "Sarah Johnson",
         position: "Digital Marketer at TechCorp",
         tags: ["Marketer", "Growth Expert"],

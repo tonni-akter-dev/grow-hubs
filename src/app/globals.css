@@ -110,6 +110,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .text-body-lg,
 .text-body,
 .text-body-sm,
@@ -292,7 +296,7 @@ body {
 
 
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     transform: scale(1);
     opacity: 1;
@@ -302,9 +306,9 @@ body {
     transform: scale(1.2);
     opacity: 0;
   }
-}
+} */
 
-.animate-pulse2 {
+/* .animate-pulse2 {
   animation: pulse 1.5s ease-out;
 }
 
@@ -318,7 +322,7 @@ body {
 
 .animate-pulse5 {
   animation: pulse 1.5s ease-out 0.3s;
-}
+} */
 
 
 
