@@ -29,7 +29,7 @@ const TrustedBy = () => {
       </p>
       <div className="relative lg:mx-[26px] h-[101px] lg:ps-12 lg:pe-[60px] py-8 bg-[#F6F5F5] lg:rounded-[20px]">
         <div className="hidden lg:block">
-          <Marquee>
+          <Marquee speed={25}>
             <div className="flex gap-[51px] items-center">
               <Image className="lg:h-10 " src={t1} alt="" />
               <Image className="lg:h-10 " src={t2} alt="" />
@@ -42,7 +42,7 @@ const TrustedBy = () => {
           </Marquee>
         </div>
         <div className="block lg:hidden">
-          <Marquee>
+          <Marquee speed={25}>
             <div className="flex gap-[40px] items-center">
               <Image src={t11} alt="" />
               <Image src={t12} alt="" />

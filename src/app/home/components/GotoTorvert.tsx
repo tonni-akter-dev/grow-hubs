@@ -11,7 +11,6 @@ const GotoTorvert = () => {
         src={topShadow}
         alt=""
       />
-
       <div className="text-center flex flex-col justify-center items-center">
         <button className="text-neutral-50 text-body font-semibold py-3 px-3.5 bg-[#62697199] rounded-[100px]">
           TORVET{" "}
