@@ -13,17 +13,17 @@ import Brokerage from './Brokerage'
 export default function Tabs() {
   const [active, setActive] = useState('courses')
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setActive((prev) => {
-  //       const currentIndex = buttons.findIndex((btn) => btn.key === prev)
-  //       const nextIndex = (currentIndex + 1) % buttons.length
-  //       return buttons[nextIndex].key
-  //     })
-  //   }, 4000)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => {
+        const currentIndex = buttons.findIndex((btn) => btn.key === prev)
+        const nextIndex = (currentIndex + 1) % buttons.length
+        return buttons[nextIndex].key
+      })
+    }, 3000)
 
-  //   return () => clearInterval(interval)
-  // }, [])
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div>
