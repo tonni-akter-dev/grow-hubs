@@ -13,17 +13,17 @@ import Brokerage from './Brokerage'
 export default function Tabs() {
   const [active, setActive] = useState('courses')
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActive((prev) => {
-        const currentIndex = buttons.findIndex((btn) => btn.key === prev)
-        const nextIndex = (currentIndex + 1) % buttons.length
-        return buttons[nextIndex].key
-      })
-    }, 2000) 
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setActive((prev) => {
+  //       const currentIndex = buttons.findIndex((btn) => btn.key === prev)
+  //       const nextIndex = (currentIndex + 1) % buttons.length
+  //       return buttons[nextIndex].key
+  //     })
+  //   }, 4000)
 
-    return () => clearInterval(interval) 
-  }, [])
+  //   return () => clearInterval(interval)
+  // }, [])
 
   return (
     <div>
@@ -35,10 +35,9 @@ export default function Tabs() {
                 key={btn.key}
                 onClick={() => setActive(btn.key)}
                 className={`flex items-center gap-2 text-body text-neutral-8 font-bold ps-2 pe-2  lg:pe-4 py-2 rounded-[100px] transition-all 
-                  ${
-                    active === btn.key
-                      ? `${btn.activeGradient} text-violet-50 font-bold`
-                      : 'text-neutral-8 hover:bg-gray-100 cursor-pointer'
+                  ${active === btn.key
+                    ? `${btn.activeGradient} text-violet-50 font-bold`
+                    : 'text-neutral-8 hover:bg-gray-100 cursor-pointer'
                   }`}
               >
                 <Image

@@ -48,6 +48,28 @@ import t4 from '/public/home/t4.svg'
 import t5 from '/public/home/t5.svg'
 import t6 from '/public/home/t6.svg'
 
+export const primaryIcons = [
+    { src: "/home/c1.png", alt: "Courses", id: "courses" },
+    { src: "/home/c2.png", alt: "Short Videos", id: "short-videos" },
+    { src: "/home/c3.png", alt: "Blogs", id: "blogs" },
+];
+
+export const secondaryIcons = [
+    { src: "/home/c4.png", alt: "Podcasts", id: "podcasts" },
+    { src: "/home/c5.png", alt: "Consultants", id: "consultants" },
+    { src: "/home/c7.png", alt: "Threads", id: "threads" },
+    { src: "/home/c7.png", alt: "Threads", id: "threads2" },
+    { src: "/home/c8.png", alt: "Webinars", id: "webinars" },
+];
+
+export const tertiaryIcons = [
+    { src: "/home/c9.png", alt: "Live Streaming", id: "live-streaming" },
+    { src: "/home/c10.png", alt: "Assessments", id: "assessments" },
+    { src: "/home/c11.png", alt: "Merchandise", id: "merchandise" },
+    { src: "/home/c1.png", alt: "E-books", id: "ebooks" },
+    { src: "/home/c2.png", alt: "Tutorials", id: "tutorials" },
+    { src: "/home/c3.png", alt: "Workshops", id: "workshops" },
+];
 export const tools = [
     {
         title: "Payments",

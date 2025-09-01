@@ -62,7 +62,7 @@ const Header = () => {
             <li className="hoverable py-4">
               <Link
                 href="/products"
-                className="flex items-center text-neutral-2  border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-75 ease-in-out relative text-sm lg:text-base font-medium"
+                className="group flex items-center text-neutral-2 border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-300 ease-in-out relative text-sm lg:text-base font-medium"
               >
                 Products
                 <svg
@@ -71,7 +71,7 @@ const Header = () => {
                   height="20"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="ml-1"
+                  className="ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
                 >
                   <path
                     d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729"
@@ -87,8 +87,8 @@ const Header = () => {
             <NavLink>Torvot</NavLink>
             <li className="hoverable py-4">
               <Link
-                href="/resources"
-                className="flex items-center text-neutral-2  border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-75 ease-in-out relative text-sm lg:text-base font-medium"
+                href="/products"
+                className="group flex items-center text-neutral-2 border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-300 ease-in-out relative text-sm lg:text-base font-medium"
               >
                 Resources
                 <svg
@@ -97,8 +97,7 @@ const Header = () => {
                   height="20"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="ml-1"
-                >
+                  className="ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180">
                   <path
                     d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729"
                     stroke="#FDFDFD"
@@ -142,7 +141,7 @@ const Header = () => {
             <li className="hoverable py-4">
               <Link
                 href="/products"
-                className="flex items-center text-neutral-2  border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-75 ease-in-out relative text-sm lg:text-base font-medium"
+                className="flex items-center text-neutral-2  border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-300 ease-in-out relative text-sm lg:text-base font-medium"
               >
                 Products
                 <svg
@@ -168,7 +167,7 @@ const Header = () => {
             <li className="hoverable py-4">
               <Link
                 href="/resources"
-                className="flex items-center text-neutral-2  border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-75 ease-in-out relative text-sm lg:text-base font-medium"
+                className="flex items-center text-neutral-2  border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-300 ease-in-out relative text-sm lg:text-base font-medium"
               >
                 Resources
                 <svg

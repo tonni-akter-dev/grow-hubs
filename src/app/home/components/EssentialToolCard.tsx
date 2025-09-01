@@ -52,7 +52,7 @@ const EssentialToolCard = () => {
             {/* Bottom button */}
             <Link
               href="#"
-              className="flex gap-2 items-center text-body text-secondary-900 font-bold mt-auto"
+              className="flex gap-2 items-center text-body-sm lg:text-body text-[#CD9D41] font-medium "
             >
               Learn more
               <svg
@@ -65,7 +65,7 @@ const EssentialToolCard = () => {
                 <g clipPath="url(#clip0_2726_1026)">
                   <path
                     d="M8.12417 1.49242L12.8694 6.23761M12.8694 6.23761L8.12417 10.9838M12.8694 6.23761L1.00537 6.23862"
-                    stroke="#695f4c"
+                    stroke="#CD9D41"
                     strokeWidth="2.00304"
                     strokeLinecap="round"
                     strokeLinejoin="round"

@@ -16,10 +16,10 @@ export default function Home() {
       <Services />
       <SellMore />
       <EssentialTools />
-      <GotoTorvert />
-      <SocialInteractions />
-      <TrustedSlider />
-      <CreatorFree />
+      {/* <GotoTorvert /> */}
+      {/* <SocialInteractions /> */}
+      {/* <TrustedSlider /> */}
+      {/* <CreatorFree /> */}
     </>
   );
 }

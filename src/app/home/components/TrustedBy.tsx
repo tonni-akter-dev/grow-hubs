@@ -29,14 +29,14 @@ const TrustedBy = () => {
       </p>
       <div className="relative lg:mx-[26px] h-[101px] lg:ps-12 lg:pe-[60px] py-8 bg-[#F6F5F5] lg:rounded-[20px]">
         <div className="hidden lg:block">
-          <Marquee speed={25}>
+          <Marquee speed={25} direction="right">
             <div className="flex gap-[51px] items-center">
-              <Image className="lg:h-10 " src={t1} alt="" />
-              <Image className="lg:h-10 " src={t2} alt="" />
-              <Image className="lg:h-10 " src={t3} alt="" />
-              <Image className="lg:h-10 " src={t4} alt="" />
-              <Image className="lg:h-10 " src={t5} alt="" />
-              <Image className="lg:h-10 " src={t6} alt="" />
+              <Image className="lg:h-10 w-full " src={t1} alt="" />
+              <Image className="lg:h-10 w-full " src={t2} alt="" />
+              <Image className="lg:h-10 w-full " src={t3} alt="" />
+              <Image className="lg:h-10 w-full " src={t4} alt="" />
+              <Image className="lg:h-10 w-full " src={t5} alt="" />
+              <Image className="lg:h-10 w-full " src={t6} alt="" />
               <Image className=" h-[30px] lg:h-10 mr-[51px]" src={t7} alt="" />
             </div>
           </Marquee>

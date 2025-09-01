@@ -46,7 +46,7 @@ const Courses = () => {
         </motion.div>
 
         <motion.div
-          initial={{ x: 200, opacity: 0 }}
+          initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           className="absolute top-[32%] right-[20px]"

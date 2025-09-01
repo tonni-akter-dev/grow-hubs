@@ -6,17 +6,17 @@ import Image from "next/image";
 const GotoTorvert = () => {
   return (
     <div className="bg-[#041527] pb-[145px] w-full min-h-screen flex flex-col items-center justify-center p-4 pt-[60px] relative">
-      <Image
+      {/* <Image
         className="absolute top-0 left-1/2 -translate-x-1/2"
         src={topShadow}
         alt=""
-      />
+      /> */}
       <div className="text-center flex flex-col justify-center items-center">
         <button className="text-neutral-50 text-body font-semibold py-3 px-3.5 bg-[#62697199] rounded-[100px]">
-          TORVET{" "}
+          TORVET
         </button>
         <h1 className="text-[36px] lg:text-display font-bold  leading-[40px] lg:leading-[57px] banner_heading my-5 ">
-          Where content connects <br /> and converts.{" "}
+          Where content connects <br /> and converts.
         </h1>
         <p className="text-white text-h6 leading-[30px]">
           Explore posts, discover offers, and engage with creators <br />
@@ -38,8 +38,8 @@ const GotoTorvert = () => {
               <path
                 d="M8.61489 1.49243L13.3601 6.23763M13.3601 6.23763L8.61489 10.9838M13.3601 6.23763L1.49609 6.23863"
                 stroke="#7A6464"
-                stroke-width="2.00304"
-                stroke-linecap="round"
+                strokeWidth="2.00304"
+                strokeLinecap="round"
                 stroke-linejoin="round"
               />
             </g>
@@ -56,7 +56,6 @@ const GotoTorvert = () => {
           </svg>
         </button>
       </div>
-
       <CircularImages />
     </div>
   );
