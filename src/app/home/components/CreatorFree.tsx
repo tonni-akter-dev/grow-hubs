@@ -1,6 +1,24 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 
 const CreatorFree = () => {
+
+  const [isPulsing, setIsPulsing] = useState(false);
+
+  const handleClick = () => {
+    setIsPulsing(true);
+    // Reset animation after it completes
+    setTimeout(() => setIsPulsing(false), 1500);
+  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsPulsing(true);
+      setTimeout(() => setIsPulsing(false), 1500);
+    }, 5000); // Auto-animate every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="py-[60px] container">
       <div
@@ -8,7 +26,6 @@ const CreatorFree = () => {
       rounded-[300px] pt-[90px] h-[530px]"
       >
         <h2 className="creatot_text ps-[104px]"> Create for free.</h2>
-        {/* press here */}
 
         <div className="flex justify-start items-center lg:ps-[131px] gap-7">
           <p
@@ -29,14 +46,18 @@ const CreatorFree = () => {
               />
             </svg>
           </p>
-
           <div className="flex justify-end items-end">
-            <div className="pres5 size-[287px] flex justify-center items-center">
-              <div className="pres4 size-[246px] flex justify-center items-center">
-                <div className="pres3 size-[213px] flex justify-center items-center">
-                  <div className="pres2 size-[171px] flex justify-center items-center">
-                    <div className="cursor-pointer pres_bg flex justify-center items-center">
-                      PRESS <br /> HERE
+            <div className="flex justify-end items-end mb-12">
+              <div className={`pres5 size-[287px] flex justify-center items-center ${isPulsing ? 'animate-pulse5' : ''}`}>
+                <div className={`pres4 size-[246px] flex justify-center items-center ${isPulsing ? 'animate-pulse4' : ''}`}>
+                  <div className={`pres3 size-[213px] flex justify-center items-center ${isPulsing ? 'animate-pulse3' : ''}`}>
+                    <div className={`pres2 size-[171px] flex justify-center items-center ${isPulsing ? 'animate-pulse2' : ''}`}>
+                      <div
+                        className="cursor-pointer pres_bg flex justify-center items-center relative z-10"
+                        onClick={handleClick}
+                      >
+                        PRESS <br /> HERE
+                      </div>
                     </div>
                   </div>
                 </div>

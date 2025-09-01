@@ -41,30 +41,33 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .pres5 {
-  background: linear-gradient(
-    180deg,
-    rgba(205, 230, 248, 0.05) 0%,
-    rgba(249, 225, 182, 0.05) 94.71%
-  );
+  background: linear-gradient(180deg,
+      rgba(205, 230, 248, 0.05) 0%,
+      rgba(249, 225, 182, 0.05) 94.71%);
   width: 287px;
   height: 287px;
   flex-shrink: 0;
   aspect-ratio: 1/1;
   border-radius: 287px;
 }
+
 .pres4 {
   background-image: url("/home/pres4.svg");
   background-repeat: no-repeat;
 }
+
 .pres3 {
   background-image: url("/home/pres3.svg");
   background-repeat: no-repeat;
 }
+
 .pres2 {
   background-image: url("/home/pres2.svg");
   background-repeat: no-repeat;
 }
+
 .pres_bg {
   background-image: url("/home/pres_bg.svg");
   width: 137.76px;
@@ -78,7 +81,8 @@ p {
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
-  line-height: 32px; /* 188.235% */
+  line-height: 32px;
+  /* 188.235% */
   letter-spacing: 4px;
 }
 
@@ -88,13 +92,43 @@ p {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%; /* 52.8px */
+  line-height: 110%;
   background: linear-gradient(93deg, #fff 17.83%, #a5c5dd 80.08%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: var(--font-clash-display) !important;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-pulse2 {
+  animation: pulse 1.5s ease-out;
+}
+
+.animate-pulse3 {
+  animation: pulse 1.5s ease-out 0.1s;
+}
+
+.animate-pulse4 {
+  animation: pulse 1.5s ease-out 0.2s;
+}
+
+.animate-pulse5 {
+  animation: pulse 1.5s ease-out 0.3s;
+}
+
+
 
 @keyframes pulse {
   0% {
@@ -168,20 +202,16 @@ p {
     transform: translate(0, 0) scale(1);
     opacity: 1;
   }
+
   50% {
-    transform: translate(
-        calc(50vw - var(--start-x) - 20px),
-        calc(50vh - var(--start-y) - 20px)
-      )
-      scale(1.2);
+    transform: translate(calc(50vw - var(--start-x) - 20px),
+        calc(50vh - var(--start-y) - 20px)) scale(1.2);
     opacity: 0.8;
   }
+
   100% {
-    transform: translate(
-        calc(50vw - var(--start-x) - 20px),
-        calc(50vh - var(--start-y) - 20px)
-      )
-      scale(0);
+    transform: translate(calc(50vw - var(--start-x) - 20px),
+        calc(50vh - var(--start-y) - 20px)) scale(0);
     opacity: 0;
   }
 }
@@ -234,10 +264,12 @@ p {
     width: 0%;
     opacity: 0;
   }
+
   50% {
     width: 100%;
     opacity: 1;
   }
+
   100% {
     width: 0%;
     opacity: 0;
@@ -257,6 +289,7 @@ p {
     transform: scale(0.8);
     opacity: 0.5;
   }
+
   100% {
     transform: scale(1.2);
     opacity: 1;
@@ -272,6 +305,7 @@ p {
   transform: scale(1.1);
   filter: drop-shadow(0 0 8px rgba(102, 126, 234, 0.6));
 }
+
 /* rocket animation */
 
 /* === Colors === */
@@ -463,12 +497,10 @@ body {
 }
 
 .sell_bg {
-  background: linear-gradient(
-    to top,
-    rgba(202, 248, 241, 0) 0%,
-    rgba(202, 240, 248, 0.5) 49.12%,
-    rgba(196, 223, 254, 0) 100%
-  );
+  background: linear-gradient(to top,
+      rgba(202, 248, 241, 0) 0%,
+      rgba(202, 240, 248, 0.5) 49.12%,
+      rgba(196, 223, 254, 0) 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -483,12 +515,10 @@ body {
 
 /* banner */
 .service_bg {
-  background: linear-gradient(
-    180deg,
-    rgba(196, 224, 254, 0) 0%,
-    rgba(196, 224, 254, 0.5) 44.34%,
-    rgba(196, 223, 254, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(196, 224, 254, 0) 0%,
+      rgba(196, 224, 254, 0.5) 44.34%,
+      rgba(196, 223, 254, 0) 100%);
 }
 
 @keyframes fadeDiagonal {
@@ -572,13 +602,11 @@ footer {
 }
 
 .footer_text {
-  background: linear-gradient(
-    90deg,
-    #33363d -6.37%,
-    rgba(255, 255, 255, 0.9) 49.33%,
-    #7b7d8d 85.21%,
-    #33363d 102.75%
-  );
+  background: linear-gradient(90deg,
+      #33363d -6.37%,
+      rgba(255, 255, 255, 0.9) 49.33%,
+      #7b7d8d 85.21%,
+      #33363d 102.75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -809,6 +837,7 @@ footer {
     left: -132px;
     top: 150px;
   }
+
   .mega-menu,
   .mega-menu-addons,
   .mega-menu-why {
