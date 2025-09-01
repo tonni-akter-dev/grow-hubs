@@ -296,7 +296,7 @@ button {
 
 
 
-/* @keyframes pulse {
+ @keyframes pulse {
   0% {
     transform: scale(1);
     opacity: 1;
@@ -308,7 +308,7 @@ button {
   }
 } */
 
-/* .animate-pulse2 {
+ .animate-pulse2 {
   animation: pulse 1.5s ease-out;
 }
 
@@ -322,7 +322,7 @@ button {
 
 .animate-pulse5 {
   animation: pulse 1.5s ease-out 0.3s;
-} */
+}
 
 
 

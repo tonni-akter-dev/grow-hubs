@@ -57,7 +57,6 @@ const CreatorFree = () => {
                 </div>
               </div>
             </div>
-
             <h3 className="sell_text">Sell without ads</h3>
           </div>
         </div>
