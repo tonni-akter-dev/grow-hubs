@@ -1,9 +1,10 @@
 'use client'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+
 import { testimonials } from '@/app/utils/data';
 import TestimonialCard from './TestimonialCard';
 
@@ -21,6 +22,12 @@ const TrustedSlider = () => {
                 loop={true}
                 className="mySwiper"
                 centeredSlides={true}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }}
+                modules={[Autoplay]}
                 initialSlide={3}
                 breakpoints={{
                     320: { slidesPerView: 2, spaceBetween: 20 },

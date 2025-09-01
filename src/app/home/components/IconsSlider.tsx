@@ -4,23 +4,52 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+import { useEffect, useRef } from 'react';
 
-const IconsSlider = () => {
+interface IconsSliderProps {
+    onComplete?: () => void;
+}
+
+const IconsSlider: React.FC<IconsSliderProps> = ({ onComplete }) => {
+    const swiperRef = useRef(null);
+    const slideCount = 5; // Number of slides in your slider
+    const autoplayDelay = 2000; // Delay between slides in ms
+    const completedRef = useRef(false);
+
+    useEffect(() => {
+        // Calculate total time for all slides to be shown
+        const totalTime = slideCount * autoplayDelay;
+
+        const timer = setTimeout(() => {
+            if (!completedRef.current && onComplete) {
+                completedRef.current = true;
+                onComplete();
+            }
+        }, totalTime + 500); // Add a small buffer
+
+        return () => clearTimeout(timer);
+    }, [onComplete]);
+
     return (
         <div className="creators h-16 overflow-hidden">
             <Swiper
+                ref={swiperRef}
                 direction={'vertical'}
                 slidesPerView={1}
                 spaceBetween={0}
                 autoplay={{
-                    delay: 2000,
+                    delay: autoplayDelay,
                     disableOnInteraction: false,
                 }}
-
                 modules={[Pagination, Autoplay]}
                 className="h-full"
-                loop={true}
                 speed={300}
+                onSlideChange={(swiper) => {
+                    if (swiper.activeIndex === slideCount - 1 && !completedRef.current && onComplete) {
+                        completedRef.current = true;
+                        onComplete();
+                    }
+                }}
             >
                 <SwiperSlide className="w-[364px] flex items-center justify-center">
                     <svg

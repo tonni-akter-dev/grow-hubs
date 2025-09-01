@@ -22,7 +22,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ data }) => {
   return (
     <div className=' max-w-[400px] lg:max-w-[1230px] flex gap-[42px] rounded-4xl bg-white py-5 ps-6 pb-[22px] pe-8 mx-auto w-full' style={{ boxShadow: '0 8px 28px 0 rgba(20, 20, 43, 0.10)' }}>
       <div className="hidden md:block">
-        <Image className='w-[155px] lg:w-[454px]' src={trustedimg} alt="Testimonial visual" />
+        <Image className='w-[155px] lg:w-[454px] h-[425px]' src={trustedimg} alt="Testimonial visual" />
       </div>
       {/* rightside */}
       <div className='w-full flex-1 flex-col items-start text-start'>
@@ -40,7 +40,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ data }) => {
           <Ratings rating={data.rating} />
         </div>
         {/* tags */}
-        <div className='flex gap-3 items-center mb-10 flex-wrap'>
+        <div className='flex gap-3 items-center mb-4 flex-wrap'>
           {data.tags.map((tag, index) => (
             <button key={index} className='text-[#030711] text-body font-medium leading-6 border border-secondary-900 rounded-[100px] px-4 py-2.5'>
               {tag}
@@ -48,7 +48,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ data }) => {
           ))}
         </div>
 
-        <p className='text-h4 text-[#030711] leading-[38px] tracking-[-0.28px] lg:max-w-[495px] mb-10'>
+        <p className='text-h4 text-[#030711] leading-[38px] tracking-[-0.28px] lg:max-w-[495px] mb-4'>
           {data.text}
         </p>
 

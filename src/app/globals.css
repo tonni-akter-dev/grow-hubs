@@ -728,10 +728,16 @@ body {
 }
 
 footer {
-  /* background-image: url("/home/footer-bg.png"); */
+  background-image: url("/home/footer-bg.png");
   background-size: cover;
-  /* background-position: bottom; */
+  background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.Typewriter__cursor {
+  font-size: 44px;
+  font-weight: 600;
+  color: #575757;
 }
 
 .footer_text {
@@ -762,7 +768,7 @@ footer {
 
 .testimonial .swiper-slide {
   width: 1225px !important;
-  height: 530px !important;
+  height: 468px !important;
 }
 
 .creators .swiper-slide {

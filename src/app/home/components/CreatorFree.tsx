@@ -9,7 +9,7 @@ const CreatorFree = () => {
     const interval = setInterval(() => {
       setIsPulsing(true);
       setTimeout(() => setIsPulsing(false), 1500);
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
