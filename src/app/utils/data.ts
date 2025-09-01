@@ -125,49 +125,49 @@ export const products1 = [
         description: "Share and profit from your expertise by creating and publishing courses.",
         icon: m1,
         bgEffect: "hover:bg-[#E8F2FF]",
-        textEffect: "group-hover:text-[#105BB2]"
+        textEffect: "group-hover/parent:text-[#105BB2]"
     },
     {
         title: "Community",
         description: "Create a community to share value, and turn members into loyal customers.",
         icon: m2,
         bgEffect: "hover:bg-[#F7EBFD]",
-        textEffect: "group-hover:text-[#5500aa]"
+        textEffect: "group-hover/parent:text-[#5500aa]"
     },
     {
         title: "Coaching & Consulting",
         description: "Monetise Your Expertise by Creating a consultancy profile page to share it online.",
         icon: m3,
         bgEffect: "hover:bg-[#FBE6E6]",
-        textEffect: "group-hover:text-[#980000]"
+        textEffect: "group-hover/parent:text-[#980000]"
     },
     {
         title: "Merchandise",
         description: "Expand Your Revenue Streams. Sell retail products to complement your services.",
         icon: m4,
         bgEffect: "hover:bg-[#F7EBFD]",
-        textEffect: "group-hover:text-[#7B26A8]"
+        textEffect: "group-hover/parent:text-[#7B26A8]"
     },
     {
         title: "Podcasts",
         description: "Create, publish, and monetize podcasts effortlessly from your dashboard on all",
         icon: m5,
         bgEffect: "hover:bg-[#fff8eb]",
-        textEffect: "group-hover:text-[#b48624]"
+        textEffect: "group-hover/parent:text-[#b48624]"
     },
     {
         title: "Events",
         description: "Gather your audience in one place for more growth and success.",
         icon: m6,
         bgEffect: "hover:bg-[#fff0ea]",
-        textEffect: "group-hover:text-[#980000]"
+        textEffect: "group-hover/parent:text-[#980000]"
     },
     {
         title: "Brokerage",
         description: "Connect creators, clients, and products in the platform, and earn a commission",
         icon: m7,
         bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover:text-[#158374]"
+        textEffect: "group-hover/parent:text-[#158374]"
     }
 ];
 export const products2 = [
@@ -176,28 +176,28 @@ export const products2 = [
         description: "Share and profit from your expertise by creating and publishing courses.",
         icon: m11,
         bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover:text-[#7B26A8]"
+        textEffect: "group-hover/parent:text-[#7B26A8]"
     },
     {
         title: "Email Marketing",
         description: "Draft, send and manage marketing emails with ease.",
         icon: m12,
         bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover:text-[#105BB2]"
+        textEffect: "group-hover/parent:text-[#105BB2]"
     },
     {
         title: "Funnels & Automations",
         description: "Create sales funnels and automate processes to boost your income easy.",
         icon: m13,
         bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover:text-[#7B26A8]"
+        textEffect: "group-hover/parent:text-[#7B26A8]"
     },
     {
         title: "Third party integrations",
         description: "Integrate to many available tools to solidify your online business.",
         icon: m14,
         bgEffect: "hover:bg-[#fff8eb]",
-        textEffect: "group-hover:text-[#b48624]"
+        textEffect: "group-hover/parent:text-[#b48624]"
     }
 ];
 export const products3 = [
@@ -206,28 +206,28 @@ export const products3 = [
         description: "Add Growhubs content to your website with one embed code",
         icon: m21,
         bgEffect: "hover:bg-[#fbe6e6]",
-        textEffect: "group-hover:text-[#980000]"
+        textEffect: "group-hover/parent:text-[#980000]"
     },
     {
         title: "Analytics & Performance",
         description: "Leverage the right metrics with reports designed for practical insights.",
         icon: m22,
         bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover:text-[#105BB2]"
+        textEffect: "group-hover/parent:text-[#105BB2]"
     },
     {
         title: "Contacts CRM",
         description: "Bring your contacts and audience to turn them in one of your biggest assets ",
         icon: m23,
         bgEffect: "hover:bg-[#fff8eb]",
-        textEffect: "group-hover:text-[#b48624]"
+        textEffect: "group-hover/parent:text-[#b48624]"
     },
     {
         title: "Time management",
         description: "Leverage our unique calendar features for bringing time efficiency in your business.",
         icon: m24,
         bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover:text-[#158374]"
+        textEffect: "group-hover/parent:text-[#158374]"
     }
 ];
 export const resource1 = [
@@ -236,21 +236,21 @@ export const resource1 = [
         description: "Create and publish your own blog posts, and start earning from your insights.",
         icon: r1,
         bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover:text-[#105BB2]"
+        textEffect: "group-hover/parent:text-[#105BB2]"
     },
     {
         title: "Creator Stories",
         description: "Shares valuable insights, transforming members into dedicated customers.",
         icon: r2,
         bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover:text-[#5500aa]"
+        textEffect: "group-hover/parent:text-[#5500aa]"
     },
     {
         title: "Training Webinars",
         description: "Setting up a consultancy profile page to promote your training webinars online.",
         icon: r3,
         bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover:text-[#158374]"
+        textEffect: "group-hover/parent:text-[#158374]"
     },
 ];
 export const resource2 = [
@@ -259,21 +259,21 @@ export const resource2 = [
         description: "Leverage your knowledge and earn by developing and offering courses.",
         icon: r4,
         bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover:text-[#b48624]"
+        textEffect: "group-hover/parent:text-[#b48624]"
     },
     {
         title: "Product Updates",
         description: "Easily create, send, and oversee your marketing emails with our latest updates.",
         icon: r5,
         bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover:text-[#5500aa]"
+        textEffect: "group-hover/parent:text-[#5500aa]"
     },
     {
         title: "FAQs",
         description: "Quickly create, send, and organize your frequently asked questions.",
         icon: r6,
         bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover:text-[#105BB2]"
+        textEffect: "group-hover/parent:text-[#105BB2]"
     },
 ];
 export const resource3 = [
@@ -282,21 +282,21 @@ export const resource3 = [
         description: "Add Growhubs content to your website with one embed code",
         icon: r7,
         bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover:text-[#105BB2]"
+        textEffect: "group-hover/parent:text-[#105BB2]"
     },
     {
         title: "Help Center",
         description: "Leverage the right metrics with reports designed for practical insights.",
         icon: r8,
         bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover:text-[#158374]"
+        textEffect: "group-hover/parent:text-[#158374]"
     },
     {
         title: "Hire an Expert",
         description: "Bring your contacts and audience to turn them in one of your biggest assets ",
         icon: r9,
         bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover:text-[#5500aa]"
+        textEffect: "group-hover/parent:text-[#5500aa]"
     },
 ];
 
