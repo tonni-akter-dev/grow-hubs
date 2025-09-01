@@ -736,6 +736,7 @@ footer {
 
 .Typewriter__cursor {
   font-size: 44px;
+  /* match lg size */
   font-weight: 600;
   color: #575757;
 }
