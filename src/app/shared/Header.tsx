@@ -59,7 +59,7 @@ const Header = () => {
           </div>
           {/* Desktop Nav */}
           <ul className="gap-7 items-center lg:flex hidden">
-            <li className="hoverable py-4">
+            <li className="group hoverable py-4">
               <Link
                 href="/products"
                 className="group flex items-center text-neutral-2 border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-300 ease-in-out relative text-sm lg:text-base font-medium"
@@ -71,7 +71,7 @@ const Header = () => {
                   height="20"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180"
+                  className="ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180 "
                 >
                   <path
                     d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729"
@@ -85,28 +85,30 @@ const Header = () => {
               <ProductsMegamenu />
             </li>
             <NavLink>Torvot</NavLink>
-            <li className="hoverable py-4">
-              <Link
-                href="/products"
-                className="group flex items-center text-neutral-2 border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-300 ease-in-out relative text-sm lg:text-base font-medium"
-              >
-                Resources
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180">
-                  <path
-                    d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729"
-                    stroke="#FDFDFD"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
+            <li className=" group hoverable py-4">
+              <div className="">
+                <Link
+                  href="/products"
+                  className="group flex items-center text-neutral-2 border border-transparent hover:border-white px-3 py-2 rounded-[100px] transition-all duration-300 ease-in-out relative text-sm lg:text-base font-medium group"
+                >
+                  Resources
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="svg_rotate ml-1 transition-transform duration-300 ease-in-out group-hover:rotate-180">
+                    <path
+                      d="M6.96118 9.729L11.8138 13.6111L16.6665 9.729"
+                      stroke="#FDFDFD"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </Link>
+              </div>
               <ResourceMegaMenu />
             </li>
             <NavLink>Blog</NavLink>

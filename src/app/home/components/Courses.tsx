@@ -11,8 +11,7 @@ const Courses = () => {
       className="lg:h-[530px] h-full 
         bg-[linear-gradient(358deg,#BFDCFD_1.53%,#020E1B_98.56%)] 
         lg:bg-[linear-gradient(270deg,#BFDCFD_29.3%,#020E1B_98.92%)]
-         rounded-[20px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-tr-[32px] lg:rounded-br-[32px] flex lg:flex-row flex-col justify-between overflow-hidden"
-    >
+         rounded-[20px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-tr-[32px] lg:rounded-br-[32px] flex lg:flex-row flex-col justify-between overflow-hidden">
       {/* Left Text Section */}
       <div className="lg:pt-[100px] text-left lg:ps-[96px] p-6">
         <h3 className="text-h3 text-neutral-50 font-semibold leading-[35px]">
@@ -39,8 +38,9 @@ const Courses = () => {
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute bottom-[57px] right-[-6px]"
+          className="absolute bottom-[15%] lg:bottom-[57px] right-[50px] lg:right-[-6px]"
         >
           <Image src={service1} alt="" />
         </motion.div>
@@ -48,8 +48,9 @@ const Courses = () => {
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-          className="absolute top-[32%] right-[20px]"
+          className="absolute top-[40%] lg:top-[32%] right-[60px] lg:right-[20px] lg:w-fit w-[147px]"
         >
           <Image src={service2} alt="" />
         </motion.div>

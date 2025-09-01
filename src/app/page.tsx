@@ -17,7 +17,7 @@ export default function Home() {
       <SellMore />
       <EssentialTools />
       {/* <GotoTorvert /> */}
-      {/* <SocialInteractions /> */}
+      <SocialInteractions />
       {/* <TrustedSlider /> */}
       {/* <CreatorFree /> */}
     </>

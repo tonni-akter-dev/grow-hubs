@@ -39,8 +39,9 @@ const Brokerage = () => {
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute bottom-[31px] left-[27%]"
+          className="absolute bottom-[31px] left-[27%] lg:w-fit w-[200px]"
         >
           <Image src={service1} alt="" />
         </motion.div>
@@ -49,7 +50,8 @@ const Brokerage = () => {
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-          className="absolute top-[37%] left-[22%]"
+          viewport={{ once: true, amount: 0.3 }}
+          className="absolute top-[37%] left-[22%] lg:w-fit w-[200px]"
         >
           <Image src={service2} alt="" />
         </motion.div>

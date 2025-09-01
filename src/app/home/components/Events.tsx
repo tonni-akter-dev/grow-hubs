@@ -39,7 +39,8 @@ const Events = () => {
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute top-11 right-[70px]"
+          viewport={{ once: true, amount: 0.3 }}
+          className="absolute top-11 right-[70px] lg:w-fit w-[200px]"
         >
           <Image src={service1} alt="" />
         </motion.div>

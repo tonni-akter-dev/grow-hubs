@@ -34,12 +34,13 @@ const Coaching = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] coaching_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative rounded-[32px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] coaching_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute bottom-[11%] left-[23%]"
+          className="absolute bottom-[11%] left-0 lg:left-[23%] lg:w-fit w-[200px]"
         >
           <Image src={service1} alt="" />
         </motion.div>
@@ -47,8 +48,9 @@ const Coaching = () => {
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-          className="absolute top-[14%] right-[26px]"
+          className="absolute top-[14%] right-[26px] lg:w-fit w-[170px]"
         >
           <Image src={service2} alt="" />
         </motion.div>

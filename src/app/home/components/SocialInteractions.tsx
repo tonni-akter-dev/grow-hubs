@@ -14,11 +14,11 @@ const SocialInteractions = () => {
       rightBallRef.current.animate(
         [
           { transform: "translateX(0) translateY(0)" },
-          { transform: "translateX(-300px) translateY(-40px)" },
-          { transform: "translateX(-600px) translateY(20px)" },
-          { transform: "translateX(-900px) translateY(-30px)" },
-          { transform: "translateX(-1200px) translateY(10px)" },
-          { transform: "translateX(-1400px) translateY(10px)" },
+          { transform: "translateX(-300px) translateY(200px)" },
+          { transform: "translateX(-600px) translateY(30px)" },
+          { transform: "translateX(-900px) translateY(400px)" },
+          { transform: "translateX(-1200px) translateY(200px)" },
+          { transform: "translateX(-1400px) translateY(0)" },
         ],
         {
           duration: 14000,
@@ -30,11 +30,11 @@ const SocialInteractions = () => {
       leftBallRef.current.animate(
         [
           { transform: "translateX(0) translateY(0)" },
-          { transform: "translateX(300px) translateY(-40px)" },
+          { transform: "translateX(300px) translateY(-300px)" },
           { transform: "translateX(600px) translateY(20px)" },
-          { transform: "translateX(900px) translateY(-30px)" },
-          { transform: "translateX(1200px) translateY(10px)" },
-          { transform: "translateX(1400px) translateY(10px)" },
+          { transform: "translateX(900px) translateY(-450px)" },
+          { transform: "translateX(1200px) translateY(15px)" },
+          { transform: "translateX(1400px) translateY(0)" },
         ],
         {
           duration: 14000,

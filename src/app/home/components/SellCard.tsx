@@ -4,7 +4,7 @@ import React from 'react'
 
 const SellCard = () => {
     return (
-        <div className="w-full pb-[105px]">
+        <div className="w-full pb-[60px]">
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  lg:gap-6">
                 {features.map((item, index) => (
                     <div
@@ -13,7 +13,7 @@ const SellCard = () => {
                         className="bg-white cursor-pointer rounded-xl p-6 flex flex-col items-start text-left transition-transform duration-200 hover:shadow-xl hover:-translate-y-1"
                     >
                         <Image src={item.icon} alt={item.title} className=" size-[65px] mb-[30px]" />
-                        <h3 className="font-bold text-h5 text-neutral-13  leading-[26px]">{item.title}</h3>
+                        <h3 className="font-bold text-h5 text-neutral-13  leading-[110%]">{item.title}</h3>
                         <p className="text-neutral-9 mt-2 leading-[26px] text-body ">{item.description}</p>
                     </div>
                 ))}

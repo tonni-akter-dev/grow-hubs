@@ -11,8 +11,7 @@ const PodCasts = () => {
         bg-[linear-gradient(358deg,#FDE9BF_1.53%,#1B1302_98.56%)] 
         lg:bg-[linear-gradient(270deg,#FDE9BF_29.3%,#1B1302_98.92%)]
         rounded-[20px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-tr-[32px] lg:rounded-br-[32px]
-        flex lg:flex-row flex-col justify-between"
-    >
+        flex lg:flex-row flex-col justify-between">
       {/* Left content */}
       <div className="lg:pt-[135px] text-left lg:ps-[96px] p-6">
         <h3 className="text-h3 text-neutral-50 font-semibold leading-[35px]">
@@ -38,8 +37,9 @@ const PodCasts = () => {
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute bottom-[4%] left-[18%]"
+          className="absolute lg:bottom-[4%] bottom-[11%]  left-[7%] lg:left-[18%] lg:w-fit w-[250px]"
         >
           <Image src={service1} alt="" />
         </motion.div>
@@ -47,8 +47,9 @@ const PodCasts = () => {
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-          className="absolute top-[55%] right-[29px]"
+          className="absolute top-[51%] lg:top-[55%] right-[70px] lg:right-[29px] lg:w-fit w-[170px]"
         >
           <Image src={service2} alt="" />
         </motion.div>

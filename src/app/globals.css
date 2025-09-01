@@ -14,17 +14,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-clash-display);
+  font-family: var(--font-clash-display) !important;
 }
 
 
 .menu_font {
   font-family: var(--font-silka) !important;
 }
+
 p {
   font-family: var(--font-silka);
   line-height: 150%;
 }
+
 /* === Colors === */
 @theme {
   /* primary 2  */
@@ -522,6 +524,11 @@ body {
   position: static;
 }
 
+.hoverable:hover .svg_rotate {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+
 .hoverable:hover .mega-menu {
   opacity: 1;
   visibility: visible;
@@ -878,37 +885,37 @@ footer {
   .communities_bg {
     height: 300px;
     border-radius: 20px;
-    width: 93%;
+    width: 88%;
   }
 
   .coaching_bg {
     height: 300px;
     border-radius: 20px;
-    width: 93%;
+    width: 88%;
   }
 
   .merchandise_bg {
     height: 300px;
     border-radius: 20px;
-    width: 93%;
+    width: 88%;
   }
 
   .podcast_bg {
     height: 300px;
     border-radius: 20px;
-    width: 93%;
+    width: 88%;
   }
 
   .events_bg {
     height: 300px;
     border-radius: 20px;
-    width: 93%;
+    width: 88%;
   }
 
   .brokerage_bg {
     height: 300px;
     border-radius: 20px;
-    width: 93%;
+    width: 88%;
   }
 
   .container {
@@ -926,10 +933,11 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
-  .creatot_text{
+  .creatot_text {
     font-size: 32px;
     margin-bottom: 38px;
   }
+
   .testimonial .swiper-slide {
     width: 380px !important;
     height: 100%;
