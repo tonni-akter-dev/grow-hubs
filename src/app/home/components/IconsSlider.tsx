@@ -12,12 +12,11 @@ interface IconsSliderProps {
 
 const IconsSlider: React.FC<IconsSliderProps> = ({ onComplete }) => {
     const swiperRef = useRef(null);
-    const slideCount = 5; // Number of slides in your slider
-    const autoplayDelay = 2000; // Delay between slides in ms
+    const slideCount = 6; 
+    const autoplayDelay = 2000;
     const completedRef = useRef(false);
 
     useEffect(() => {
-        // Calculate total time for all slides to be shown
         const totalTime = slideCount * autoplayDelay;
 
         const timer = setTimeout(() => {
@@ -175,6 +174,24 @@ const IconsSlider: React.FC<IconsSliderProps> = ({ onComplete }) => {
                             </filter>
                         </defs>
                     </svg>
+                </SwiperSlide>
+                <SwiperSlide className="w-[364px] flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="346" height="49" viewBox="0 0 346 49" fill="none">
+  <g filter="url(#filter0_g_2832_3028)">
+    <path d="M20.0052 44.728C10.5412 44.728 4.10116 37.952 4.10116 29.216C4.10116 20.48 10.4852 13.704 20.0612 13.704C29.5252 13.704 35.9652 20.48 35.9652 29.216C35.9652 37.952 29.5252 44.728 20.0052 44.728ZM20.0052 36.888C24.1492 36.888 27.1732 33.696 27.1732 29.216C27.1732 24.736 24.1492 21.544 20.0052 21.544C15.9172 21.544 12.8932 24.736 12.8932 29.216C12.8932 33.752 15.9172 36.888 20.0052 36.888ZM44.4562 44V14.432H52.6322V18.912H53.0802C54.0882 16.728 56.7202 14.208 60.6962 14.208H63.5522V22.384H60.1362C55.8802 22.384 53.1362 25.464 53.1362 30.56V44H44.4562ZM108.53 44.728C96.2658 44.728 87.8658 35.992 87.8658 24.4C87.8658 12.864 96.3218 4.072 108.53 4.072C118.834 4.072 126.058 10.344 127.962 18.464H118.162C116.874 15.104 113.402 12.584 108.53 12.584C101.586 12.584 97.0498 17.68 97.0498 24.4C97.0498 31.288 101.586 36.44 108.53 36.44C114.074 36.44 118.106 33.472 118.834 29.888H108.138V22.608H128.69C129.194 36.384 120.906 44.728 108.53 44.728ZM156.779 44.728C144.739 44.728 135.947 35.992 135.947 24.4C135.947 12.864 144.795 4.072 156.779 4.072C168.763 4.072 177.611 12.976 177.611 24.4C177.611 35.88 168.707 44.728 156.779 44.728ZM156.779 36.216C163.555 36.216 168.371 31.176 168.371 24.4C168.371 17.736 163.555 12.584 156.779 12.584C149.947 12.584 145.131 17.736 145.131 24.4C145.131 31.176 149.947 36.216 156.779 36.216ZM205.681 44.728C193.641 44.728 184.849 35.992 184.849 24.4C184.849 12.864 193.697 4.072 205.681 4.072C217.665 4.072 226.513 12.976 226.513 24.4C226.513 35.88 217.609 44.728 205.681 44.728ZM205.681 36.216C212.457 36.216 217.273 31.176 217.273 24.4C217.273 17.736 212.457 12.584 205.681 12.584C198.849 12.584 194.033 17.736 194.033 24.4C194.033 31.176 198.849 36.216 205.681 36.216ZM254.414 44.728C242.15 44.728 233.75 35.992 233.75 24.4C233.75 12.864 242.206 4.072 254.414 4.072C264.718 4.072 271.942 10.344 273.846 18.464H264.046C262.758 15.104 259.286 12.584 254.414 12.584C247.47 12.584 242.934 17.68 242.934 24.4C242.934 31.288 247.47 36.44 254.414 36.44C259.958 36.44 263.99 33.472 264.718 29.888H254.022V22.608H274.574C275.078 36.384 266.79 44.728 254.414 44.728ZM283.455 44V4.8H292.303V36.104H307.647V44H283.455ZM316.334 44V4.8H341.142V12.36H325.182V20.48H338.79V28.04H325.182V36.384H341.758V44H316.334Z" fill="#4193B9"/>
+  </g>
+  <defs>
+    <filter id="filter0_g_2832_3028" x="0.101562" y="0.0720215" width="345.656" height="48.656" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.01785714365541935 0.01785714365541935" numOctaves="3" seed="5475"/>
+      <feDisplacementMap in="shape" scale="8" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%"/>
+      <feMerge result="effect1_texture_2832_3028">
+        <feMergeNode in="displacedImage"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
                 </SwiperSlide>
             </Swiper>
         </div>

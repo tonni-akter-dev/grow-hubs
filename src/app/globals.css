@@ -104,12 +104,6 @@ p {
   --text-caption: 12px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 button {
   cursor: pointer;
 }
@@ -790,7 +784,7 @@ footer {
 
 .testimonial .swiper-slide {
   width: 1225px !important;
-  height: 468px !important;
+  /* height: 468px !important; */
 }
 
 .creators .swiper-slide {
