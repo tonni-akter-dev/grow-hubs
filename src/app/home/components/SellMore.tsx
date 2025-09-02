@@ -14,7 +14,7 @@ const SellMore = () => {
                 <p className='text-body-sm lg:text-h6 text-neutral-9 mb-6  font-medium leading-[30px] '>Collaborate with members who promote your <br className='lg:hidden block' /> products to warm <br className='lg:block hidden' /> audiences. Set the split; <br className='lg:hidden block' /> we automate the rest.</p>
                 <button className='px-6 py-3 text-secondary-50 font-bold text-body leading-6 bg-[linear-gradient(214deg,_#3F7DFF_20.22%,_#2E9FE5_77.53%)] hover:bg-transparent  rounded-[100px] lg:mt-4 border  cursor-pointer transition-all ease-in-out duration-300'>Learn more about Co-Sells</button>
             </div>
-            <div className="lg:mt-[-50px]  max-w-[1000px] mx-auto w-full">
+            <div className="lg:mt-[-100px]  max-w-[1200px] mx-auto w-full">
                 <Lottie animationData={sellAnimation} />
             </div>
             <SellCard />
