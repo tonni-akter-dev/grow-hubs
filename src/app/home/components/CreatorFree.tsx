@@ -18,17 +18,17 @@ const CreatorFree = () => {
     <div className="py-[60px] container">
       <div
         className="bg-[linear-gradient(99deg,#4D5D69_18.46%,#A16A6B_97.93%),linear-gradient(270deg,#FFF_0%,#999_100%)]
-   rounded-[30px]   lg:rounded-[300px] pt-[90px] h-[530px]"
+   rounded-[30px]   lg:rounded-[300px] pt-[60px] lg:pt-[90px] h-full lg:h-[530px]"
       >
         <h2 className="creatot_text lg:text-start text-center lg:ps-[104px]"> Create for free.</h2>
 
-        <div className="flex lg:flex-row flex-col justify-start items-center lg:ps-[131px] gap-7">
+        <div className=" flex lg:flex-row flex-col justify-start items-start lg:items-center md:ps-[131px] gap-[40px] md:gap-7">
           <p
-            className=" text-xl lg:text-h5 font-bold leading-[150%] flex lg:flex-row flex-col  gap-3 items-center text-secondary-50 "
+            className="lg:ps-0 ps-12 text-xl lg:text-h5 font-bold leading-[150%] flex lg:flex-row flex-col  gap-[28px] md:gap-3 items-center text-secondary-50 "
             style={{ fontStyle: "italic" }}
           >
             Get started for free
-            <span className="lg:transform: rotate(0deg) transform: rotate(90deg)">    <svg
+            <span className="lg:rotate-0 rotate-90 md:ml-0  ml-[70px]">    <svg
               xmlns="http://www.w3.org/2000/svg"
               width="62"
               height="8"
@@ -41,15 +41,14 @@ const CreatorFree = () => {
               />
             </svg></span>
           </p>
-          <div className="flex justify-end items-end">
-            <div className="flex justify-end items-end mb-12">
-              <div className={`pres5 size-[287px] flex justify-center items-center ${isPulsing ? 'animate-pulse5' : ''}`}>
-                <div className={`pres4 size-[246px] flex justify-center items-center ${isPulsing ? 'animate-pulse4' : ''}`}>
-                  <div className={`pres3 size-[213px] flex justify-center items-center ${isPulsing ? 'animate-pulse3' : ''}`}>
-                    <div className={`pres2 size-[171px] flex justify-center items-center ${isPulsing ? 'animate-pulse2' : ''}`}>
+          <div className="flex lg:flex-row flex-col justify-center lg:justify-end items-center lg:items-end ">
+            <div className="flex justify-end items-end ">
+              <div className={`pres5 size-[143px] lg:size-[287px] flex justify-center items-center rounded-full ${isPulsing ? 'animate-pulse5' : ''}`}>
+                <div className={`pres4 size-[122px] lg:size-[246px] flex justify-center items-center  rounded-full${isPulsing ? 'animate-pulse4' : ''}`}>
+                  <div className={`pres3 size-[106px] lg:size-[213px] flex justify-center items-center rounded-full ${isPulsing ? 'animate-pulse3' : ''}`}>
+                    <div className={`pres2 size-[85px] lg:size-[171px] flex justify-center items-center  rounded-full${isPulsing ? 'animate-pulse2' : ''}`}>
                       <div
-                        className="cursor-pointer pres_bg flex justify-center items-center relative z-10"
-                      >
+                        className="cursor-pointer size-[68px] lg:size-[137px] pres_bg flex justify-center items-center rounded-full relative z-10">
                         PRESS <br /> HERE
                       </div>
                     </div>
@@ -57,7 +56,7 @@ const CreatorFree = () => {
                 </div>
               </div>
             </div>
-            <h3 className="sell_text">Sell without ads</h3>
+            <h3 className="sell_text lg:text-[48px] text-[32px] ">Sell without ads</h3>
           </div>
         </div>
       </div>

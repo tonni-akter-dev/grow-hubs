@@ -138,32 +138,31 @@ button {
   background: linear-gradient(180deg,
       rgba(205, 230, 248, 0.05) 0%,
       rgba(249, 225, 182, 0.05) 94.71%);
-  width: 287px;
-  height: 287px;
-  flex-shrink: 0;
-  aspect-ratio: 1/1;
-  border-radius: 287px;
+
 }
 
 .pres4 {
   background-image: url("/home/pres4.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pres3 {
   background-image: url("/home/pres3.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pres2 {
   background-image: url("/home/pres2.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pres_bg {
   background-image: url("/home/pres_bg.svg");
-  width: 137.76px;
-  height: 137.76px;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-shrink: 0;
   color: #093669;
   text-align: center;
@@ -174,14 +173,11 @@ button {
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
-  /* 188.235% */
   letter-spacing: 4px;
 }
 
 .sell_text {
   text-align: center;
-  font-family: "Clash Display Variable";
-  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
@@ -296,7 +292,7 @@ button {
 
 
 
- @keyframes pulse {
+@keyframes pulse {
   0% {
     transform: scale(1);
     opacity: 1;
@@ -306,9 +302,9 @@ button {
     transform: scale(1.2);
     opacity: 0;
   }
-} */
+}
 
- .animate-pulse2 {
+*/ .animate-pulse2 {
   animation: pulse 1.5s ease-out;
 }
 
@@ -555,9 +551,30 @@ button {
 }
 
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 32px);
+  max-width: 1920px;
+}
+
+@media (min-width: 1024px) and (max-width:1920px) {
+  .container {
+    width: calc(100% - 200px);
+  }
+}
+
+.tool_special_card h6 {
+  background: var(--Gold-main, radial-gradient(50% 50% at 50% 50%, #FBFD89 24%, #FFD900 87%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tool_special_card a {
+  background: var(--Gold-main, radial-gradient(50% 50% at 50% 50%, #FBFD89 24%, #FFD900 87%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .product2_bg {
@@ -828,6 +845,12 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .pres_bg {
+    font-size: 10px !important;
+    line-height: 15.944px !important;
+    letter-spacing: 1.993px !important;
+  }
+
   .course_bg {
     background-image: url("/home/service11.png");
     height: 300px;
@@ -871,10 +894,10 @@ footer {
     width: 351px;
   }
 
-  .container {
+  /* .container {
     padding-left: 16px;
     padding-right: 16px;
-  }
+  } */
 
   .header {
     border-bottom: none;
@@ -929,10 +952,10 @@ footer {
     width: 88%;
   }
 
-  .container {
+  /* .container {
     padding-left: 16px;
     padding-right: 16px;
-  }
+  } */
 
   .header {
     border-bottom: none;

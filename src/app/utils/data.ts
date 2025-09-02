@@ -36,11 +36,9 @@ import s6 from '/public/home/s6.svg'
 import s66 from '/public/home/s66.svg'
 import s7 from '/public/home/s7.svg'
 import s77 from '/public/home/s77.svg'
-
 import pay from "/public/home/pay.png"
 import commision from "/public/home/commission.png"
 import network from "/public/home/network.png"
-
 import t1 from '/public/home/t1.svg'
 import t2 from '/public/home/t2.svg'
 import t3 from '/public/home/t3.svg'
@@ -100,6 +98,18 @@ export const tools = [
         title: "Emails",
         description: "Showcase your expertise with a personal profile that sells for you.",
         icon: t6,
+    },
+    {
+        title: "Co-sell network",
+        description: "Collaborate with others to sell more without ad spend or extra effort.",
+        icon: t6,
+
+    },
+    {
+        title: "Enterprise plan",
+        description: "Full white-label platform hosted on a dedicated, auto-scaling server. Includes branding freedom, private content protection, and 24/7 service availability.",
+        icon: t6,
+        special: true,
     }
 ];
 export const features = [

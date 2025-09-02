@@ -31,13 +31,13 @@ const TrustedBy = () => {
         <div className="hidden lg:block">
           <Marquee speed={25} direction="right">
             <div className="flex gap-[51px] items-center">
-              <Image className="lg:h-10 w-full " src={t1} alt="" />
+              <Image className="lg:h-7 w-full " src={t1} alt="" />
               <Image className="lg:h-10 w-full " src={t2} alt="" />
               <Image className="lg:h-10 w-full " src={t3} alt="" />
               <Image className="lg:h-10 w-full " src={t4} alt="" />
               <Image className="lg:h-10 w-full " src={t5} alt="" />
               <Image className="lg:h-10 w-full " src={t6} alt="" />
-              <Image className=" h-[30px] lg:h-10 mr-[51px]" src={t7} alt="" />
+              <Image className=" h-[30px] lg:h-5 mr-[51px]" src={t7} alt="" />
             </div>
           </Marquee>
         </div>

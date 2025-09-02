@@ -45,10 +45,10 @@ const PodCasts = () => {
         </motion.div>
 
         <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+     initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.3 }}
           className="absolute top-[51%] lg:top-[55%] right-[70px] lg:right-[29px] lg:w-fit w-[170px]"
         >
           <Image src={service2} alt="" />

@@ -15,7 +15,7 @@ const Coaching = () => {
     >
       {/* Left content */}
       <div className="lg:pt-[135px] text-left lg:ps-[96px] p-6">
-        <h3 className="text-h3 text-neutral-50 font-semibold leading-[35px]">
+        <h3 className="text-h3 text-neutral-50 font-semibold leading-[35px] lg:whitespace-nowrap">
           Coaching & Consulting
         </h3>
         <div className="max-w-[381px] space-y-5 text-body text-white mt-4">
@@ -46,10 +46,10 @@ const Coaching = () => {
         </motion.div>
 
         <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+     initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.3 }}
           className="absolute top-[14%] right-[26px] lg:w-fit w-[170px]"
         >
           <Image src={service2} alt="" />
