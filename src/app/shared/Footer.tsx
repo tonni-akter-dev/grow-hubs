@@ -1,7 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import footerrightshadow from '../../../public/home/footer-right-shadow.png';
-import footerleftShadow from '../../../public/home/footerleftShadow.png';
 
 const Footer = () => {
   return (

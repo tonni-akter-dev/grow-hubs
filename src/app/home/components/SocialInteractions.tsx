@@ -120,11 +120,11 @@ const SocialInteractions = () => {
       {startAnimations && (
         <>
           <div ref={rightBallRef} className="absolute right-0 top-10">
-            {/* <Image
+            <Image
               src={creatorrightball}
               alt=""
               className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36"
-            /> */}
+            />
           </div>
           <div ref={leftBallRef} className="absolute left-0 bottom-16">
             <Image

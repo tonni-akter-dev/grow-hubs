@@ -40,12 +40,12 @@ const TrustedSlider = () => {
         loop={true}
         className="mySwiper relative z-20"
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // }}
-        // modules={[Autoplay]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        modules={[Autoplay]}
         initialSlide={3}
         breakpoints={{
           320: { slidesPerView: 2, spaceBetween: 20 },
