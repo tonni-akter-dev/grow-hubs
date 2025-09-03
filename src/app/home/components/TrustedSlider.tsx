@@ -10,11 +10,10 @@ import TestimonialCard from "./TestimonialCard";
 
 const TrustedSlider = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const swiperRef = useRef<any>(null); // reference to the swiper instance
+  const swiperRef = useRef<any>(null);
 
-  // Pause autoplay when modal opens
   useEffect(() => {
-    if (swiperRef.current) {
+    if (swiperRef.current && swiperRef.current.autoplay) {
       if (isOpen) {
         swiperRef.current.autoplay.stop();
       } else {
@@ -41,12 +40,12 @@ const TrustedSlider = () => {
         loop={true}
         className="mySwiper relative z-20"
         centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        modules={[Autoplay]}
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
+        // modules={[Autoplay]}
         initialSlide={3}
         breakpoints={{
           320: { slidesPerView: 2, spaceBetween: 20 },

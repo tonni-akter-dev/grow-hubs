@@ -123,9 +123,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   return (
     <>
       <div
-        className="max-w-[400px] lg:max-w-[1230px]  flex gap-[42px] rounded-4xl bg-white py-5 ps-6 pb-[22px] pe-8 mx-auto w-full"
-        style={{ boxShadow: "0 8px 28px 0 rgba(20, 20, 43, 0.10)" }}
-      >
+        className="max-w-[400px] lg:max-w-[1230px]  flex lg:gap-[42px] rounded-4xl bg-white py-5 ps-6 pb-[22px] pe-8 mx-auto w-full"
+        style={{ boxShadow: "0 8px 28px 0 rgba(20, 20, 43, 0.10)" }}>
         <div className="relative">
           {/* Image */}
           <Image
@@ -170,7 +169,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           </div>
 
           {/* tags */}
-          <div className="flex gap-3 items-center mb-10 flex-wrap mt-5">
+          <div className="lg:flex gap-3 items-center mb-10 flex-wrap mt-5">
             {data.tags.map((tag, index) => (
               <button
                 key={index}
@@ -181,7 +180,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             ))}
           </div>
 
-          <p className="text-h4 text-[#030711] leading-[38px] tracking-[-0.28px] lg:max-w-[495px] mb-10">
+          <p className="lg:text-h4 text-[#030711] leading-[38px] tracking-[-0.28px] lg:max-w-[495px] mb-10">
             {data.text}
           </p>
 
