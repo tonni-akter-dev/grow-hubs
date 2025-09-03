@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React, { useState } from "react";
 import trustedimg from "../../../../public/home/trustedimg.png";
 import profile from "../../../../public/home/profile.png";
 import play from "../../../../public/home/play.png";
