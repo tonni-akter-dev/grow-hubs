@@ -22,438 +22,470 @@ import r6 from "/public/home/r6.svg";
 import r7 from "/public/home/r7.svg";
 import r8 from "/public/home/r8.svg";
 import r9 from "/public/home/r9.svg";
-import s1 from '/public/home/s1.png'
-import s11 from '/public/home/s11.png'
-import s3 from '/public/home/s.svg'
-import s33 from '/public/home/s33.svg'
-import s2 from '/public/home/s2.svg'
-import s22 from '/public/home/s22.svg'
-import s4 from '/public/home/s4.png'
-import s44 from '/public/home/s44.svg'
-import s5 from '/public/home/s5.svg'
-import s55 from '/public/home/s55.svg'
-import s6 from '/public/home/s6.svg'
-import s66 from '/public/home/s66.svg'
-import s7 from '/public/home/s7.svg'
-import s77 from '/public/home/s77.svg'
-import pay from "/public/home/pay.png"
-import commision from "/public/home/commission.png"
-import network from "/public/home/network.png"
-import t1 from '/public/home/t1.svg'
-import t2 from '/public/home/t2.svg'
-import t3 from '/public/home/t3.svg'
-import t4 from '/public/home/t4.svg'
-import t5 from '/public/home/t5.svg'
-import t6 from '/public/home/t6.svg'
+import s1 from "/public/home/s1.png";
+import s11 from "/public/home/s11.png";
+import s3 from "/public/home/s.svg";
+import s33 from "/public/home/s33.svg";
+import s2 from "/public/home/s2.svg";
+import s22 from "/public/home/s22.svg";
+import s4 from "/public/home/s4.png";
+import s44 from "/public/home/s44.svg";
+import s5 from "/public/home/s5.svg";
+import s55 from "/public/home/s55.svg";
+import s6 from "/public/home/s6.svg";
+import s66 from "/public/home/s66.svg";
+import s7 from "/public/home/s7.svg";
+import s77 from "/public/home/s77.svg";
+import pay from "/public/home/pay.png";
+import commision from "/public/home/commission.png";
+import network from "/public/home/network.png";
+import t1 from "/public/home/t1.svg";
+import t2 from "/public/home/t2.svg";
+import t3 from "/public/home/t3.svg";
+import t4 from "/public/home/t4.svg";
+import t5 from "/public/home/t5.svg";
+import t6 from "/public/home/t6.svg";
 
 export const primaryIcons = [
-    { src: "/home/c1.png", alt: "Courses", id: "courses" },
-    { src: "/home/c2.png", alt: "Short Videos", id: "short-videos" },
-    { src: "/home/c3.png", alt: "Blogs", id: "blogs" },
+  { src: "/home/c1.png", alt: "Courses", id: "courses" },
+  { src: "/home/c2.png", alt: "Short Videos", id: "short-videos" },
+  { src: "/home/c3.png", alt: "Blogs", id: "blogs" },
 ];
 
 export const secondaryIcons = [
-    { src: "/home/c4.png", alt: "Podcasts", id: "podcasts" },
-    { src: "/home/c5.png", alt: "Consultants", id: "consultants" },
-    { src: "/home/c7.png", alt: "Threads", id: "threads" },
-    { src: "/home/c7.png", alt: "Threads", id: "threads2" },
-    { src: "/home/c8.png", alt: "Webinars", id: "webinars" },
+  { src: "/home/c4.png", alt: "Podcasts", id: "podcasts" },
+  { src: "/home/c5.png", alt: "Consultants", id: "consultants" },
+  { src: "/home/c7.png", alt: "Threads", id: "threads" },
+  { src: "/home/c7.png", alt: "Threads", id: "threads2" },
+  { src: "/home/c8.png", alt: "Webinars", id: "webinars" },
 ];
 
 export const tertiaryIcons = [
-    { src: "/home/c9.png", alt: "Live Streaming", id: "live-streaming" },
-    { src: "/home/c10.png", alt: "Assessments", id: "assessments" },
-    { src: "/home/c11.png", alt: "Merchandise", id: "merchandise" },
-    { src: "/home/c1.png", alt: "E-books", id: "ebooks" },
-    { src: "/home/c2.png", alt: "Tutorials", id: "tutorials" },
-    { src: "/home/c3.png", alt: "Workshops", id: "workshops" },
+  { src: "/home/c9.png", alt: "Live Streaming", id: "live-streaming" },
+  { src: "/home/c10.png", alt: "Assessments", id: "assessments" },
+  { src: "/home/c11.png", alt: "Merchandise", id: "merchandise" },
+  { src: "/home/c1.png", alt: "E-books", id: "ebooks" },
+  { src: "/home/c2.png", alt: "Tutorials", id: "tutorials" },
+  { src: "/home/c3.png", alt: "Workshops", id: "workshops" },
 ];
 export const tools = [
-    {
-        title: "Payments",
-        description: "Responsibly sourced woods and eco-friendly fabrics for a better tomorrow.",
-        icon: t1,
-    },
-    {
-        title: "Analytics",
-        description: "Understand your growth with smart, built-in analytics.",
-        icon: t2,
-    },
-    {
-        title: "Newsletters",
-        description: "build your audience with engaging, branded newsletter.",
-        icon: t3,
-    },
-    {
-        title: "Pages",
-        description: "Showcase your expertise with a personal profile that sells for you.",
-        icon: t4,
-    },
-    {
-        title: "Contact",
-        description: "Organize your contacts and turn them into your most valuable asset.,",
-        icon: t5,
-    },
-    {
-        title: "Emails",
-        description: "Showcase your expertise with a personal profile that sells for you.",
-        icon: t6,
-    },
-    {
-        title: "Co-sell network",
-        description: "Collaborate with others to sell more without ad spend or extra effort.",
-        icon: t6,
-
-    },
-    {
-        title: "Enterprise plan",
-        description: "Full white-label platform hosted on a dedicated, auto-scaling server. Includes branding freedom, private content protection, and 24/7 service availability.",
-        icon: t6,
-        special: true,
-    }
+  {
+    title: "Payments",
+    description:
+      "Responsibly sourced woods and eco-friendly fabrics for a better tomorrow.",
+    icon: t1,
+  },
+  {
+    title: "Analytics",
+    description: "Understand your growth with smart, built-in analytics.",
+    icon: t2,
+  },
+  {
+    title: "Newsletters",
+    description: "build your audience with engaging, branded newsletter.",
+    icon: t3,
+  },
+  {
+    title: "Pages",
+    description:
+      "Showcase your expertise with a personal profile that sells for you.",
+    icon: t4,
+  },
+  {
+    title: "Contact",
+    description:
+      "Organize your contacts and turn them into your most valuable asset.,",
+    icon: t5,
+  },
+  {
+    title: "Emails",
+    description:
+      "Showcase your expertise with a personal profile that sells for you.",
+    icon: t6,
+  },
+  {
+    title: "Co-sell network",
+    description:
+      "Collaborate with others to sell more without ad spend or extra effort.",
+    icon: t6,
+  },
+  {
+    title: "Enterprise plan",
+    description:
+      "Full white-label platform hosted on a dedicated, auto-scaling server. Includes branding freedom, private content protection, and 24/7 service availability.",
+    icon: t6,
+    special: true,
+  },
 ];
 export const features = [
-    {
-        title: "Pay Only When You Earn",
-        description: "No monthly fees or ad costs. We grow with your success.",
-        icon: pay,
-    },
-    {
-        title: "You Set the Commission",
-        description: "Decide how much to share with members who help you sell.",
-        icon: commision,
-    },
-    {
-        title: "Earn From the Network",
-        description: "Sell your content or earn by helping others grow.",
-        icon: network,
-    },
+  {
+    title: "Pay Only When You Earn",
+    description: "No monthly fees or ad costs. We grow with your success.",
+    icon: pay,
+  },
+  {
+    title: "You Set the Commission",
+    description: "Decide how much to share with members who help you sell.",
+    icon: commision,
+  },
+  {
+    title: "Earn From the Network",
+    description: "Sell your content or earn by helping others grow.",
+    icon: network,
+  },
 ];
 export const products1 = [
-    {
-        title: "Courses",
-        description: "Share and profit from your expertise by creating and publishing courses.",
-        icon: m1,
-        bgEffect: "hover:bg-[#E8F2FF]",
-        textEffect: "group-hover/parent:text-[#105BB2]"
-    },
-    {
-        title: "Community",
-        description: "Create a community to share value, and turn members into loyal customers.",
-        icon: m2,
-        bgEffect: "hover:bg-[#F7EBFD]",
-        textEffect: "group-hover/parent:text-[#5500aa]"
-    },
-    {
-        title: "Coaching & Consulting",
-        description: "Monetise Your Expertise by Creating a consultancy profile page to share it online.",
-        icon: m3,
-        bgEffect: "hover:bg-[#FBE6E6]",
-        textEffect: "group-hover/parent:text-[#980000]"
-    },
-    {
-        title: "Merchandise",
-        description: "Expand Your Revenue Streams. Sell retail products to complement your services.",
-        icon: m4,
-        bgEffect: "hover:bg-[#F7EBFD]",
-        textEffect: "group-hover/parent:text-[#7B26A8]"
-    },
-    {
-        title: "Podcasts",
-        description: "Create, publish, and monetize podcasts effortlessly from your dashboard on all",
-        icon: m5,
-        bgEffect: "hover:bg-[#fff8eb]",
-        textEffect: "group-hover/parent:text-[#b48624]"
-    },
-    {
-        title: "Events",
-        description: "Gather your audience in one place for more growth and success.",
-        icon: m6,
-        bgEffect: "hover:bg-[#fff0ea]",
-        textEffect: "group-hover/parent:text-[#980000]"
-    },
-    {
-        title: "Brokerage",
-        description: "Connect creators, clients, and products in the platform, and earn a commission",
-        icon: m7,
-        bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover/parent:text-[#158374]"
-    }
+  {
+    title: "Courses",
+    description:
+      "Share and profit from your expertise by creating and publishing courses.",
+    icon: m1,
+    bgEffect: "hover:bg-[#E8F2FF]",
+    textEffect: "group-hover/parent:text-[#105BB2]",
+  },
+  {
+    title: "Community",
+    description:
+      "Create a community to share value, and turn members into loyal customers.",
+    icon: m2,
+    bgEffect: "hover:bg-[#F7EBFD]",
+    textEffect: "group-hover/parent:text-[#5500aa]",
+  },
+  {
+    title: "Coaching & Consulting",
+    description:
+      "Monetise Your Expertise by Creating a consultancy profile page to share it online.",
+    icon: m3,
+    bgEffect: "hover:bg-[#FBE6E6]",
+    textEffect: "group-hover/parent:text-[#980000]",
+  },
+  {
+    title: "Merchandise",
+    description:
+      "Expand Your Revenue Streams. Sell retail products to complement your services.",
+    icon: m4,
+    bgEffect: "hover:bg-[#F7EBFD]",
+    textEffect: "group-hover/parent:text-[#7B26A8]",
+  },
+  {
+    title: "Podcasts",
+    description:
+      "Create, publish, and monetize podcasts effortlessly from your dashboard on all",
+    icon: m5,
+    bgEffect: "hover:bg-[#fff8eb]",
+    textEffect: "group-hover/parent:text-[#b48624]",
+  },
+  {
+    title: "Events",
+    description:
+      "Gather your audience in one place for more growth and success.",
+    icon: m6,
+    bgEffect: "hover:bg-[#fff0ea]",
+    textEffect: "group-hover/parent:text-[#980000]",
+  },
+  {
+    title: "Brokerage",
+    description:
+      "Connect creators, clients, and products in the platform, and earn a commission",
+    icon: m7,
+    bgEffect: "hover:bg-[#e8f8f6]",
+    textEffect: "group-hover/parent:text-[#158374]",
+  },
 ];
 export const products2 = [
-    {
-        title: "Co-sales",
-        description: "Share and profit from your expertise by creating and publishing courses.",
-        icon: m11,
-        bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover/parent:text-[#7B26A8]"
-    },
-    {
-        title: "Email Marketing",
-        description: "Draft, send and manage marketing emails with ease.",
-        icon: m12,
-        bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover/parent:text-[#105BB2]"
-    },
-    {
-        title: "Funnels & Automations",
-        description: "Create sales funnels and automate processes to boost your income easy.",
-        icon: m13,
-        bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover/parent:text-[#7B26A8]"
-    },
-    {
-        title: "Third party integrations",
-        description: "Integrate to many available tools to solidify your online business.",
-        icon: m14,
-        bgEffect: "hover:bg-[#fff8eb]",
-        textEffect: "group-hover/parent:text-[#b48624]"
-    }
+  {
+    title: "Co-sales",
+    description:
+      "Share and profit from your expertise by creating and publishing courses.",
+    icon: m11,
+    bgEffect: "hover:bg-[#f2e6fe]",
+    textEffect: "group-hover/parent:text-[#7B26A8]",
+  },
+  {
+    title: "Email Marketing",
+    description: "Draft, send and manage marketing emails with ease.",
+    icon: m12,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover/parent:text-[#105BB2]",
+  },
+  {
+    title: "Funnels & Automations",
+    description:
+      "Create sales funnels and automate processes to boost your income easy.",
+    icon: m13,
+    bgEffect: "hover:bg-[#f2e6fe]",
+    textEffect: "group-hover/parent:text-[#7B26A8]",
+  },
+  {
+    title: "Third party integrations",
+    description:
+      "Integrate to many available tools to solidify your online business.",
+    icon: m14,
+    bgEffect: "hover:bg-[#fff8eb]",
+    textEffect: "group-hover/parent:text-[#b48624]",
+  },
 ];
 export const products3 = [
-    {
-        title: "Embed anywhere",
-        description: "Add Growhubs content to your website with one embed code",
-        icon: m21,
-        bgEffect: "hover:bg-[#fbe6e6]",
-        textEffect: "group-hover/parent:text-[#980000]"
-    },
-    {
-        title: "Analytics & Performance",
-        description: "Leverage the right metrics with reports designed for practical insights.",
-        icon: m22,
-        bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover/parent:text-[#105BB2]"
-    },
-    {
-        title: "Contacts CRM",
-        description: "Bring your contacts and audience to turn them in one of your biggest assets ",
-        icon: m23,
-        bgEffect: "hover:bg-[#fff8eb]",
-        textEffect: "group-hover/parent:text-[#b48624]"
-    },
-    {
-        title: "Time management",
-        description: "Leverage our unique calendar features for bringing time efficiency in your business.",
-        icon: m24,
-        bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover/parent:text-[#158374]"
-    }
+  {
+    title: "Embed anywhere",
+    description: "Add Growhubs content to your website with one embed code",
+    icon: m21,
+    bgEffect: "hover:bg-[#fbe6e6]",
+    textEffect: "group-hover/parent:text-[#980000]",
+  },
+  {
+    title: "Analytics & Performance",
+    description:
+      "Leverage the right metrics with reports designed for practical insights.",
+    icon: m22,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover/parent:text-[#105BB2]",
+  },
+  {
+    title: "Contacts CRM",
+    description:
+      "Bring your contacts and audience to turn them in one of your biggest assets ",
+    icon: m23,
+    bgEffect: "hover:bg-[#fff8eb]",
+    textEffect: "group-hover/parent:text-[#b48624]",
+  },
+  {
+    title: "Time management",
+    description:
+      "Leverage our unique calendar features for bringing time efficiency in your business.",
+    icon: m24,
+    bgEffect: "hover:bg-[#e8f8f6]",
+    textEffect: "group-hover/parent:text-[#158374]",
+  },
 ];
 export const resource1 = [
-    {
-        title: "Blog",
-        description: "Create and publish your own blog posts, and start earning from your insights.",
-        icon: r1,
-        bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover/parent:text-[#105BB2]"
-    },
-    {
-        title: "Creator Stories",
-        description: "Shares valuable insights, transforming members into dedicated customers.",
-        icon: r2,
-        bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover/parent:text-[#5500aa]"
-    },
-    {
-        title: "Training Webinars",
-        description: "Setting up a consultancy profile page to promote your training webinars online.",
-        icon: r3,
-        bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover/parent:text-[#158374]"
-    },
+  {
+    title: "Blog",
+    description:
+      "Create and publish your own blog posts, and start earning from your insights.",
+    icon: r1,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover/parent:text-[#105BB2]",
+  },
+  {
+    title: "Creator Stories",
+    description:
+      "Shares valuable insights, transforming members into dedicated customers.",
+    icon: r2,
+    bgEffect: "hover:bg-[#f2e6fe]",
+    textEffect: "group-hover/parent:text-[#5500aa]",
+  },
+  {
+    title: "Training Webinars",
+    description:
+      "Setting up a consultancy profile page to promote your training webinars online.",
+    icon: r3,
+    bgEffect: "hover:bg-[#e8f8f6]",
+    textEffect: "group-hover/parent:text-[#158374]",
+  },
 ];
 export const resource2 = [
-    {
-        title: "Become a Partner",
-        description: "Leverage your knowledge and earn by developing and offering courses.",
-        icon: r4,
-        bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover/parent:text-[#b48624]"
-    },
-    {
-        title: "Product Updates",
-        description: "Easily create, send, and oversee your marketing emails with our latest updates.",
-        icon: r5,
-        bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover/parent:text-[#5500aa]"
-    },
-    {
-        title: "FAQs",
-        description: "Quickly create, send, and organize your frequently asked questions.",
-        icon: r6,
-        bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover/parent:text-[#105BB2]"
-    },
+  {
+    title: "Become a Partner",
+    description:
+      "Leverage your knowledge and earn by developing and offering courses.",
+    icon: r4,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover/parent:text-[#b48624]",
+  },
+  {
+    title: "Product Updates",
+    description:
+      "Easily create, send, and oversee your marketing emails with our latest updates.",
+    icon: r5,
+    bgEffect: "hover:bg-[#f2e6fe]",
+    textEffect: "group-hover/parent:text-[#5500aa]",
+  },
+  {
+    title: "FAQs",
+    description:
+      "Quickly create, send, and organize your frequently asked questions.",
+    icon: r6,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover/parent:text-[#105BB2]",
+  },
 ];
 export const resource3 = [
-    {
-        title: "Contact Support",
-        description: "Add Growhubs content to your website with one embed code",
-        icon: r7,
-        bgEffect: "hover:bg-[#e8f2ff]",
-        textEffect: "group-hover/parent:text-[#105BB2]"
-    },
-    {
-        title: "Help Center",
-        description: "Leverage the right metrics with reports designed for practical insights.",
-        icon: r8,
-        bgEffect: "hover:bg-[#e8f8f6]",
-        textEffect: "group-hover/parent:text-[#158374]"
-    },
-    {
-        title: "Hire an Expert",
-        description: "Bring your contacts and audience to turn them in one of your biggest assets ",
-        icon: r9,
-        bgEffect: "hover:bg-[#f2e6fe]",
-        textEffect: "group-hover/parent:text-[#5500aa]"
-    },
+  {
+    title: "Contact Support",
+    description: "Add Growhubs content to your website with one embed code",
+    icon: r7,
+    bgEffect: "hover:bg-[#e8f2ff]",
+    textEffect: "group-hover/parent:text-[#105BB2]",
+  },
+  {
+    title: "Help Center",
+    description:
+      "Leverage the right metrics with reports designed for practical insights.",
+    icon: r8,
+    bgEffect: "hover:bg-[#e8f8f6]",
+    textEffect: "group-hover/parent:text-[#158374]",
+  },
+  {
+    title: "Hire an Expert",
+    description:
+      "Bring your contacts and audience to turn them in one of your biggest assets ",
+    icon: r9,
+    bgEffect: "hover:bg-[#f2e6fe]",
+    textEffect: "group-hover/parent:text-[#5500aa]",
+  },
 ];
 
 export const stats = [
-    {
-        title: "CO-SELLERS IN NETWORK",
-        value: "21,500+",
-        description: "People who can co-promote"
-    },
-    {
-        title: "EXPECTED BUYERS / MONTH",
-        value: "86",
-        description: "With zero personal audience"
-    },
-    {
-        title: "EST. MRR AT US$9/MO",
-        value: "US$774",
-        description: "From membership sales"
-    },
-    {
-        title: "EARN W/O A PRODUCT",
-        value: "US$300",
-        description: "Just by co-selling"
-    }
-]
+  {
+    title: "CO-SELLERS IN NETWORK",
+    value: "21,500+",
+    description: "People who can co-promote",
+  },
+  {
+    title: "EXPECTED BUYERS / MONTH",
+    value: "86",
+    description: "With zero personal audience",
+  },
+  {
+    title: "EST. MRR AT US$9/MO",
+    value: "US$774",
+    description: "From membership sales",
+  },
+  {
+    title: "EARN W/O A PRODUCT",
+    value: "US$300",
+    description: "Just by co-selling",
+  },
+];
 
 export const buttons = [
-    {
-        key: 'courses',
-        label: 'Courses',
-        activeGradient: 'bg-[linear-gradient(214deg,#3F7DFF_20.22%,#2E9FE5_77.53%)]',
-        imgActive: s11,
-        imgInactive: s1,
-    },
-    {
-        key: 'communities',
-        label: 'Communities',
-        activeGradient: 'bg-[linear-gradient(214deg,#9F3FFF_20.22%,#892EE5_77.53%)]',
-        imgActive: s22,
-        imgInactive: s2,
-    },
-    {
-        key: 'coaching',
-        label: 'Coaching & Consulting',
-        activeGradient: 'bg-[linear-gradient(214deg,#F75757_20.22%,#F70808_77.53%)]',
-        imgActive: s33,
-        imgInactive: s3,
-    },
-    {
-        key: 'merchandise',
-        label: 'Merchandise',
-        activeGradient: 'bg-[linear-gradient(21deg,#76CA00_20.22%,#579600_77.53%)]',
-        imgActive: s44,
-        imgInactive: s4,
-    },
-    {
-        key: 'podcasts',
-        label: 'Podcasts',
-        activeGradient: 'bg-[linear-gradient(214deg,#F8B421_20.22%,#D29000_77.53%)]',
-        imgActive: s55,
-        imgInactive: s5,
-    },
-    {
-        key: 'events',
-        label: 'Events',
-        activeGradient: 'bg-[linear-gradient(214deg,#FF723F_20.22%,#E55F2E_77.53%)]',
-        imgActive: s66,
-        imgInactive: s6,
-    },
-    {
-        key: 'brokerage',
-        label: 'Brokerage',
-        activeGradient: 'bg-[linear-gradient(214deg,#05CFB4_20.22%,#00A58F_77.53%)]',
-        imgActive: s77,
-        imgInactive: s7,
-    },
+  {
+    key: "courses",
+    label: "Courses",
+    activeGradient:
+      "bg-[linear-gradient(214deg,#3F7DFF_20.22%,#2E9FE5_77.53%)]",
+    imgActive: s11,
+    imgInactive: s1,
+  },
+  {
+    key: "communities",
+    label: "Communities",
+    activeGradient:
+      "bg-[linear-gradient(214deg,#9F3FFF_20.22%,#892EE5_77.53%)]",
+    imgActive: s22,
+    imgInactive: s2,
+  },
+  {
+    key: "coaching",
+    label: "Coaching & Consulting",
+    activeGradient:
+      "bg-[linear-gradient(214deg,#F75757_20.22%,#F70808_77.53%)]",
+    imgActive: s33,
+    imgInactive: s3,
+  },
+  {
+    key: "merchandise",
+    label: "Merchandise",
+    activeGradient: "bg-[linear-gradient(21deg,#76CA00_20.22%,#579600_77.53%)]",
+    imgActive: s44,
+    imgInactive: s4,
+  },
+  {
+    key: "podcasts",
+    label: "Podcasts",
+    activeGradient:
+      "bg-[linear-gradient(214deg,#F8B421_20.22%,#D29000_77.53%)]",
+    imgActive: s55,
+    imgInactive: s5,
+  },
+  {
+    key: "events",
+    label: "Events",
+    activeGradient:
+      "bg-[linear-gradient(214deg,#FF723F_20.22%,#E55F2E_77.53%)]",
+    imgActive: s66,
+    imgInactive: s6,
+  },
+  {
+    key: "brokerage",
+    label: "Brokerage",
+    activeGradient:
+      "bg-[linear-gradient(214deg,#05CFB4_20.22%,#00A58F_77.53%)]",
+    imgActive: s77,
+    imgInactive: s7,
+  },
 ];
 
 export const testimonials = [
-    {
-        id: 1,
-        name: "Iva Ryan",
-        position: "Marketing manager at Adobe",
-        tags: ["Content Creator", "Youtuber", "Growth Expert"],
-        text: "I recently had the opportunity to use the platform, and I must say, the feature that allows you to set your own commission is a game changer!",
-        amount: "$2M",
-        earnings: "EARNED IN HELENUIL",
-        rating: 5
-    },
-    {
-        id: 2,
-        name: "John Smith",
-        position: "Content Creator at YouTube",
-        tags: ["Content Creator", "Youtuber", "Growth Expert"],
-        text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
-        amount: "$1.5M",
-        earnings: "EARNED IN 6 MONTHS",
-        rating: 3
-    },
-    {
-        id: 3,
-        name: "Sarah Johnson",
-        position: "Digital Marketer at TechCorp",
-        tags: ["Marketer", "Growth Expert"],
-        text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
-        amount: "$3.2M",
-        earnings: "EARNED IN 1 YEAR",
-        rating: 5
-    },
-    {
-        id: 4,
-        name: "John Smith",
-        position: "Content Creator at YouTube",
-        tags: ["Content Creator", "Influencer"],
-        text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
-        amount: "$1.5M",
-        earnings: "EARNED IN 6 MONTHS",
-        rating: 3
-    },
-    {
-        id: 5,
-        name: "Sarah Johnson",
-        position: "Digital Marketer at TechCorp",
-        tags: ["Marketer", "Growth Expert"],
-        text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
-        amount: "$3.2M",
-        earnings: "EARNED IN 1 YEAR",
-        rating: 4
-    },
-    {
-        id: 6,
-        name: "John Smith",
-        position: "Content Creator at YouTube",
-        tags: ["Content Creator", "Influencer"],
-        text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
-        amount: "$1.5M",
-        earnings: "EARNED IN 6 MONTHS",
-        rating: 2
-    },
-    {
-        id: 7,
-        name: "Sarah Johnson",
-        position: "Digital Marketer at TechCorp",
-        tags: ["Marketer", "Growth Expert"],
-        text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
-        amount: "$3.2M",
-        earnings: "EARNED IN 1 YEAR",
-        rating: 5
-    }
+  {
+    id: 1,
+    name: "Iva Ryan",
+    position: "Marketing manager at Adobe",
+    tags: ["Content Creator", "Youtuber"],
+    text: "I recently had the opportunity to use the platform, and I must say, the feature that allows you to set your own commission is a game changer!",
+    amount: "$2M",
+    earnings: "EARNED IN HELENUIL",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "John Smith",
+    position: "Content Creator at YouTube",
+    tags: ["Content Creator", "Youtuber"],
+    text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
+    amount: "$1.5M",
+    earnings: "EARNED IN 6 MONTHS",
+    rating: 3,
+  },
+  {
+    id: 3,
+    name: "Sarah Johnson",
+    position: "Digital Marketer at TechCorp",
+    tags: ["Marketer", "Growth Expert"],
+    text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
+    amount: "$3.2M",
+    earnings: "EARNED IN 1 YEAR",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "John Smith",
+    position: "Content Creator at YouTube",
+    tags: ["Content Creator", "Influencer"],
+    text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
+    amount: "$1.5M",
+    earnings: "EARNED IN 6 MONTHS",
+    rating: 3,
+  },
+  {
+    id: 5,
+    name: "Sarah Johnson",
+    position: "Digital Marketer at TechCorp",
+    tags: ["Marketer", "Growth Expert"],
+    text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
+    amount: "$3.2M",
+    earnings: "EARNED IN 1 YEAR",
+    rating: 4,
+  },
+  {
+    id: 6,
+    name: "John Smith",
+    position: "Content Creator at YouTube",
+    tags: ["Content Creator", "Influencer"],
+    text: "This platform has completely transformed how I monetize my content. The analytics are incredibly detailed and helpful!",
+    amount: "$1.5M",
+    earnings: "EARNED IN 6 MONTHS",
+    rating: 2,
+  },
+  {
+    id: 7,
+    name: "Sarah Johnson",
+    position: "Digital Marketer at TechCorp",
+    tags: ["Marketer", "Growth Expert"],
+    text: "The customization options and user-friendly interface made it easy to set up campaigns that actually convert.",
+    amount: "$3.2M",
+    earnings: "EARNED IN 1 YEAR",
+    rating: 5,
+  },
 ];
