@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import creatorrightball from "../../../../public/home/creator-right-ball.png";
@@ -20,9 +20,11 @@ const SocialInteractions = () => {
   const [startAnimations, setStartAnimations] = useState(false);
   const [typingFinished, setTypingFinished] = useState(false);
   const [secondTypingFinished, setSecondTypingFinished] = useState(false);
+  const [showFirstSlider, setShowFirstSlider] = useState(false);
+  const [showSecondSlider, setShowSecondSlider] = useState(false);
 
-  // 🔑 This forces Typewriter to restart each cycle
-  const [resetKey, setResetKey] = useState(0);
+  // 🔑 New cycle counter to reset everything in a loop
+  const [cycleKey, setCycleKey] = useState(0);
 
   const isInView = useInView(sectionRef, { once: true, margin: "-200px" });
 
@@ -32,30 +34,45 @@ const SocialInteractions = () => {
 
   useEffect(() => {
     if (startAnimations && rightBallRef.current && leftBallRef.current) {
+      // Right ball animation - moving left and down in a wave pattern
       rightBallRef.current.animate(
         [
           { transform: "translateX(0) translateY(0)" },
-          { transform: "translateX(-300px) translateY(540px)" },
-          { transform: "translateX(-600px) translateY(30px)" },
-          { transform: "translateX(-900px) translateY(400px)" },
-          { transform: "translateX(-1200px) translateY(200px)" },
-          { transform: "translateX(-1400px) translateY(0)" },
+          { transform: "translateX(-100px) translateY(80px)" },
+          { transform: "translateX(-200px) translateY(20px)" },
+          { transform: "translateX(-300px) translateY(100px)" },
+          { transform: "translateX(-400px) translateY(40px)" },
+          { transform: "translateX(-500px) translateY(120px)" },
+          { transform: "translateX(-600px) translateY(60px)" },
         ],
-        { duration: 14000, iterations: Infinity, direction: "alternate", easing: "ease-in-out" }
+        {
+          duration: 20000,
+          iterations: Infinity,
+          easing: "ease-in-out",
+        }
       );
+      
+      // Left ball animation - moving right and up in a wave pattern
       leftBallRef.current.animate(
         [
           { transform: "translateX(0px) translateY(0px)" },
           { transform: "translateX(150px) translateY(-500px)" },
-          { transform: "translateX(200px) translateY(300px)" },
-          { transform: "translateX(200px) translateY(200px)" },
-          { transform: "translateX(200px) translateY(150px)" },
-          { transform: "translateX(200px) translateY(0)" },
+          { transform: "translateX(160px) translateY(-60px)" },
+          { transform: "translateX(240px) translateY(-180px)" },
+          { transform: "translateX(320px) translateY(-90px)" },
+          { transform: "translateX(400px) translateY(-200px)" },
+          { transform: "translateX(480px) translateY(-100px)" },
         ],
-        { duration: 14000, iterations: Infinity, direction: "alternate", easing: "ease-in-out" }
+        {
+          duration: 2000,
+          iterations: Infinity,
+          easing: "ease-in-out",
+        }
       );
     }
   }, [startAnimations]);
+
+
 
   // When first slider finishes → move to second stage
   const handleIconsSliderComplete = () => {
@@ -63,16 +80,36 @@ const SocialInteractions = () => {
     setTimeout(() => setShowSecondText(true), 500);
   };
 
-  // When second slider finishes → restart loop
+  // When second slider finishes → restart whole cycle
   const handleNotThemComplete = () => {
     setTimeout(() => {
       setStage("first");
       setShowSecondText(false);
+      setShowFirstSlider(false);
+      setShowSecondSlider(false);
       setTypingFinished(false);
       setSecondTypingFinished(false);
-      setResetKey((prev) => prev + 1); 
+      setCycleKey((prev) => prev + 1); // reset EVERYTHING
     }, 1000);
   };
+
+  // Show first slider with slide effect when typing is finished
+  useEffect(() => {
+    if (typingFinished) {
+      setTimeout(() => {
+        setShowFirstSlider(true);
+      }, 300);
+    }
+  }, [typingFinished]);
+
+  // Show second slider with slide effect when second typing is finished
+  useEffect(() => {
+    if (secondTypingFinished) {
+      setTimeout(() => {
+        setShowSecondSlider(true);
+      }, 300);
+    }
+  }, [secondTypingFinished]);
 
   return (
     <div
@@ -83,10 +120,18 @@ const SocialInteractions = () => {
       {startAnimations && (
         <>
           <div ref={rightBallRef} className="absolute right-0 top-10">
-            <Image src={creatorrightball} alt="" className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36" />
+            <Image
+              src={creatorrightball}
+              alt=""
+              className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36"
+            />
           </div>
           <div ref={leftBallRef} className="absolute left-0 bottom-16">
-            <Image src={creatorleftball} alt="" className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36" />
+            <Image
+              src={creatorleftball}
+              alt=""
+              className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36"
+            />
           </div>
         </>
       )}
@@ -102,18 +147,27 @@ const SocialInteractions = () => {
       </h2>
 
       <p className="text-neutral-9 font-medium text-body-sm lg:text-h6 leading-[150%] text-center mb-4">
-        Growhubs is built on collaboration — no data <br /> mining, no ad chasing, just growth.
+        Growhubs is built on collaboration — no data <br /> mining, no ad
+        chasing, just growth.
       </p>
 
-      {/* Typewriter */}
+      {/* Typewriter Section */}
       <div className="min-h-[60px] flex items-center justify-center">
         {startAnimations && stage === "first" && (
           <Typewriter
-            key={resetKey} // 🔑 restart typing
-            options={{ autoStart: true, loop: false, delay: 100, deleteSpeed: 0, cursor: "|" }}
+            key={`first-${cycleKey}`}
+            options={{
+              autoStart: true,
+              loop: false,
+              delay: 100,
+              deleteSpeed: 0,
+              cursor: "|",
+            }}
             onInit={(typewriter) => {
               typewriter
-                .typeString('<span class="text-[#575757] text-h5 lg:text-[44px] font-semibold">We are not</span>')
+                .typeString(
+                  '<span class="text-[#575757] text-h5 lg:text-[44px] font-semibold text_clash">We are not</span>'
+                )
                 .callFunction(() => setTypingFinished(true))
                 .start();
             }}
@@ -122,11 +176,19 @@ const SocialInteractions = () => {
 
         {startAnimations && stage === "second" && showSecondText && (
           <Typewriter
-            key={resetKey + 1} // 🔑 restart typing when looping
-            options={{ autoStart: true, loop: false, delay: 100, deleteSpeed: 0, cursor: "|" }}
+            key={`second-${cycleKey}`}
+            options={{
+              autoStart: true,
+              loop: false,
+              delay: 100,
+              deleteSpeed: 0,
+              cursor: "|",
+            }}
             onInit={(typewriter) => {
               typewriter
-                .typeString('<span class="text-[#575757] text-h5 lg:text-[44px] font-semibold">Here, your data rewards you</span>')
+                .typeString(
+                  '<span class="text-[#575757] text-h5 lg:text-[44px] font-semibold text_clash">Here, your data rewards you</span>'
+                )
                 .callFunction(() => setSecondTypingFinished(true))
                 .start();
             }}
@@ -135,13 +197,36 @@ const SocialInteractions = () => {
       </div>
 
       {/* Slider Section */}
-      <div className="h-16 overflow-hidden my-4">
-        {startAnimations &&
-          (stage === "first" ? (
-            typingFinished && <IconsSlider onComplete={handleIconsSliderComplete} />
-          ) : (
-            secondTypingFinished && <NotThemSlider />
-          ))}
+      <div className="h-16 overflow-hidden my-4 relative">
+        {startAnimations && stage === "first" && typingFinished && (
+          <div
+            className={`transition-all duration-500 ease-in-out ${
+              showFirstSlider
+                ? "translate-y-0 opacity-100"
+                : "translate-y-full opacity-0"
+            }`}
+          >
+            <IconsSlider
+              key={`icons-${cycleKey}`}
+              onComplete={handleIconsSliderComplete}
+            />
+          </div>
+        )}
+
+        {startAnimations && stage === "second" && secondTypingFinished && (
+          <div
+            className={`transition-all duration-500 ease-in-out ${
+              showSecondSlider
+                ? "translate-y-0 opacity-100"
+                : "translate-y-full opacity-0"
+            }`}
+          >
+            <NotThemSlider
+              key={`notthem-${cycleKey}`}
+              onComplete={handleNotThemComplete}
+            />
+          </div>
+        )}
       </div>
 
       {/* CTA Button */}

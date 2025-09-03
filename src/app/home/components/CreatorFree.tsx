@@ -17,20 +17,18 @@ const CreatorFree = () => {
     <div className="py-[60px] container">
       <div
         className="bg-[linear-gradient(99deg,#4D5D69_18.46%,#A16A6B_97.93%),linear-gradient(270deg,#FFF_0%,#999_100%)]
-   rounded-[30px]   lg:rounded-[300px] pt-[60px] lg:pt-[90px] h-full lg:h-[530px]"
-      >
+   rounded-[30px]   lg:rounded-[300px] pt-[60px] lg:pt-[90px] h-full lg:h-[530px]">
         <h2 className="creatot_text lg:text-start text-center lg:ps-[104px]">
-          {" "}
           Create for free.
         </h2>
 
-        <div className=" flex lg:flex-row flex-col justify-start items-start lg:items-center md:ps-[131px] gap-[40px] md:gap-7">
+        <div className=" flex lg:flex-row flex-col justify-start items-start lg:items-center md:ps-[131px] gap-12 md:gap-7">
           <p
             className="lg:ps-0 ps-12 text-xl lg:text-h5 font-bold leading-[150%] flex lg:flex-row flex-col  gap-[28px] md:gap-3 items-center text-secondary-50 "
             style={{ fontStyle: "italic" }}
           >
             Get started for free
-            <span className="lg:rotate-0 rotate-90 md:ml-0  ml-[70px]">
+            <span className="lg:rotate-0 rotate-90 md:ml-0  ml-[100px]">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +44,7 @@ const CreatorFree = () => {
               </svg>
             </span>
           </p>
-          <div className="flex lg:flex-row flex-col justify-center lg:justify-end items-center lg:items-end ">
+          <div className="flex lg:mx-0 mx-auto lg:flex-row lg:gap-0 gap-12 flex-col justify-center lg:justify-end items-center lg:items-end lg:pb-0 pb-[87px]">
             <div className="flex justify-end items-end ">
               <div
                 className={`pres5 size-[143px] lg:size-[287px] flex justify-center items-center rounded-full ${

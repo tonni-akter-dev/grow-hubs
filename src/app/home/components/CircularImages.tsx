@@ -71,7 +71,7 @@ const CircularImages = () => {
       </video>
 
       <TorvertIcons />
-      {/* <TorvertShadow /> */}
+      <TorvertShadow />
       <div className="absolute z-50 rounded-full size-[460px] flex items-center justify-center">
         <div className="absolute z-20 rounded-full border-2 border-[#E5D9CB]  size-[362px] flex items-center justify-center">
           <div

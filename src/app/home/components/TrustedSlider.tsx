@@ -4,17 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-
+import type { Swiper as SwiperClass } from "swiper";
 import { testimonials } from "@/app/utils/data";
 import TestimonialCard from "./TestimonialCard";
 
 const TrustedSlider = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const swiperRef = useRef<any>(null); // reference to the swiper instance
+const swiperRef = useRef<SwiperClass | null>(null);
 
-  // Pause autoplay when modal opens
   useEffect(() => {
-    if (swiperRef.current) {
+    if (swiperRef.current && swiperRef.current.autoplay) {
       if (isOpen) {
         swiperRef.current.autoplay.stop();
       } else {

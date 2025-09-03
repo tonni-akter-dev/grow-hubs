@@ -6,11 +6,11 @@ import Image from "next/image";
 const GotoTorvert = () => {
   return (
     <div className="bg-[#041527] pb-[145px] w-full min-h-screen flex flex-col items-center justify-center p-4 pt-[60px] relative">
-      {/* <Image
+      <Image
         className="absolute top-0 left-1/2 -translate-x-1/2"
         src={topShadow}
         alt=""
-      /> */}
+      />
       <div className="text-center flex flex-col justify-center items-center">
         <button className="text-neutral-50 text-body font-semibold py-3 px-3.5 bg-[#62697199] rounded-[100px]">
           TORVET

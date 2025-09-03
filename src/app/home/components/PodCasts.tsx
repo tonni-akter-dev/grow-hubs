@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import service1 from "../../../../public/home/podcast-1.png";
 import service2 from "../../../../public/home/podcast-2.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const PodCasts = () => {
+  const [secondImageVisible, setSecondImageVisible] = useState(false);
   return (
-    <div 
+    <div
       className="lg:h-[530px] h-full overflow-hidden
         bg-[linear-gradient(358deg,#FDE9BF_1.53%,#1B1302_98.56%)] 
         lg:bg-[linear-gradient(270deg,#FDE9BF_29.3%,#1B1302_98.92%)]
         rounded-[20px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-tr-[32px] lg:rounded-br-[32px]
-        flex lg:flex-row flex-col justify-between">
+        flex lg:flex-row flex-col justify-between"
+    >
       {/* Left content */}
       <div className="lg:pt-[135px] text-left lg:ps-[96px] p-6">
         <h3 className="text-h3 text-neutral-50 font-semibold leading-[35px]">
@@ -33,26 +35,27 @@ const PodCasts = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] podcast_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] podcast_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
+          onAnimationComplete={() => setSecondImageVisible(true)}
           className="absolute lg:bottom-[4%] bottom-[11%]  left-[7%] lg:left-[18%] lg:w-fit w-[250px]"
         >
           <Image src={service1} alt="" />
         </motion.div>
-
-        <motion.div
-     initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1, ease: "easeIn", delay: 0.3 }}
-          className="absolute top-[51%] lg:top-[55%] right-[70px] lg:right-[29px] lg:w-fit w-[170px]"
-        >
-          <Image src={service2} alt="" />
-        </motion.div>
+        {secondImageVisible && (
+          <motion.div
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="absolute top-[51%] lg:top-[55%] right-[70px] lg:right-[29px] lg:w-fit w-[170px]"
+          >
+            <Image src={service2} alt="" />
+          </motion.div>
+        )}
       </div>
     </div>
   );

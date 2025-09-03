@@ -23,11 +23,11 @@ import Image from "next/image";
 const TrustedBy = () => {
   return (
     <div>
-      <p className="text-neutral-9 text-body lg:text-h5 text-center mb-8 leading-[150%] ">
+      <p className="text-neutral-9 text-body md:text-h5 text-center mb-8 leading-[150%] ">
         TRUSTED BY +10,000 CONSULTANTS <br className="lg:hidden block" /> &
         ORGANISATIONS
       </p>
-      <div className="relative lg:mx-[26px] h-[101px] lg:ps-12 lg:pe-[60px] py-8 bg-[#F6F5F5] lg:rounded-[20px]">
+      <div className="relative  h-[101px] lg:ps-12 lg:pe-[60px] py-8 bg-[#F6F5F5] lg:rounded-[20px]">
         <div className="hidden lg:block">
           <Marquee speed={25} direction="right">
             <div className="flex gap-[51px] items-center">
@@ -41,8 +41,8 @@ const TrustedBy = () => {
             </div>
           </Marquee>
         </div>
-        <div className="block lg:hidden">
-          <Marquee speed={25}>
+        <div className="block lg:hidden" >
+          <Marquee speed={25} direction="right">
             <div className="flex gap-[40px] items-center">
               <Image src={t11} alt="" />
               <Image src={t12} alt="" />
@@ -66,7 +66,7 @@ const TrustedBy = () => {
             alt=""
           />
         </div>
-        <div className="absolute left-0 top-0 h-[101px] z-50  w-[91px] lg:w-[290px] ">
+        <div className="absolute left-0 top-[1px] h-[101px] z-50  w-[91px] lg:w-[290px] ">
           <Image
             className="rounded-[20px] lg:block hidden"
             src={trustedrleftshadow}

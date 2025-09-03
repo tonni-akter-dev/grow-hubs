@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Events = () => {
   return (
-    <div 
+    <div
       className="lg:h-[530px] h-full overflow-hidden
         bg-[linear-gradient(358deg,#FDCFBF_1.53%,#1B0902_98.56%)] 
         lg:bg-[linear-gradient(270deg,#FDCFBF_29.3%,#1B0902_98.92%)]
@@ -34,7 +34,7 @@ const Events = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] section_bg events_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] section_bg events_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
