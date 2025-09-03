@@ -568,7 +568,7 @@ footer {
   font-weight: 500;
   line-height: 110%;
   /* 278.3px */
- 
+
   text-transform: uppercase;
   font-family: var(--font-blauer-nue), sans-serif;
 }
@@ -592,7 +592,7 @@ footer {
     background-image: url("/home/service11.png");
     height: 300px;
     border-radius: 20px;
-    width: 93%;
+    width: 88%;
   }
 
   .communities_bg {
@@ -697,7 +697,6 @@ footer {
   .course_bg {
     background-image: url("/home/service11.png");
   }
-
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
@@ -708,7 +707,7 @@ footer {
     width: 300px;
   }
 
-  .communities_bg {
+  /* .communities_bg {
     height: 300px;
     border-radius: 20px;
     width: 300px;
@@ -742,7 +741,7 @@ footer {
     height: 300px;
     border-radius: 20px;
     width: 300px;
-  }
+  } */
   .creatot_text {
     font-size: 32px;
     margin-bottom: 38px;
@@ -761,7 +760,6 @@ footer {
   }
 
   .bg_leftShadow {
-    /* background-image: none; */
     background-image: url("/home/banner-left-shadow_sm.png ");
     background-repeat: no-repeat;
     left: -132px;

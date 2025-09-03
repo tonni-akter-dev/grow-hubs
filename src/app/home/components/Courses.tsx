@@ -37,13 +37,13 @@ const Courses = () => {
       </div>
 
       {/* Right Images Section */}
-      <div className="relative  rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] md:h-[600px] lg:h-full lg:rounded-bl-[250px] lg:rounded-br-[32px] course_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative  rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] md:h-[400px] lg:h-[500px] lg:rounded-bl-[250px] lg:rounded-br-[32px] course_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute bottom-[15%] lg:bottom-[57px] right-[50px] lg:right-[-6px]"
+          className="absolute bottom-[15%] md:bottom-[4%]  lg:bottom-[57px] right-[50px] lg:right-[-6px]"
           onAnimationComplete={() => setSecondImageVisible(true)}
         >
           <Image src={service1} alt="" />
@@ -53,7 +53,7 @@ const Courses = () => {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute top-[40%] lg:top-[33%] right-[60px] lg:right-[20px] lg:w-fit md:w-[250px] w-[147px] "
+            className="absolute top-[40%] lg:top-[35%] md:top-[29%] right-[60px] lg:right-[20px] lg:w-fit md:w-[250px] w-[147px] "
           >
             <Image src={service2} alt="Service Image" />
           </motion.div>

@@ -36,13 +36,14 @@ const Communities = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] communities_bg m-6 lg:m-4 lg:w-[634px]">
+
+      <div className="relative rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] md:h-[400px] lg:h-[500px] lg:rounded-br-[32px] communities_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute bottom-2.5 left-6 lg:w-fit w-[200px]"
+          className="absolute bottom-2.5  md:left-[15%]  lg:left-6 left-6 lg:w-fit md:w-[300px] w-[200px] "
           onAnimationComplete={() => setSecondImageVisible(true)}
         >
           <Image src={service1} alt="" />
@@ -52,7 +53,8 @@ const Communities = () => {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute top-[21%] lg:top-[14%] right-[26px] lg:w-fit w-[170px] z-50">
+            className="absolute  lg:top-[20%] md:top-[15%] top-[21%] md:right-[13%] right-[26px] lg:w-fit  md:w-[250px] w-[147px] z-50"
+          >
             <Image src={service2} alt="" />
           </motion.div>
         )}

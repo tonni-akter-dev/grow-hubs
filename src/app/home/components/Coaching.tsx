@@ -36,26 +36,27 @@ const Coaching = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative rounded-[32px] rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] coaching_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px]  md:h-[400px] lg:h-[500px] lg:rounded-bl-[250px] lg:rounded-br-[32px] coaching_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-          className="absolute bottom-[11%] left-0 lg:left-[23%] lg:w-fit w-[200px]"
+          className="absolute lg:bottom-[11%] bottom-[11%] left-0 lg:left-[23%] lg:w-fit md:w-[500px] w-[200px] md:bottom-[5%]"
           onAnimationComplete={() => setSecondImageVisible(true)}
         >
           <Image src={service1} alt="" />
         </motion.div>
-
         {secondImageVisible && (
           <motion.div
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute top-[14%] right-[26px] lg:w-fit w-[170px]"
+            className="absolute lg:top-[18%] md:top-[8%] top-[16%] 
+        lg:right-[-30%]   md:right-[25%] right-[21%] 
+        lg:w-[400px] md:w-[200px] w-[115px]  "
           >
-            <Image src={service2} alt="" />
+            <Image src={service2} className="" alt="" />
           </motion.div>
         )}
       </div>

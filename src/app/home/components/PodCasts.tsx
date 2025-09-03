@@ -35,14 +35,14 @@ const PodCasts = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] podcast_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative rounded-[20px] lg:rounded-tr-[32px]  md:h-[400px] lg:h-[500px]  lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] podcast_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
           onAnimationComplete={() => setSecondImageVisible(true)}
-          className="absolute lg:bottom-[4%] bottom-[11%]  left-[7%] lg:left-[18%] lg:w-fit w-[250px]"
+          className="absolute lg:bottom-[4%] bottom-[11%]  left-[7%] lg:left-[18%] lg:w-fit md:w-[500px] w-[250px]"
         >
           <Image src={service1} alt="" />
         </motion.div>
@@ -51,7 +51,7 @@ const PodCasts = () => {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute top-[51%] lg:top-[55%] right-[70px] lg:right-[29px] lg:w-fit w-[170px]"
+            className="absolute  lg:top-[57%] md:top-[37%] top-[51%] lg:right-[29px] md:right-[18%]  right-[70px] lg:w-fit md:w-[300px]  w-[170px]"
           >
             <Image src={service2} alt="" />
           </motion.div>

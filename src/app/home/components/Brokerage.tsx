@@ -36,14 +36,14 @@ const Brokerage = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] brokerage_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative rounded-[20px] md:h-[400px] lg:h-[500px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] brokerage_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
           onAnimationComplete={() => setSecondImageVisible(true)}
-          className="absolute bottom-[31px] left-[27%] lg:w-fit w-[200px]"
+          className="absolute bottom-[31px] left-[27%] lg:w-fit md:w-[300px] w-[200px]"
         >
           <Image src={service1} alt="" />
         </motion.div>

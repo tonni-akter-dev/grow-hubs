@@ -150,7 +150,7 @@ const EssentialToolCard = () => {
         ))}
       </div>
       <div className="container lg:hidden grid grid-cols-2  gap-2">
-        {tools.slice(0,6).map((item, index) => (
+        {tools.map((item, index) => (
           <motion.div
             key={index}
             custom={index}
