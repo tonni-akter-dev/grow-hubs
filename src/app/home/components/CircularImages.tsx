@@ -11,17 +11,18 @@ const CircularImages = () => {
   const [rotation3, setRotation3] = useState(0); // Tertiary icons rotation
   const [isPaused, setIsPaused] = useState(false);
 
-  useEffect(() => {
-    if (isPaused) return;
+useEffect(() => {
+  if (isPaused) return;
 
-    const interval = setInterval(() => {
-      setRotation1((prev) => prev + 0.5); // Primary rotation
-      setRotation2((prev) => prev - 0.7); // Secondary rotation (opposite direction)
-      setRotation3((prev) => prev + 0.4); // Tertiary rotation
-    }, 50);
+  const interval = setInterval(() => {
+    setRotation1((prev) => prev + 2);   // ⬅️ was 0.5 → now 2
+    setRotation2((prev) => prev - 3);   // ⬅️ was -0.7 → now -3
+    setRotation3((prev) => prev + 1.5); // ⬅️ was 0.4 → now 1.5
+  }, 30); // ⬅️ was 50ms → now 30ms (more frequent updates)
 
-    return () => clearInterval(interval);
-  }, [isPaused]);
+  return () => clearInterval(interval);
+}, [isPaused]);
+
 
   // Primary icons (first bordered circle)
   const primaryIcons = [
@@ -73,12 +74,12 @@ const CircularImages = () => {
       <TorvertIcons />
       <TorvertShadow />
       <div className="absolute z-50 rounded-full size-[460px] flex items-center justify-center">
-        <div className="absolute z-20 rounded-full border-2 border-[#E5D9CB]  size-[362px] flex items-center justify-center">
+        <div className="absolute z-20 rounded-full border-[4px] border-[#E5D9CB]  size-[362px] flex items-center justify-center" >
           <div
             className="absolute z-30 rounded-full border-2 border-[#E4D8C5] size-[257px] flex items-center justify-center"
             style={{ boxShadow: "0 -2.09px 8.36px 10.45px #E1D9CE" }}
           >
-            <div className="z-40 flex flex-col items-center acno_1 justify-center text-center bg-white/90 rounded-full size-[153px] ">
+            <div className="z-40 flex flex-col items-center justify-center text-center  rounded-full size-[153px] acno_1">
               <span className="text-sm text-[#513232]">Go to</span>
               <span className="text-xl font-bold text-[#513232]">TORVET</span>
             </div>

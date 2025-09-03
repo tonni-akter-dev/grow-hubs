@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const GotoTorvert = () => {
   return (
-    <div className="bg-[#041527] pb-[145px] w-full min-h-screen flex flex-col items-center justify-center p-4 pt-[60px] relative">
+    <div className="bg-[#001320] pb-[145px] w-full min-h-screen flex flex-col items-center justify-center pt-[60px] relative">
       <Image
         className="absolute top-0 left-1/2 -translate-x-1/2"
         src={topShadow}
@@ -24,8 +24,7 @@ const GotoTorvert = () => {
         </p>
         <button
           className="text-[#7A6464] text-body font-bold  py-3 px-6 flex gap-2 items-center bg-[linear-gradient(267deg,#F7E6CD_9.84%,#E3F1FA_58.55%,#C0DBF9_107.26%)] rounded-[100px] mt-5"
-          style={{ textShadow: " 0 1px 4px rgba(255, 255, 255, 0.25)" }}
-        >
+          style={{ textShadow: " 0 1px 4px rgba(255, 255, 255, 0.25)" }}>
           Learn more
           <svg
             xmlns="http://www.w3.org/2000/svg"

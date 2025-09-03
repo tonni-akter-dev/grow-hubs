@@ -68,7 +68,7 @@ const TorvertIcons = () => {
         <Image src={communities} alt="" />
         <p className="text-[#FFFFFF4D] font-medium text-h6">Communities</p>
       </div>
-      <div className="absolute z-40 left-[-5%] bottom-[46%] flex flex-col items-center gap-2">
+      <div className="absolute z-40 left-[19%] bottom-[46%] flex flex-col items-center gap-2">
         <Image src={live1} alt="" />
         <p className="text-[#FFFFFF8F] font-medium text-h6">Short videos</p>
       </div>
@@ -76,11 +76,11 @@ const TorvertIcons = () => {
         <Image src={podcast} alt="" />
         <p className="text-[#FFFFFF82] font-medium text-h6">Podcasts</p>
       </div>
-      <div className="absolute z-40 left-[22%] top-[25%]  flex items-center gap-2">
+      <div className="absolute z-40 left-[30%] top-[25%]  flex items-center gap-2">
         <Image src={events1} alt="" />
         <p className="text-[#FFFFFFCC] font-medium text-h6">Events</p>
       </div>
-      <div className="absolute z-40 left-[3%] top-[20%]  flex  flex-col items-center gap-2">
+      <div className="absolute z-40 left-[20%] top-[20%]  flex  flex-col items-center gap-2">
         <Image src={courses} alt="" />
         <p className="text-[#FFFFFFCC] font-medium text-h6">Courses</p>
       </div>
