@@ -34,10 +34,10 @@ const Footer = () => {
             <span>GrowHubs</span>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between mb-[51px] gap-8">
+        <div className="flex flex-col lg:flex-row  justify-between mb-[51px] gap-8">
           {/* Products Column */}
-          <div className="flex flex-col sm:flex-row gap-8 lg:gap-[100px]">
-            <div>
+          <div className="flex mr-[100px] flex-row flex-wrap gap-8 lg:mr-10 lg:gap-[100px]">
+            <div className='flex-1  max-w-full'>
               <h3 className="text-h6 text-white font-medium leading-[30px] mb-6">Products</h3>
               <ul className="space-y-4">
                 {[
@@ -61,8 +61,8 @@ const Footer = () => {
             </div>
 
             {/* Links Column */}
-            <div>
-              <h3 className="text-h6 text-white font-medium leading-[30px] mb-6">Links</h3>
+            <div className=''>
+              <h3 className="text-h6  text-white font-medium leading-[30px] mb-6">Links</h3>
               <ul className="space-y-4">
                 {[
                   { href: '#', text: 'Products' },

@@ -563,12 +563,12 @@ footer {
   text-align: center;
   leading-trim: both;
   text-edge: cap;
-  font-size: 253px;
+  font-size: clamp(40px, 16.5vw, 278px);
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
   /* 278.3px */
-  letter-spacing: -12.65px;
+ 
   text-transform: uppercase;
   font-family: var(--font-blauer-nue), sans-serif;
 }
@@ -781,12 +781,7 @@ footer {
   .hoverable:hover .mega-menu-why {
     top: 358px !important;
   }
-
-  .footer_text {
-    font-size: 73px;
-  }
 }
-
 @media (min-width: 1024px) and (max-width: 1920px) {
   .container {
     width: calc(100% - 200px);
