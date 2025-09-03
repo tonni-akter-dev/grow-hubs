@@ -646,43 +646,36 @@ footer {
   .course_bg {
     background-image: url("/home/service11.png");
     height: 300px;
-    border-radius: 20px;
     width: 345px !important;
   }
 
   .communities_bg {
     height: 300px;
-    border-radius: 20px;
     width: 351px;
   }
 
   .coaching_bg {
     height: 300px;
-    border-radius: 20px;
     width: 351px;
   }
 
   .merchandise_bg {
     height: 300px;
-    border-radius: 20px;
     width: 351px;
   }
 
   .podcast_bg {
     height: 300px;
-    border-radius: 20px;
     width: 351px;
   }
 
   .events_bg {
     height: 300px;
-    border-radius: 20px;
     width: 351px;
   }
 
   .brokerage_bg {
     height: 300px;
-    border-radius: 20px;
     width: 351px;
   }
 
@@ -701,6 +694,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .course_bg {
+    background-image: url("/home/service11.png");
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 699px) {

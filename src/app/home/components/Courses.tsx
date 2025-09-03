@@ -37,7 +37,7 @@ const Courses = () => {
       </div>
 
       {/* Right Images Section */}
-      <div className="relative lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] course_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative  rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] md:h-[600px] lg:h-full lg:rounded-bl-[250px] lg:rounded-br-[32px] course_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
@@ -48,38 +48,16 @@ const Courses = () => {
         >
           <Image src={service1} alt="" />
         </motion.div>
-
-        {/* {secondImageVisible && (
+        {secondImageVisible && (
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="absolute top-[40%] lg:top-[32%] right-[60px] lg:right-[20px] lg:w-fit w-[147px]"
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="absolute top-[40%] lg:top-[33%] right-[60px] lg:right-[20px] lg:w-fit md:w-[250px] w-[147px] "
           >
-            <Image src={service2} alt="" />
+            <Image src={service2} alt="Service Image" />
           </motion.div>
-        )} */}
-
-{secondImageVisible && (
-  <motion.div
-    initial={{ opacity: 0, y: 50, maskImage: "linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%)" }}
-    whileInView={{
-      opacity: 1,
-      y: 0,
-      maskImage: "linear-gradient(to bottom, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%)"
-    }}
-    transition={{ duration: 1.5, ease: "easeOut" }}
-    className="absolute top-[40%] lg:top-[32%] right-[60px] lg:right-[20px] lg:w-fit w-[147px] overflow-hidden"
-    style={{
-      WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%)",
-      WebkitMaskRepeat: "no-repeat",
-      WebkitMaskSize: "cover"
-    }}
-  >
-    <Image src={service2} alt="" />
-  </motion.div>
-)}
-
+        )}
       </div>
     </div>
   );

@@ -2,9 +2,11 @@ import service1 from "../../../../public/home/coatching-2.png";
 import service2 from "../../../../public/home/coatching-1.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Coaching = () => {
-  
+  const [secondImageVisible, setSecondImageVisible] = useState(false);
+
   return (
     <div
       className="lg:h-[530px] h-full overflow-hidden
@@ -34,26 +36,28 @@ const Coaching = () => {
       </div>
 
       {/* Right image */}
-      <div className="relative rounded-[32px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] coaching_bg m-6 lg:m-4 lg:w-[634px]">
+      <div className="relative rounded-[32px] rounded-[20px] lg:rounded-tr-[32px] lg:rounded-tl-[250px] lg:rounded-bl-[250px] lg:rounded-br-[32px] coaching_bg m-6 lg:m-4 lg:w-[634px]">
         <motion.div
           initial={{ x: -200, y: 200, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
           className="absolute bottom-[11%] left-0 lg:left-[23%] lg:w-fit w-[200px]"
+          onAnimationComplete={() => setSecondImageVisible(true)}
         >
           <Image src={service1} alt="" />
         </motion.div>
 
-        <motion.div
-     initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1, ease: "easeIn", delay: 0.3 }}
-          className="absolute top-[14%] right-[26px] lg:w-fit w-[170px]"
-        >
-          <Image src={service2} alt="" />
-        </motion.div>
+        {secondImageVisible && (
+          <motion.div
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="absolute top-[14%] right-[26px] lg:w-fit w-[170px]"
+          >
+            <Image src={service2} alt="" />
+          </motion.div>
+        )}
       </div>
     </div>
   );
