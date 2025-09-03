@@ -40,12 +40,12 @@ const swiperRef = useRef<SwiperClass | null>(null);
         loop={true}
         className="mySwiper relative z-20"
         centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        modules={[Autoplay]}
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
+        // modules={[Autoplay]}
         initialSlide={3}
         breakpoints={{
           320: { slidesPerView: 2, spaceBetween: 20 },
@@ -63,7 +63,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
 
       {isOpen && (
         <div className="fixed inset-0 !z-50 flex items-center justify-center bg-black/50">
-          <div className="w-[439px] h-[697px] aspect-video rounded-2xl overflow-hidden relative">
+          <div className="mt-5 w-[155px] h-[190px] lg:w-[439px] lg:h-[697px] aspect-video rounded-2xl overflow-hidden relative">
             <button
               className="absolute top-2 right-3 text-white text-2xl font-bold"
               onClick={() => setIsOpen(false)}
