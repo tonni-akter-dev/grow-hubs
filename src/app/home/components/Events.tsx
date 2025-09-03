@@ -30,7 +30,7 @@ const Events = () => {
         </div>
         <button className="px-6 py-3 text-secondary-50 font-bold text-body leading-6 bg-[#FC642C] hover:bg-transparent hover:text-[#FC642C] rounded-[100px] mt-4 border border-[#FC642C] cursor-pointer transition-all ease-in-out duration-300">
           Learn More
-        </button>
+        </button> 
       </div>
 
       {/* Right image */}

@@ -53,7 +53,7 @@ const Brokerage = () => {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute top-[37%] left-[22%] lg:w-fit w-[200px]"
+            className="absolute top-[37%] md:top-[40%] lg:top-[37%] left-[22%] lg:w-fit w-[200px]"
           >
             <Image src={service2} alt="" />
           </motion.div>

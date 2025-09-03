@@ -1,7 +1,7 @@
 import Banner from "./home/components/Banner";
 import CreatorFree from "./home/components/CreatorFree";
 import EssentialTools from "./home/components/EssentialTools";
-// import GotoTorvert from "./home/components/GotoTorvert";
+import GotoTorvert from "./home/components/GotoTorvert";
 import SellMore from "./home/components/SellMore";
 import Services from "./home/components/Services";
 import SocialInteractions from "./home/components/SocialInteractions";
@@ -16,7 +16,7 @@ export default function Home() {
       <Services />
       <SellMore />
       <EssentialTools />
-      {/* <GotoTorvert /> */}
+      <GotoTorvert />
       <SocialInteractions />
       <TrustedSlider />
       <CreatorFree />

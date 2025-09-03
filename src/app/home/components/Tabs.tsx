@@ -72,7 +72,6 @@ export default function Tabs() {
           </div>
         </div>
       </div>
-
       <div
         className="w-full mt-2 lg:mt-6"
         onMouseEnter={() => setIsHovered(true)}

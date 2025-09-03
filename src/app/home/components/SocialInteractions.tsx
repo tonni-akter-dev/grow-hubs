@@ -34,7 +34,6 @@ const SocialInteractions = () => {
 
   useEffect(() => {
     if (startAnimations && rightBallRef.current && leftBallRef.current) {
-      // Right ball animation - moving left and down in a wave pattern
       rightBallRef.current.animate(
         [
           { transform: "translateX(0) translateY(0)" },
@@ -52,7 +51,6 @@ const SocialInteractions = () => {
         }
       );
       
-      // Left ball animation - moving right and up in a wave pattern
       leftBallRef.current.animate(
         [
           { transform: "translateX(0px) translateY(0px)" },
@@ -64,7 +62,7 @@ const SocialInteractions = () => {
           { transform: "translateX(480px) translateY(-100px)" },
         ],
         {
-          duration: 2000,
+          duration: 20000,
           iterations: Infinity,
           easing: "ease-in-out",
         }
