@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import service1 from "../../../../public/home/communities-1.png";
 import service2 from "../../../../public/home/communities-2.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Communities = () => {
+    const [secondImageVisible, setSecondImageVisible] = useState(false);
+  
   return (
     <div
       className="lg:h-[530px] h-full overflow-hidden

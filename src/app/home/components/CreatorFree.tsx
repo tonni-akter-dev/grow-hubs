@@ -17,10 +17,8 @@ const CreatorFree = () => {
     <div className="py-[60px] container">
       <div
         className="bg-[linear-gradient(99deg,#4D5D69_18.46%,#A16A6B_97.93%),linear-gradient(270deg,#FFF_0%,#999_100%)]
-   rounded-[30px]   lg:rounded-[300px] pt-[60px] lg:pt-[90px] h-full lg:h-[530px]"
-      >
+   rounded-[30px]   lg:rounded-[300px] pt-[60px] lg:pt-[90px] h-full lg:h-[530px]">
         <h2 className="creatot_text lg:text-start text-center lg:ps-[104px]">
-          {" "}
           Create for free.
         </h2>
 
